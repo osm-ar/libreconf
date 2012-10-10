@@ -1,0 +1,36 @@
+es-AR:
+  activerecord:
+    models:
+      sponsor:
+        one: Auspiciante
+        other: Auspiciantes
+      abstract: 
+        one: Propuesta
+        other: Propuestas
+    attributes:
+      abstract:
+        author: Autor
+        title: Título
+        email: E-mail
+        description: Descripción
+        status: Estado
+        organization: Organización
+        created_at: Creación
+      sponsor:
+        name: Nombre
+        description: Descripción
+        email: E-mail
+        website: Página
+        created_at: Creación
+
+  helpers:
+    actions: Acciones
+    links:
+      new: Nuevo
+      edit: Editar
+      cancel: Cancelar
+      back: Volver
+      destroy: Eliminar
+
+  status: Estado
+  type: Tipo

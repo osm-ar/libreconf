@@ -1,0 +1,10 @@
+en:
+  routes:
+es-AR:
+  routes:
+    sponsors: auspiciantes
+    abstracts: propuestas
+    new: nuevo
+    edit: editar
+    destroy: eliminar
+    cancel: cancelar
