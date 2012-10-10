@@ -9,8 +9,7 @@
       <th><%= model_class.human_attribute_name(:author) %></th>
       <th><%= model_class.human_attribute_name(:email) %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
-      <th><%= model_class.human_attribute_name(:status_id) %></th>
+      <th><%= t('status') %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -24,6 +23,7 @@
         <td><%= abstract.title %></td>
         <td><%= abstract.description %></td>
         <td><%= abstract.status_id %></td>
+        <td><%= abstract.organization %></td>
         <td><%=l abstract.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

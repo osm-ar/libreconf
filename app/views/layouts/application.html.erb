@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Foss4g" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "FOSS4G Buenos Aires" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -44,12 +44,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Foss4g</a>
+          <a class="brand" href="/">
+            <%= image_tag 'logo_small.png' %>
+          </a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li><%= link_to Abstract.model_name.human.pluralize, abstracts_path %></li>
+              <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -64,20 +65,19 @@
             </div>
             <div class="span3">
               <div class="well sidebar-nav">
-                <h3>Sidebar</h3>
-                <ul class="nav nav-list">
-                  <li class="nav-header">Sidebar</li>
-                  <li><%= link_to "Link1", "/path1"  %></li>
-                  <li><%= link_to "Link2", "/path2"  %></li>
-                  <li><%= link_to "Link3", "/path3"  %></li>
-                </ul>
+                <h3>Auspiciantes</h3>
+        
+              </div><!--/.well -->
+              <div class="well sidebar-nav">
+                <h3>Novedades</h3>
+                
               </div><!--/.well -->
             </div><!--/span-->
         </div><!--/row-->
       </div><!--/content-->
 
       <footer>
-        <p>Free and Open Source Software for Geoespatial. Conferencia de Geomática Libre. Buenos Aires, Argentina. 2013.</p>
+        <div class="well">FOSS4G Buenos Aires 2013</div>
       </footer>
 
     </div> <!-- /container -->

@@ -11,16 +11,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121009175440) do
+ActiveRecord::Schema.define(:version => 20121010133524) do
+
+  create_table "abstract_statuses", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "abstracts", :force => true do |t|
     t.string   "author"
     t.string   "email"
     t.string   "title"
     t.text     "description"
-    t.integer  "status_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.integer  "abstract_status_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "organization"
+  end
+
+  create_table "sponsor_types", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "sponsors", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "sponsor_type_id"
+    t.string   "email"
+    t.string   "website"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
