@@ -8,12 +8,12 @@
   <dd><%= @sponsor.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
   <dd><%= @sponsor.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:sponsor_type_id) %>:</strong></dt>
-  <dd><%= @sponsor.sponsor_type_id %></dd>
+  <dt><strong><%= t(:type) %>:</strong></dt>
+  <dd><%= @sponsor.sponsor_type.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
   <dd><%= @sponsor.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:website) %>:</strong></dt>
-  <dd><%= @sponsor.website %></dd>
+  <dd><%= link_to @sponsor.website, "http://" + @sponsor.website %></dd>
 </dl>
 
 <div class="form-actions">

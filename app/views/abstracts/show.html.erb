@@ -6,16 +6,17 @@
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:author) %>:</strong></dt>
   <dd><%= @abstract.author %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:organization) %>:</strong></dt>
+  <dd><%= @abstract.organization %></dd>
   <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
   <dd><%= @abstract.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @abstract.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
   <dd><%= @abstract.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:status_id) %>:</strong></dt>
-  <dd><%= @abstract.status_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:organization) %>:</strong></dt>
-  <dd><%= @abstract.organization %></dd>
+  <dt><strong><%= t(:status) %>:</strong></dt>
+  <dd><%= @abstract.abstract_status.name %></dd>
+  
 </dl>
 
 <div class="form-actions">

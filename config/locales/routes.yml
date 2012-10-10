@@ -8,3 +8,5 @@ es-AR:
     edit: editar
     destroy: eliminar
     cancel: cancelar
+    sponsor_types: tipos_auspiciante
+    abstract_statuses: estados_propuesta

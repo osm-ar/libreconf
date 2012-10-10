@@ -7,6 +7,12 @@ es-AR:
       abstract: 
         one: Propuesta
         other: Propuestas
+      abstract_status:
+        one: Estado de Propuestas
+        other: Estados de Propuestas
+      sponsor_type:
+        one: Tipo de Auspiciantes
+        other: Tipos de Auspiciantes
     attributes:
       abstract:
         author: Autor
@@ -22,6 +28,12 @@ es-AR:
         email: E-mail
         website: Página
         created_at: Creación
+      sponsor_type:
+        name: Nombre
+        created_at: Creación
+      abstract_status:
+        name: Nombre
+        created_at: Creación
 
   helpers:
     actions: Acciones
@@ -31,6 +43,8 @@ es-AR:
       cancel: Cancelar
       back: Volver
       destroy: Eliminar
+    titles:
+      new: Nuevo
 
   status: Estado
   type: Tipo

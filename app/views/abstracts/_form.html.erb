@@ -1,8 +1,20 @@
 <%= form_for @abstract, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
+    <%= f.label t(:status), :class => 'control-label' %>
+    <div class="controls">
+      <%= collection_select(:abstract, :abstract_status_id, AbstractStatus.all, :id, :name) %>
+    </div>
+  </div>
+  <div class="control-group">
     <%= f.label :author, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :author, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :organization, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :organization, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
@@ -14,28 +26,16 @@
   <div class="control-group">
     <%= f.label :title, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :title, :class => 'text_field' %>
+      <%= f.text_field :title, :class => 'text_field input-xxlarge' %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :description, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_area :description, :class => 'text_area' %>
+      <%= f.text_area :description, :class => 'text_area input-xxlarge' %>
     </div>
   </div>
-  <div class="control-group">
-    <%= f.label :status_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :status_id, :class => 'number_field' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :organization, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :organization, :class => 'text_field' %>
-    </div>
-  </div>
-
+  
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),

@@ -19,9 +19,9 @@
       <tr>
         <td><%= link_to sponsor.id, sponsor_path(sponsor) %></td>
         <td><%= sponsor.name %></td>
-        <td><%= sponsor.sponsor_type_id %></td>
+        <td><%= sponsor.sponsor_type.name %></td>
         <td><%= sponsor.email %></td>
-        <td><%= link_to URI.parse(sponsor.website).host, URI.parse(sponsor.website).to_s %></td>
+        <td><%= link_to sponsor.website, "http://" + sponsor.website %></td>
         <td><%=l sponsor.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
