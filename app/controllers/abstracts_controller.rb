@@ -1,4 +1,6 @@
 class AbstractsController < ApplicationController
+  before_filter :authenticate_user!
+  
   # GET /abstracts
   # GET /abstracts.json
   def index

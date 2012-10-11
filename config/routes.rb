@@ -1,4 +1,6 @@
 Foss4g::Application.routes.draw do
+  devise_for :users
+
   resources :abstract_statuses
 
   resources :sponsor_types

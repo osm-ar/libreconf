@@ -1,4 +1,6 @@
 class AbstractStatusesController < ApplicationController
+  before_filter :authenticate_user!
+  
   # GET /abstract_statuses
   # GET /abstract_statuses.json
   def index

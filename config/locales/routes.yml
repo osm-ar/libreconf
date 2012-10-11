@@ -10,3 +10,6 @@ es-AR:
     cancel: cancelar
     sponsor_types: tipos_auspiciante
     abstract_statuses: estados_propuesta
+    users: usuarios
+    sign_in: entrar
+    sign_out: salir

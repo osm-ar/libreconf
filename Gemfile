@@ -39,3 +39,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'rails-translate-routes'
+
+gem 'devise'

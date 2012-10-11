@@ -34,6 +34,10 @@ es-AR:
       abstract_status:
         name: Nombre
         created_at: Creación
+      user:
+        email: E-mail
+        password: Contraseña
+        remember_me: Recordarme
 
   helpers:
     actions: Acciones
@@ -48,3 +52,13 @@ es-AR:
 
   status: Estado
   type: Tipo
+  sign_in: Entrar
+  sign_out: Salir
+  conference_name: FOSS4G Buenos Aires 2013
+  conference_slogan: Conferencia de Geomática Libre
+  conference_date: 24 al 26 de abril
+  conference_venue: Instituto Geográfico Nacional
+  conference_location: Buenos Aires, Argentina
+  organized_by: Organiza
+  supported_by: Con el apoyo de
+  invited_by: Invita

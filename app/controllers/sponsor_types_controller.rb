@@ -1,4 +1,6 @@
 class SponsorTypesController < ApplicationController
+  before_filter :authenticate_user!
+  
   # GET /sponsor_types
   # GET /sponsor_types.json
   def index

@@ -33,7 +33,9 @@ body {
 
 body {
   background: url('background.png') no-repeat center center fixed;
-  background-size:100%;
+  background-size: 100%;
+  background-color: #004D6A;
+  color: #FFF;
 }
 
 body > .container {
@@ -42,8 +44,22 @@ body > .container {
 }
 
 footer {
-  text-align: right;
-  padding-top: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 3px #F9F9F9 solid;
+}
+
+footer .label {
+  color: #00AFEA;
+  background-color: #004D6A;
+  font-size: 13px;
+  height: 18px;
+  vertical-align: middle;
+  padding: 4px 10px 0px 10px;
+}
+
+.well {
+  color: #004D6A;
 }
 
 .nav {
@@ -68,11 +84,37 @@ footer {
 }
 
 .homeBox {
-  height: 160px;
-  background-color: rgba(50, 50, 50, 0.85);
+  height: 120px;
+  background-color: rgba(1, 15, 24, 0.75);
   color: #FFF;
 }
 
 .homeBanner {
-  background-color: rgba(238, 238, 238, 0.90);
+  background-color: rgba(238, 238, 238, 0.80);
+  padding: 30px;
+  color: #004D6A;
+}
+
+.homeBanner h1 {
+  text-shadow: 1px 1px 2px #FFF;
+  font-size: 55px;
+}
+
+.homeBanner h2 {
+  text-shadow: 1px 1px 2px #666;
+  color: #FFF14A;
+  font-size: 50px;
+}
+
+.homeBanner h3 {
+  font-size: 30px;
+  color: #6D6E72;
+}
+
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  background-color: rgba(1, 15, 24, 0.5);
+}
+
+.table-striped tbody tr:nth-child(even) td, .table-striped tbody tr:nth-child(even) th {
+  background-color: rgba(255, 255, 255, 0.1);
 }

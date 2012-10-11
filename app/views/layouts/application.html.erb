@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "FOSS4G Buenos Aires" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : t(:conference_name) %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -48,11 +48,16 @@
             <%= image_tag 'logo_small.png' %>
           </a>
           <div class="container nav-collapse">
-            <ul class="nav">
-              <li><%= link_to Abstract.model_name.human.pluralize, abstracts_path %></li>
-              <!-- <li><%= link_to AbstractStatus.model_name.human.pluralize, abstract_statuses_path %></li> -->
-              <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
-              <!-- <li><%= link_to SponsorType.model_name.human.pluralize, sponsor_types_path %></li> -->
+            <ul class="nav pull-right">
+              <% if user_signed_in? %>
+                <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
+                <!-- <li><%= link_to AbstractStatus.model_name.human.pluralize, abstract_statuses_path %></li> -->
+                <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
+                <!-- <li><%= link_to SponsorType.model_name.human.pluralize, sponsor_types_path %></li> -->
+                <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
+              <% else %>
+                <li><%= link_to t(:sign_in), new_user_session_path %></li>
+              <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -62,24 +67,34 @@
     <div class="container">
       <div class="content">
         <div class="row">
-           <div class="span9">
-              <%= yield %>
-            </div>
-            <div class="span3">
-              <div class="well sidebar-nav">
-                <h3>Novedades</h3>
-                
-              </div><!--/.well -->
-              <div class="well sidebar-nav">
-                <h3>Auspiciantes</h3>
-        
-              </div><!--/.well -->
-            </div><!--/span-->
+          <div class="span9">
+            <%= yield %>
+          </div>
+          <div class="span3">
+            <div class="well sidebar-nav">
+              <h3>Novedades</h3>
+            </div><!--/.well -->
+            <div class="well sidebar-nav">
+              <h3>Auspiciantes</h3>
+            </div><!--/.well -->
+          </div><!--/span-->
         </div><!--/row-->
       </div><!--/content-->
 
       <footer>
-        <div class="well">FOSS4G Buenos Aires 2013</div>
+        <div class="content">
+          <div class="row">
+            <div class="span6">
+              <a href="https://twitter.com/foss4gBA" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @foss4gBA</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.foss4g.org.ar" data-text="FOSS4G Buenos Aires 2013 - Conferencia de Geomática Libre" data-via="foss4gBA" data-lang="es">Twittear</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+            <div class="span6">
+              <span class="label pull-right"><%= t(:conference_name) %></span>
+            </div>            
+          </div>
+        </div>
       </footer>
 
     </div> <!-- /container -->
