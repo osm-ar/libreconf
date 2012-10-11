@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+jQuery(function($){
+    $(".tweet").tweet({
+        avatar_size: 16,
+        count: 5,
+        query: "foss4g",
+        loading_text: "cargando tweets...",
+        template: "{text}"
+    });
+});
