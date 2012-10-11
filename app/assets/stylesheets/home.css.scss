@@ -2,11 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.tweet {
+  font-size: 12px;
+}
+
 .tweet_list {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  font-size: 12px;
 }
 
 .tweet_list li {

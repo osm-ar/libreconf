@@ -19,7 +19,7 @@ jQuery(function($){
     $(".tweet").tweet({
         avatar_size: 16,
         count: 5,
-        query: "foss4g",
+        query: "foss4gBA",
         loading_text: "cargando tweets...",
         template: "{text}"
     });
