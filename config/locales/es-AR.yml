@@ -27,6 +27,7 @@ es-AR:
         description: Descripción
         email: E-mail
         website: Página
+        logo_url: Logo
         created_at: Creación
       sponsor_type:
         name: Nombre

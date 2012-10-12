@@ -4,6 +4,8 @@
 </div>
 
 <dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:logo_url) %>:</strong></dt>
+  <dd><%= image_tag @sponsor.logo_url %></dd>
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
   <dd><%= @sponsor.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
@@ -13,7 +15,7 @@
   <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
   <dd><%= @sponsor.email %></dd>
   <dt><strong><%= model_class.human_attribute_name(:website) %>:</strong></dt>
-  <dd><%= link_to @sponsor.website, "http://" + @sponsor.website %></dd>
+  <dd><%= link_to @sponsor.website, @sponsor.website %></dd>
 </dl>
 
 <div class="form-actions">
