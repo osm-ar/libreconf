@@ -17,10 +17,11 @@
 
 jQuery(function($){
     $(".tweet").tweet({
-        avatar_size: 16,
+        avatar_size: 32,
         count: 5,
         query: "foss4gBA",
         loading_text: "cargando tweets...",
-        template: "{text}"
+        //refresh_interval: 60,
+        template: "{avatar}{text}"
     });
 });

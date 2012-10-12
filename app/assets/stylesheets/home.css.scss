@@ -13,9 +13,18 @@
 }
 
 .tweet_list li {
-  border-bottom: 1px dashed #004D6A;
+  border-top: 1px dashed #004D6A;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  clear: both;
+  min-height: 32px;
 }
 
-.tweet_list li:last-child {
-  border-bottom: none;
+.tweet_avatar img {
+  margin: 5px 5px 0px 0px;
+  float: left;
+}
+
+.tweet_list .tweet_first {
+  border-top: none;
 }
