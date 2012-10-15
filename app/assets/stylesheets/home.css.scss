@@ -2,34 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.homeBox {
-  height: 120px;
-  background-color: rgba(1, 15, 24, 0.75);
-  color: #FFF;
-}
-
-.homeBanner {
-  background: rgba(238, 238, 238, 0.80) url('banner_bg.png') no-repeat left bottom;
-  padding: 30px;
-  color: #004D6A;
-}
-
-.homeBanner h1 {
-  text-shadow: 1px 1px 2px #FFF;
-  font-size: 55px;
-}
-
-.homeBanner h2 {
-  text-shadow: 1px 1px 2px #666;
-  color: #FFF14A;
-  font-size: 50px;
-}
-
-.homeBanner h3 {
-  font-size: 30px;
-  color: #6D6E72;
-}
-
 .tweet {
   font-size: 12px;
 }
