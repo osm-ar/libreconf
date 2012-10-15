@@ -3,13 +3,15 @@ en:
 es-AR:
   routes:
     sponsors: auspiciantes
-    abstracts: propuestas
+    abstracts: resumenes
     new: nuevo
     edit: editar
     destroy: eliminar
     cancel: cancelar
-    sponsor_types: tipos_auspiciante
-    abstract_statuses: estados_propuesta
+    sponsor_types: tipos_auspiciantes
+    abstract_statuses: estados_resumenes
     users: usuarios
     sign_in: entrar
     sign_out: salir
+    registration: registracion
+    home: inicio

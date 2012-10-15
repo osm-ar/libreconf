@@ -49,14 +49,14 @@
           </a>
           <div class="container nav-collapse">
             <ul class="nav pull-right">
-              <% if user_signed_in? %>
-                <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
-                <!-- <li><%= link_to AbstractStatus.model_name.human.pluralize, abstract_statuses_path %></li> -->
-                <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
-                <!-- <li><%= link_to SponsorType.model_name.human.pluralize, sponsor_types_path %></li> -->
-                <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
+              <% unless user_signed_in? %>
+                <li><%= link_to t(:register), home_registration_path %></li>
+                <li><%= link_to t(:new_abstract), new_abstract_path %></li>
+                <!-- <li><%= link_to t(:sign_in), new_user_session_path %></li> -->
               <% else %>
-                <li><%= link_to t(:sign_in), new_user_session_path %></li>
+                <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
+                <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
+                <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
               <% end %>
             </ul>
           </div><!--/.nav-collapse -->
@@ -68,12 +68,19 @@
       <div class="content">
         <div class="row">
           <div class="span9">
+            <%= render 'layouts/messages' %>
             <%= yield %>
           </div>
           <div class="span3">
+            <div class="well well-small sidebar-nav register">
+              <%= link_to t(:register), home_registration_path %>
+            </div>
             <div class="well well-small sidebar-nav">
               <h4>Últimos tweets</h4>
               <div class="tweet"></div>
+            </div>
+            <div class="well well-small sidebar-nav abstract">
+              <%= link_to t(:new_abstract), new_abstract_path %>
             </div>
             <% if Sponsor.count > 0 %>
               <div id="sponsors" class="well well-small sidebar-nav">
@@ -102,6 +109,8 @@
             </div>
             <div class="span6">
               <span class="label pull-right"><%= t(:conference_name) %></span>
+              <span class="pull-right">&nbsp;</span>
+              <span class="label pull-right"><%= link_to t(:sign_in), new_user_session_path %></span>
             </div>            
           </div>
         </div>

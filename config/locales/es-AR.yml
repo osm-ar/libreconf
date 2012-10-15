@@ -5,11 +5,11 @@ es-AR:
         one: Auspiciante
         other: Auspiciantes
       abstract: 
-        one: Propuesta
-        other: Propuestas
+        one: Resumen
+        other: Resúmenes
       abstract_status:
-        one: Estado de Propuestas
-        other: Estados de Propuestas
+        one: Estado de Resúmenes
+        other: Estados de Resúmenes
       sponsor_type:
         one: Tipo de Auspiciantes
         other: Tipos de Auspiciantes
@@ -20,7 +20,7 @@ es-AR:
         email: E-mail
         description: Descripción
         status: Estado
-        organization: Organización
+        organization: Organización/Proyecto
         created_at: Creación
       sponsor:
         name: Nombre
@@ -63,3 +63,6 @@ es-AR:
   organized_by: Organiza
   supported_by: Con el apoyo de
   invited_by: Invita
+  register: ¡Registrate!
+  new_abstract: Subí tu resumen
+  abstract_created: El resumen fue creado correctamente ¡Muchas gracias!

@@ -1,5 +1,5 @@
 class AbstractsController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :except => [:new, :create]
   
   # GET /abstracts
   # GET /abstracts.json
@@ -30,7 +30,7 @@ class AbstractsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @abstract }
+      #format.json { render json: @abstract }
     end
   end
 
@@ -46,11 +46,15 @@ class AbstractsController < ApplicationController
 
     respond_to do |format|
       if @abstract.save
-        format.html { redirect_to @abstract, notice: 'Abstract was successfully created.' }
-        format.json { render json: @abstract, status: :created, location: @abstract }
+        if user_signed_in?
+          format.html { redirect_to @abstract, notice: t(:abstract_created) }
+        else
+          format.html { redirect_to root_path, notice: t(:abstract_created) }
+        end
+        # format.json { render json: @abstract, status: :created, location: @abstract }
       else
         format.html { render action: "new" }
-        format.json { render json: @abstract.errors, status: :unprocessable_entity }
+        #format.json { render json: @abstract.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -63,7 +67,7 @@ class AbstractsController < ApplicationController
     respond_to do |format|
       if @abstract.update_attributes(params[:abstract])
         format.html { redirect_to @abstract, notice: 'Abstract was successfully updated.' }
-        format.json { head :no_content }
+        #format.json { head :no_content }
       else
         format.html { render action: "edit" }
         format.json { render json: @abstract.errors, status: :unprocessable_entity }
@@ -78,7 +82,7 @@ class AbstractsController < ApplicationController
     @abstract.destroy
 
     respond_to do |format|
-      format.html { redirect_to abstracts_url }
+      format.html { redirect_to abstracts_url, notice: 'Abstract was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
