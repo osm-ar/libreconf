@@ -45,7 +45,7 @@ class AbstractsController < ApplicationController
     @abstract = Abstract.new(params[:abstract])
 
     respond_to do |format|
-      if @abstract.save
+      if (user_signed_in? or verify_recaptcha) and @abstract.save
         if user_signed_in?
           format.html { redirect_to @abstract, notice: t(:abstract_created) }
         else

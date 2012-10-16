@@ -37,6 +37,13 @@
       <%= f.text_area :description, :class => 'text_area input-xxlarge' %>
     </div>
   </div>
+  <% unless user_signed_in? %>
+    <div class="control-group">
+      <div class="controls">
+        <%= recaptcha_tags %>
+      </div>
+    </div>
+  <% end %>
   
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
