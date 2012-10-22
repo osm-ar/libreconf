@@ -13,7 +13,7 @@
     </div>
     <div class="row">
       <div class="span9">
-        <div class="well well-small">
+        <div class="well">
           <h2>Acerca de la conferencia</h2>
           <p>Las <strong><a href="#" rel="tooltip" title="Free and Open Source Software for Geospatial">FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href="http://www.osgeo.org" rel="tooltip" title="Open Source Geospatial Foundation">OSGeo</a></strong> que en 2013 tendrá lugar en Nottigham, Reindo Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del este, España, Japón y otros.</p>
           <p>A partir del 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de <strong>Argentina</strong> y del resto de los <strong>países latinoamericanos</strong>. Así como en la conferencia global, esperamos tener una mezcla de <strong>talleres prácticos</strong>, <strong>charlas</strong> acerca de proyectos libres y <strong>exposiciones</strong> de casos de uso de herramientas libres aplicadas a la geomática. Además, también será un evento que promoverá la <strong>interacción</strong> entre los usuarios de la geomática de distintos ambientes y lugares.</p>
@@ -38,8 +38,8 @@
     <% if Sponsor.count > 0 %>
       <div class="row">
         <div class="span9">
-          <div id="sponsors" class="well well-small sidebar-nav">
-            <h4>Auspiciantes</h4>
+          <div id="sponsors" class="well">
+            <h2>Auspiciantes</h2>
             <ul class="thumbnails">
               <% Sponsor.all.each do |sponsor| %>
                 <li>

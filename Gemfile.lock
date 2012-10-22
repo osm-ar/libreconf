@@ -47,6 +47,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    google-analytics-rails (0.0.3)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -132,6 +133,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
+  google-analytics-rails
   jquery-rails
   pg
   rails (= 3.2.8)
