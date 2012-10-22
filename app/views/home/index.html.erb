@@ -12,35 +12,19 @@
       </div>
     </div>
     <div class="row">
-      <div class="span3">
-        <h4><%= t(:organized_by) %></h4>
-        <div class="well well-small box">
-          <%= link_to image_tag('geoinquietos_logo.png'), 'http://wiki.osgeo.org/wiki/Geoinquietos_Buenos_Aires' %>
-        </div>
-      </div>
-      <div class="span3">
-        <h4><%= t(:supported_by) %></h4>
-        <div class="well well-small box">
-          <%= link_to image_tag('osgeo_logo.png'), 'http://www.osgeo.org/' %>
-        </div>
-      </div>
-      <div class="span3">
-        <h4><%= t(:invited_by) %></h4>
-        <div class="well well-small box">
-          <%= link_to image_tag('ign_logo.png', :style => 'padding-top: 15px;'), 'http://www.ign.gob.ar/' %>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="span9">
         <div class="well well-small">
-          <h3>Acerca de la conferencia</h3>
-          <h4>Objetivos</h4>
+          <h2>Acerca de la conferencia</h2>
+          <p>Las <strong><a href="#" rel="tooltip" title="Free and Open Source Software for Geospatial">FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href="http://www.osgeo.org" rel="tooltip" title="Open Source Geospatial Foundation">OSGeo</a></strong> que en 2013 tendrá lugar en Nottigham, Reindo Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del este, España, Japón y otros.</p>
+          <p>A partir del 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de <strong>Argentina</strong> y del resto de los <strong>países latinoamericanos</strong>. Así como en la conferencia global, esperamos tener una mezcla de <strong>talleres prácticos</strong>, <strong>charlas</strong> acerca de proyectos libres y <strong>exposiciones</strong> de casos de uso de herramientas libres aplicadas a la geomática. Además, también será un evento que promoverá la <strong>interacción</strong> entre los usuarios de la geomática de distintos ambientes y lugares.</p>
+          <p>Seguinos en <a href="https://twitter.com/foss4gBA" rel="tooltip" title="@foss4gBA">Twitter</a> para enterarte de las novedades o escibinos a <a href="mailto:info@foss4g.org.ar">info@foss4g.org.ar</a> por cualquier duda o comentario que tengas.</p>
+          <p><strong>¡Nos vemos muy pronto!</strong></p>
+          <h3>Objetivos</h3>
           <ul>
-            <li>Compartir experiencias, proyectos e ideas en torno a la geomática libre</li>
-            <li>Consolidar la comunidad para trabajar apostando a la transparencia, la colaboración y el conocimiento compartido</li>
+            <li><strong>Compartir</strong> experiencias, proyectos e ideas en torno a la geomática libre</li>
+            <li><strong>Consolidar</strong> la comunidad para trabajar apostando a la transparencia, la colaboración y el conocimiento compartido</li>
           </ul>
-          <h4>Target</h4>
+          <h3>Target</h3>
           <ul>
             <li>Decisores de distintos organismos de gobierno</li>
             <li>Empleados estatales relacionados con el SIG</li>
@@ -51,5 +35,21 @@
         </div>
       </div>
     </div>
+    <% if Sponsor.count > 0 %>
+      <div class="row">
+        <div class="span9">
+          <div id="sponsors" class="well well-small sidebar-nav">
+            <h4>Auspiciantes</h4>
+            <ul class="thumbnails">
+              <% Sponsor.all.each do |sponsor| %>
+                <li>
+                  <%= link_to image_tag(sponsor.logo_url), sponsor.website, :class => "thumbnail" %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>

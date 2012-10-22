@@ -19,9 +19,9 @@ jQuery(function($){
     $(".tweet").tweet({
         avatar_size: 32,
         count: 5,
-        query: "foss4gBA",
+        query: "(from:foss4gBA OR foss4gBA) -RT",
         loading_text: "cargando tweets...",
-        //refresh_interval: 60,
+        refresh_interval: 30,
         template: "{avatar}{text}"
     });
 });

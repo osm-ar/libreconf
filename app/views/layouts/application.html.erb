@@ -82,18 +82,21 @@
             <div class="well well-small sidebar-nav abstract">
               <%= link_to t(:new_abstract), new_abstract_path %>
             </div>
-            <% if Sponsor.count > 0 %>
-              <div id="sponsors" class="well well-small sidebar-nav">
-                <h4>Auspiciantes</h4>
-                <ul class="thumbnails">
-                  <% Sponsor.all.each do |sponsor| %>
-                    <li>
-                      <%= link_to image_tag(sponsor.logo_url), sponsor.website, :class => "thumbnail" %>
-                    </li>
-                  <% end %>
-                </ul>
+            <div class="sidebar-nav">
+              <div class="well well-small box">
+                <h5><%= t(:organized_by) %></h5>
+                <%= link_to image_tag('geoinquietos_logo.png'), 'http://wiki.osgeo.org/wiki/Geoinquietos_Buenos_Aires' %>
               </div>
-            <% end %>
+              <div class="well well-small box">
+                <h5><%= t(:invited_by) %></h5>
+                <%= link_to image_tag('ign_logo.png'), 'http://www.ign.gob.ar/' %>
+              </div>              
+              <div class="well well-small box">
+                <h5><%= t(:supported_by) %></h5>
+                <%= link_to image_tag('osgeo_logo.png'), 'http://www.osgeo.org/' %>
+                <%= link_to image_tag('solar_logo.png'), 'http://www.solar.org.ar/' %>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -108,7 +111,7 @@
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
             <div class="span6">
-              <span class="label pull-right"><%= t(:conference_name) %></span>
+              <span class="label pull-right"><%= t(:conference_name) %> | <a href="mailto:info@foss4g.org.ar">info@foss4g.org.ar</a></span>
               <span class="pull-right">&nbsp;</span>
               <span class="label pull-right"><%= link_to t(:sign_in), new_user_session_path %></span>
             </div>            
