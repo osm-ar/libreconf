@@ -8,7 +8,6 @@ Foss4g::Application.routes.draw do
   resources :sponsors
 
   get "home/index"
-  get "home/registration"
 
   resources :abstracts
 

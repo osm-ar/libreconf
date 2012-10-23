@@ -32,16 +32,15 @@
           <div class="container nav-collapse">
             <ul class="nav pull-right">
               <% unless user_signed_in? %>
-                <li><%= link_to t(:register), home_registration_path %></li>
+                <li><%= link_to t(:register), "https://eventioz.com.ar/foss4gba/registrations/new", :target => "_blank" %></li>
                 <li><%= link_to t(:new_abstract), new_abstract_path %></li>
-                <!-- <li><%= link_to t(:sign_in), new_user_session_path %></li> -->
               <% else %>
                 <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
                 <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
                 <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
               <% end %>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +54,7 @@
           </div>
           <div class="span3">
             <div class="well well-small sidebar-nav register">
-              <%= link_to t(:register), home_registration_path %>
+              <%= link_to t(:register), "https://eventioz.com.ar/foss4gba/registrations/new", :target => "_blank" %>
             </div>
             <div class="well well-small sidebar-nav">
               <h4>Últimos tweets</h4>
@@ -101,7 +100,7 @@
         </div>
       </footer>
 
-    </div> <!-- /container -->
+    </div>
 
     <!-- Javascripts
     ================================================== -->
