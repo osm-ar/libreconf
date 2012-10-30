@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="about">
       <div class="span9">
         <div class="well">
           <%= t('conference_about.html') %>
@@ -19,7 +19,7 @@
       </div>
     </div>
     <% if Sponsor.count > 0 %>
-      <div class="row">
+      <div class="row" id="sponsors">
         <div class="span9">
           <div id="sponsors" class="well">
             <h2>Auspiciantes</h2>
@@ -34,7 +34,7 @@
         </div>
       </div>
     <% end %>
-    <div class="row">
+    <div class="row" id="venue">
       <div class="span9">
         <div class="well">
           <%= t('venue_about.html') %>
