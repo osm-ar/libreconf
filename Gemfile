@@ -8,6 +8,9 @@ gem 'rails', '3.2.8'
 gem 'twitter-bootstrap-rails'
 gem "recaptcha", :require => "recaptcha/rails"
 gem 'google-analytics-rails'
+gem 'leaflet-rails'
+gem 'rails-translate-routes'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -37,10 +40,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
-gem 'rails-translate-routes'
-
-gem 'devise'
 
 group :development do
   gem "sqlite3"

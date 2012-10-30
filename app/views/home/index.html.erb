@@ -14,24 +14,7 @@
     <div class="row">
       <div class="span9">
         <div class="well">
-          <h2>Acerca de la conferencia</h2>
-          <p>Las <strong><a href="#" rel="tooltip" title="Free and Open Source Software for Geospatial">FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href="http://www.osgeo.org" rel="tooltip" title="Open Source Geospatial Foundation">OSGeo</a></strong> que en 2013 tendrá lugar en Nottingham, Reino Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del este, España, Japón y otros.</p>
-          <p>A partir del 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de <strong>Argentina</strong> y del resto de los <strong>países latinoamericanos</strong>. Así como en la conferencia global, esperamos tener una mezcla de <strong>talleres prácticos</strong>, <strong>charlas</strong> acerca de proyectos libres y <strong>exposiciones</strong> de casos de uso de herramientas libres aplicadas a la geomática. Además, también será un evento que promoverá la <strong>interacción</strong> entre los usuarios de la geomática de distintos ambientes y lugares.</p>
-          <p>Seguinos en <a href="https://twitter.com/foss4gBA" rel="tooltip" title="@foss4gBA">Twitter</a> para enterarte de las novedades o escibinos a <a href="mailto:info@foss4g.org.ar">info@foss4g.org.ar</a> por cualquier duda o comentario que tengas.</p>
-          <p><strong>¡Nos vemos muy pronto!</strong></p>
-          <h3>Objetivos</h3>
-          <ul>
-            <li><strong>Compartir</strong> experiencias, proyectos e ideas en torno a la geomática libre</li>
-            <li><strong>Consolidar</strong> la comunidad para trabajar apostando a la transparencia, la colaboración y el conocimiento compartido</li>
-          </ul>
-          <h3>Target</h3>
-          <ul>
-            <li>Decisores de distintos organismos de gobierno</li>
-            <li>Empleados estatales relacionados con el SIG</li>
-            <li>Miembros de <a href="http://www.idera.gob.ar" rel="tooltip" title="Infraestructura de Datos Espaciales de la República Argentina">IDERA</a></li>
-            <li>Universidades: profesores y alumnos</li>
-            <li>Público general</li>
-          </ul>
+          <%= t('conference_about.html') %>
         </div>
       </div>
     </div>
@@ -51,5 +34,13 @@
         </div>
       </div>
     <% end %>
+    <div class="row">
+      <div class="span9">
+        <div class="well">
+          <%= t('venue_about.html') %>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

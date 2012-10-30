@@ -25,3 +25,18 @@ jQuery(function($){
         template: "{avatar}{text}"
     });
 });
+
+// create a map in the "map" div, set the view to a given place and zoom
+var map = L.map('map').setView([-34.57158, -58.43926], 14);
+
+// add a CloudMade tile layer with style #997
+L.tileLayer('http://{s}.tile.cloudmade.com/ca2c213aa13f4f53923011857d2d8962/999/256/{z}/{x}/{y}.png', {
+    maxZoom: 18
+}).addTo(map);
+
+// add a marker in the given location, attach some popup content to it and open the popup
+
+var circle = L.circle([-34.57158, -58.43926], 200, {
+    color: '#FFF14A',
+    fillOpacity: 0.2
+}).addTo(map);
