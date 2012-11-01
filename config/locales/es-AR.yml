@@ -13,6 +13,9 @@ es-AR:
       sponsor_type:
         one: Tipo de Auspiciantes
         other: Tipos de Auspiciantes
+      speaker:
+        one: Expositor
+        other: Expositores
     attributes:
       abstract:
         author: Autor
@@ -26,8 +29,8 @@ es-AR:
         name: Nombre
         description: Descripción
         email: E-mail
-        website: Página
-        logo_url: Logo
+        website: URL Sitio Web
+        logo_url: URL Logo
         created_at: Creación
       sponsor_type:
         name: Nombre
@@ -39,6 +42,12 @@ es-AR:
         email: E-mail
         password: Contraseña
         remember_me: Recordarme
+      speaker:
+        name: Nombre
+        title: Título
+        description: Descripción
+        picture_url: URL Foto
+        created_at: Creación
 
   helpers:
     actions: Acciones
@@ -65,6 +74,7 @@ es-AR:
   invited_by: Invita
   register: ¡Registrate!
   new_abstract: Subí tu resumen
+  become_sponsor: Auspiciá la conferencia
   abstract_created: El resumen fue creado correctamente ¡Muchas gracias!
   conference_about:
     html: |

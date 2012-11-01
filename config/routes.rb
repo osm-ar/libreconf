@@ -1,4 +1,6 @@
 Foss4g::Application.routes.draw do
+  resources :speakers
+
   devise_for :users
 
   resources :abstract_statuses

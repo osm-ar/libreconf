@@ -36,13 +36,14 @@
           </a>
           <div class="container nav-collapse">
             <ul class="nav pull-right">
-              <% unless user_signed_in? %>
+              <% if user_signed_in? %>
+                <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
+                <li><%= link_to Sponsor.model_name.human(:count => 2), sponsors_path %></li>
+                <li><%= link_to Speaker.model_name.human(:count => 2), speakers_path %></li>
+                <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
+              <% else %>
                 <li><%= link_to t(:register), "https://eventioz.com.ar/foss4gba/registrations/new", :target => "_blank" %></li>
                 <li><%= link_to t(:new_abstract), new_abstract_path %></li>
-              <% else %>
-                <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
-                <li><%= link_to Sponsor.model_name.human.pluralize, sponsors_path %></li>
-                <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
               <% end %>
             </ul>
           </div>
@@ -58,14 +59,14 @@
             <%= yield %>
           </div>
           <div class="span3">
-            <div class="well well-small sidebar-nav register">
+            <div class="well well-small sidebar-nav sidebar-banner register">
               <%= link_to t(:register), "https://eventioz.com.ar/foss4gba/registrations/new", :target => "_blank" %>
             </div>
             <div class="well well-small sidebar-nav">
               <h4>Últimos tweets</h4>
               <div class="tweet"></div>
             </div>
-            <div class="well well-small sidebar-nav abstract">
+            <div class="well well-small sidebar-nav sidebar-banner">
               <%= link_to t(:new_abstract), new_abstract_path %>
             </div>
             <div class="sidebar-nav">
@@ -82,6 +83,9 @@
                 <%= link_to image_tag('osgeo_logo.png'), 'http://www.osgeo.org/' %>
                 <%= link_to image_tag('solar_logo.png'), 'http://www.solar.org.ar/' %>
               </div>
+            </div>
+            <div class="well well-small sidebar-nav sidebar-banner">
+              <%= link_to t(:become_sponsor), 'assets/brochure.pdf', :target => '_blank' %>
             </div>
           </div>
         </div>

@@ -18,15 +18,27 @@
         </div>
       </div>
     </div>
-    <% if Sponsor.count > 0 %>
-      <div class="row" id="sponsors">
+    <% if Speaker.count > 0 %>
+      <div class="row" id="speakers">
         <div class="span9">
-          <div id="sponsors" class="well">
-            <h2>Auspiciantes</h2>
+          <div id="speakers" class="well banner">
+            <div class="pull-right">
+              <%= link_to t(:new_abstract), new_abstract_path, :class => 'label label-info' %>
+            </div>
+            <h3><%= Speaker.model_name.human(:count => 2) %></h3>
             <ul class="thumbnails">
-              <% Sponsor.all.each do |sponsor| %>
+              <% Speaker.all.each do |speaker| %>
                 <li>
-                  <%= link_to image_tag(sponsor.logo_url), sponsor.website, :class => "thumbnail" %>
+                  <%= link_to image_tag(speaker.picture_url), 'javascript:void(0)', 
+                    'rel' => 'popover', 
+                    'data-placement' => 'right',
+                    'data-trigger' => 'hover',
+                    'data-content' => speaker.description,
+                    'data-original-title' => speaker.name,
+                    :class => 'thumbnail'
+                  %>
+                  <h4><%= speaker.name %></h4>  
+                  <h5><%= speaker.title %></h5>
                 </li>
               <% end %>
             </ul>
@@ -42,5 +54,24 @@
         </div>
       </div>
     </div>
+    <% if Sponsor.count > 0 %>
+      <div class="row" id="sponsors">
+        <div class="span9">
+          <div id="sponsors" class="well">
+            <div class="pull-right">
+              <%= link_to t(:become_sponsor), 'assets/brochure.pdf', :target => '_blank', :class => 'label label-info' %>
+            </div>
+            <h2><%= Sponsor.model_name.human(:count => 2) %></h2>
+            <ul class="thumbnails">
+              <% Sponsor.all.each do |sponsor| %>
+                <li>
+                  <%= link_to image_tag(sponsor.logo_url), sponsor.website, :class => "thumbnail" %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
