@@ -34,4 +34,7 @@ Foss4g::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.en_url = 'http://foss4g-ba.org:3000'
+  config.es_url = 'http://foss4g.org.ar:3000'
 end

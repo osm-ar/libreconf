@@ -4,13 +4,6 @@
 </div>
 <div class="alert alert-block alert-info">
   <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4>Antes de cargar tu resumen tené en cuenta lo siguiente:</h4>
-  <ul>
-    <li>Las charlas serán de 30 minutos donde los últimos 5 serán para preguntas</li>
-    <li>Las charlas deberán ser presentaciones de casos de uso de FOSS4G</li>
-    <li>No se aceptarán presentaciones de productos de software privativos por más que hagan uso de software libre.</li>
-    <li>En todo caso, se permitirá presentar el caso de uso: cómo se eligieron las herramientas libres utilizadas, cómo se configuraron, cómo se utilizan, cuáles son los beneficios.</li>
-    <li>De ninguna forma podrá presentarse un producto final si no está disponible bajo una licencia libre.</li>
-  </ul>
+  <%= t('abstract_disclaimer.html') %>
 </div>
 <%= render :partial => 'form' %>

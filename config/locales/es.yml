@@ -1,4 +1,4 @@
-es-AR:
+es:
   activerecord:
     models:
       sponsor:
@@ -60,6 +60,7 @@ es-AR:
     titles:
       new: Nuevo
 
+  switch_lang: Switch to English
   status: Estado
   type: Tipo
   sign_in: Entrar
@@ -103,3 +104,13 @@ es-AR:
       <p>Siendo un organismo tan importante dentro del ambiente de la geomática, es un placer, un orgullo y un honor contar con sus instalaciones para llevar a cabo este evento que busca fortalecer la comunidad en torno a los sistemas de información geográfica y los datos geoespaciales.</p>
       <p>El IGN cuenta con un auditorio para aproximadamente 300 personas y varias salas pequeñas para desarrollar los talleres prácticos y las exposiciones.</p>
       <p>Está ubicado sobre la calle Cabildo, en el barrio de Palermo y tiene fácil acceso a través de transporte público.</p>
+  abstract_disclaimer:
+    html: |
+      <h4>Antes de cargar tu resumen tené en cuenta lo siguiente:</h4>
+      <ul>
+        <li>Las charlas serán de 30 minutos donde los últimos 5 serán para preguntas</li>
+        <li>Las charlas deberán ser presentaciones de casos de uso de FOSS4G</li>
+        <li>No se aceptarán presentaciones de productos de software privativos por más que hagan uso de software libre.</li>
+        <li>En todo caso, se permitirá presentar el caso de uso: cómo se eligieron las herramientas libres utilizadas, cómo se configuraron, cómo se utilizan, cuáles son los beneficios.</li>
+        <li>De ninguna forma podrá presentarse un producto final si no está disponible bajo una licencia libre.</li>
+      </ul>
