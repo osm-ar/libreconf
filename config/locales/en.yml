@@ -79,37 +79,37 @@ en:
   conference_about:
     html: |
       <h2>About the conference</h2>
-      <p>Las <strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> que en 2013 tendrá lugar en Nottingham, Reino Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del Este, España, Japón, India y otros.</p>
-      <p>A partir del año 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de Argentina y del resto de los países latinoamericanos. Así como en la conferencia global, esperamos tener una mezcla de talleres prácticos, presentaciones de proyectos y exposiciones de casos de uso de herramientas libres aplicadas a la geomática. Además, es un evento que promueve la interacción entre los usuarios de la geomática de distintos ambientes y lugares.</p>
-      <p>En los días en que transcurra la conferencia buscaremos:</p>
+      <p><strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> are conferences about <strong>Free Geomatics</strong> that are held every year on differnt parts of the world. A global conference is organized by <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> and in 2013 it will take place in Nottingham, United Kingdom. Besides the global one, there are other local conferences in: North America, Eastern Europe, Spain, Japan, India and others.</p>
+      <p>Starting on 2013, FOSS4G Buenos Aires intends to gather the members of the geomatics community from Argentina and the rest of the latin american countries. As well as in the global conference, we expect to have a mix of workshops, projects presentations and expositions about use cases of free tools applied to geomatics. It is also an event promoting the interaction between users of geomatics from different environments and places.</p>
+      <p>During the conference time we will be looking for:</p>
       <ul>
-        <li><strong>Compartir</strong> experiencias, proyectos e ideas en torno a la geomática libre</li>
-        <li><strong>Consolidar</strong> la comunidad para trabajar apostando a la transparencia, la colaboración y el conocimiento compartido</li>
+        <li><strong>Sharing</strong> experiences, projects and ideas around free geomatics</li>
+        <li><strong>Consolidate</strong> the community to work towards transparency, collaboration and shared knowledge</li>
       </ul>
-      <p>La conferencia está dirigida a:</p>
+      <p>The conference is aimed at:</p>
       <ul>
-        <li>Decisores de distintos organismos de gobierno</li>
-        <li>Empleados estatales relacionados con el SIG</li>
-        <li>Miembros de <a href='http://www.idera.gob.ar' rel='tooltip' title='Infraestructura de Datos Espaciales de la República Argentina'>IDERA</a></li>
-        <li>Universidades: profesores y alumnos</li>
-        <li>Público general</li>
+        <li>Decision makers from different government organisms</li>
+        <li>State employees related with GIS</li>
+        <li>Members of <a href='http://www.idera.gob.ar' rel='tooltip' title='Infraestructura de Datos Espaciales de la República Argentina'>IDERA</a></li>
+        <li>Universities: professors and students</li>
+        <li>General public</li>
       </ul>
-      <p>Seguinos en <a href='https://twitter.com/foss4gBA' rel='tooltip' title='@foss4gBA'>Twitter</a> para enterarte de las novedades o escibinos a <a href='mailto:info@foss4g.org.ar'>info@foss4g.org.ar</a> por cualquier duda o comentario que tengas.</p>
-      <p><strong>¡Nos vemos muy pronto!</strong></p>
+      <p>Follow us on <a href='https://twitter.com/foss4gBA' rel='tooltip' title='@foss4gBA'>Twitter</a> to get news or write us to <a href='mailto:info@foss4g.org.ar'>info@foss4g.org.ar</a> with any question or comment you may have.</p>
+      <p><strong>See you soon!</strong></p>
   venue_about:
     html: |
       <h2>The venue</h2>
-      <p>El Instituto Geográfico Nacional es un organismo público que tiene como misión principal representar el territorio nacional a través de la cartografía oficial y velar para que los mapas de la República Argentina que se confeccionen, ingresen o circulen en el país se ajusten a dicha cartografía oficial.</p>
-      <p>Siendo un organismo tan importante dentro del ambiente de la geomática, es un placer, un orgullo y un honor contar con sus instalaciones para llevar a cabo este evento que busca fortalecer la comunidad en torno a los sistemas de información geográfica y los datos geoespaciales.</p>
-      <p>El IGN cuenta con un auditorio para aproximadamente 300 personas y varias salas pequeñas para desarrollar los talleres prácticos y las exposiciones.</p>
-      <p>Está ubicado sobre la calle Cabildo, en el barrio de Palermo y tiene fácil acceso a través de transporte público.</p>
+      <p>The National Geographic Institue (Instituto Geográfico Nacional - IGN) is a public organism which has as its main mission the representation of the national territory through the official cartography and watching over so that maps of the Argentine Republic which are made, that come in or that circulate inside the country are compliant with that official cartography.</p>
+      <p>Being such an important organism inside the geomatic world, it's a pleasure, a pride and an honour to count with their facilities to accomplish this event in search of strenghtening the community sourrounding geographical information systems and geospatial data.</p>
+      <p>The IGN counts with an auditorium for approximately 300 people and many smaller rooms for the workshops and expositions.</p>
+      <p>It is located on Cabildo street, in Palermo neighbourhood and it's easily reached through public transportation.</p>
   abstract_disclaimer:
     html: |
-      <h4>Before to upload your abstract, keep in mind the following:</h4>
+      <h4>Before uploading your abstract, keep the following in mind:</h4>
       <ul>
-        <li>Las charlas serán de 30 minutos donde los últimos 5 serán para preguntas</li>
-        <li>Las charlas deberán ser presentaciones de casos de uso de FOSS4G</li>
-        <li>No se aceptarán presentaciones de productos de software privativos por más que hagan uso de software libre.</li>
-        <li>En todo caso, se permitirá presentar el caso de uso: cómo se eligieron las herramientas libres utilizadas, cómo se configuraron, cómo se utilizan, cuáles son los beneficios.</li>
-        <li>De ninguna forma podrá presentarse un producto final si no está disponible bajo una licencia libre.</li>
+        <li>Talks will be 30 minutes long, where the last 5 ones will be used for questions</li>
+        <li>Talks should be use cases of FOSS4G</li>
+        <li>Presentations about propietary software products will not be allowed, even though they make use of free software.</li>
+        <li>In every case it will be allowed to present the use case: how the tools were chosen, how they were configured, how are they used, which are the advantages.</li>
+        <li>Presentation of a final product without a free license will not be allowed.</li>
       </ul>
