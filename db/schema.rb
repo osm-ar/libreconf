@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121031181218) do
+ActiveRecord::Schema.define(:version => 20121116231418) do
 
   create_table "abstract_statuses", :force => true do |t|
     t.string   "name"
@@ -30,13 +30,27 @@ ActiveRecord::Schema.define(:version => 20121031181218) do
     t.string   "organization"
   end
 
+  create_table "speaker_translations", :force => true do |t|
+    t.integer  "speaker_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "description"
+    t.string   "organization"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "speaker_translations", ["locale"], :name => "index_speaker_translations_on_locale"
+  add_index "speaker_translations", ["speaker_id"], :name => "index_speaker_translations_on_speaker_id"
+
   create_table "speakers", :force => true do |t|
     t.string   "name"
     t.string   "title"
     t.text     "description"
     t.string   "picture_url"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.string   "organization"
   end
 
   create_table "sponsor_types", :force => true do |t|

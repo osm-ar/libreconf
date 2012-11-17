@@ -45,6 +45,7 @@ es:
       speaker:
         name: Nombre
         title: Título
+        organization: Organización
         description: Descripción
         picture_url: URL Foto
         created_at: Creación
