@@ -15,6 +15,8 @@
 //= require twitter/bootstrap
 //= require_tree .
 
+
+// Twitter sidebar panel
 jQuery(function($){
     $(".tweet").tweet({
         avatar_size: 32,
@@ -23,19 +25,14 @@ jQuery(function($){
         loading_text: "cargando tweets...",
         refresh_interval: 30,
         template: "{avatar}{text}"
-    });
+    }).bind("loaded",function(){$(this).find("a").attr("target","_blank");});
 });
 
-// create a map in the "map" div, set the view to a given place and zoom
+// Leaflet map
 var map = L.map('map').setView([-34.57158, -58.43926], 14);
-
-// add a CloudMade tile layer with style #997
 L.tileLayer('http://{s}.tile.cloudmade.com/ca2c213aa13f4f53923011857d2d8962/999/256/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
-
-// add a marker in the given location, attach some popup content to it and open the popup
-
 var circle = L.circle([-34.57158, -58.43926], 200, {
     color: '#FFF14A',
     fillOpacity: 0.2
