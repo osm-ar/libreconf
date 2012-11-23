@@ -43,6 +43,35 @@
   color: #6D6E72;
 }
 
+.country {
+  display: block;
+  height: 48px;
+  margin: 131px 0 0 124px;
+  position: absolute;
+  width: 48px;
+  z-index: 3;
+}
+
+.argentina {
+  background: url('flags/Argentina.png');
+}
+
+.canada {
+  background: url('flags/Canada.png');
+}
+
+.colombia {
+  background: url('flags/Colombia.png');
+}
+
+.spain {
+  background: url('flags/Spain.png');
+}
+
+.united-states {
+  background: url('flags/United States of America(USA).png');
+}
+
 #sponsors img.platinum {
   width: 200px;
   max-height: 200px;
