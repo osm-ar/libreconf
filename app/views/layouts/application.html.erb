@@ -68,8 +68,16 @@
               <h3><%= t(:ticket_discount) %></h3>
               <h4><%= t(:ticket_date) %></h4>
             </div>
+            <div>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url='<%= Rails.configuration.send("#{I18n.locale}_url") %>' data-text="<%= t(:twitter_text) %>" data-via="foss4gBA" data-lang="<%= I18n.locale %>"></a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <div style="float: right;">
+                <a href="https://twitter.com/foss4gBA" class="twitter-follow-button" data-show-count="false" data-lang="<%= I18n.locale %>"></a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
+            </div>
             <div class="well well-small sidebar-nav">
-              <h4>Últimos tweets</h4>
+              <h4><%= t(:twitter_last_tweets) %></h4>
               <div class="tweet"></div>
             </div>
             <div class="well well-small sidebar-nav sidebar-banner">
@@ -101,9 +109,9 @@
         <div class="content">
           <div class="row">
             <div class="span6">
-              <a href="https://twitter.com/foss4gBA" class="twitter-follow-button" data-show-count="false" data-lang="es">Seguir a @foss4gBA</a>
+              <a href="https://twitter.com/foss4gBA" class="twitter-follow-button" data-show-count="false" data-lang="<%= I18n.locale %>"></a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.foss4g.org.ar" data-text="FOSS4G Buenos Aires 2013 - Conferencia de Geomática Libre" data-via="foss4gBA" data-lang="es">Twittear</a>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url='<%= Rails.configuration.send("#{I18n.locale}_url") %>' data-text="<%= t(:twitter_text) %>" data-via="foss4gBA" data-lang="<%= I18n.locale %>" sytle="text-align: right;"></a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
             <div class="span6">

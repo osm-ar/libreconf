@@ -78,6 +78,10 @@ en:
   ticket_price: General Ticket ARS $400
   ticket_discount: Special Discount 25%
   ticket_date: by December 31, 2012
+  twitter_last_tweets: Last tweets
+  twitter_follow: Follow @foss4gBA
+  twitter_tweet: Tweet
+  twitter_text: FOSS4G Buenos Aires 2013 - Free Geospatial Software Conference
   new_abstract: Upload your Abstract
   become_sponsor: Become Sponsor
   conference_about:
@@ -100,6 +104,27 @@ en:
       </ul>
       <p>Follow us on <a href='https://twitter.com/foss4gBA' rel='tooltip' title='@foss4gBA'>Twitter</a> to get news or write us to <a href='mailto:info@foss4g.org.ar'>info@foss4g.org.ar</a> with any question or comment you may have.</p>
       <p><strong>See you soon!</strong></p>
+  program_content:
+    html: |
+      <h2>Program</h2>
+      <h3>Wednesday</h3>
+      <ul>
+        <li>Half-day workshops where participants, along with the instructors, will work with different free geospatial tools</li>
+        <li>Multiple levels workshops</li>
+        <li>Participants must bring their laptops</li>
+      </ul>
+      <h3>Thursday and Friday</h3>
+      <ul>
+        <li>50-60 minute plenary talks from our key speakers</li>
+        <li>20-30 minute presentations about foss4g products and free geospatial software use cases</li>
+        <li>60-90 minute tutorials</li>
+      </ul>
+      <h3>Saturday (special events)</h3>
+      <ul>
+        <li><a href='http://www.stateofthemap.org/'>State Of The Map Argentina</a> - OpenStreetMap</li>
+        <li><a href='http://wiki.openstreetmap.org/wiki/Mapping_parties'>Mapping Party</a> - OpenStreetMap</li>
+        <li><a href='http://en.wikipedia.org/wiki/Hackathon'>Hackaton</a></li>
+      </ul>
   venue_about:
     html: |
       <h2>The venue</h2>
