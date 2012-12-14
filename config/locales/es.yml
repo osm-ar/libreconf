@@ -75,6 +75,9 @@ es:
   supported_by: Con el apoyo de
   invited_by: Invita
   register: ¡Registrate!
+  ticket_price: Entrada general ARS $400
+  ticket_discount: Descuento especial 25%
+  ticket_date: hasta el 31 de diciembre
   new_abstract: Subí tu resumen
   become_sponsor: Auspiciá la conferencia
   abstract_created: El resumen fue creado correctamente ¡Muchas gracias!
