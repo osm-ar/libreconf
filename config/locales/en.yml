@@ -110,7 +110,7 @@ en:
       <h3>Wednesday</h3>
       <ul>
         <li>Half-day workshops where participants, along with the instructors, will work with different free geospatial tools</li>
-        <li>Multiple levels workshops</li>
+        <li>Workshops of multiple levels</li>
         <li>Participants must bring their laptops</li>
       </ul>
       <h3>Thursday and Friday</h3>
@@ -123,7 +123,7 @@ en:
       <ul>
         <li><a href='http://www.stateofthemap.org/'>State Of The Map Argentina</a> - OpenStreetMap</li>
         <li><a href='http://wiki.openstreetmap.org/wiki/Mapping_parties'>Mapping Party</a> - OpenStreetMap</li>
-        <li><a href='http://en.wikipedia.org/wiki/Hackathon'>Hackaton</a></li>
+        <li><a href='http://en.wikipedia.org/wiki/Hackathon'>Hackathon</a></li>
       </ul>
   venue_about:
     html: |
