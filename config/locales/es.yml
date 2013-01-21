@@ -76,8 +76,8 @@ es:
   invited_by: Invita
   register: ¡Registrate!
   ticket_price: Entrada general ARS $400
-  ticket_discount: Descuento especial 25%
-  ticket_date: hasta el 31 de diciembre
+  ticket_discount: Descuento especial 10%
+  ticket_date: hasta el 28 de febrero
   twitter_last_tweets: Últimos tweets
   twitter_follow: Seguir a @foss4gBA
   twitter_tweet: Twittear
@@ -110,7 +110,7 @@ es:
       <h2>Programa</h2>
       <h3>Miércoles</h3>
       <ul>
-        <li>Talleres de medio día donde los participantes, junto a los instructures, trabajarán con herramientas de geomática libre</li>
+        <li>Talleres de medio día donde los participantes, junto a los instructores, trabajarán con herramientas de geomática libre</li>
         <li>Habrán talleres de distintos niveles</li>
         <li>Cada participante deberá llevar su computadora portátil</li>
       </ul>
