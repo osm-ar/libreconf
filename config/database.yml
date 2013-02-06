@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   host: localhost
   username: foss4gba
-  password: geofreaks
+  password: foss4gba
   database: foss4gba
 
 # Warning: The database defined as "test" will be erased and
