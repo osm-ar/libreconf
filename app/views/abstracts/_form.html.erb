@@ -1,5 +1,5 @@
 <%= form_for @abstract, :html => { :class => 'form-horizontal' } do |f| %>
-  <% if user_signed_in? %>
+  <% if user_signed_in? and not @abstract.id.nil? %>
     <div class="control-group">
       <%= f.label t(:status), :class => 'control-label' %>
       <div class="controls">
