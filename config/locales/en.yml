@@ -66,6 +66,8 @@ en:
   type: Type
   sign_in: Login
   sign_out: Logout
+  show: Show
+  filter: Filter
   conference_name: FOSS4G Buenos Aires 2013
   conference_slogan: Free and Open Source Geomatics Conference
   conference_date: 24th - 26th April

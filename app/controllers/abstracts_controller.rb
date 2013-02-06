@@ -4,7 +4,11 @@ class AbstractsController < ApplicationController
   # GET /abstracts
   # GET /abstracts.json
   def index
-    @abstracts = Abstract.all
+    if params.has_key?(:abstract_status_id)
+      @abstracts = Abstract.where(:abstract_status_id => params[:abstract_status_id])
+    else
+      @abstracts = Abstract.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

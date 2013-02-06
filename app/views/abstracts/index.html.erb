@@ -2,6 +2,13 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human(:count => 2) %></h1>
 </div>
+<%= form_tag(:abstracts, :method => "get") do %>
+  <% AbstractStatus.order(:id).each do |status| %> 
+    <%= check_box_tag 'abstract_status_id[]', status.id, true %>
+    <%= status.name %>
+  <% end %>
+  <%= submit_tag(t(:filter), :class => 'btn btn-mini btn-primary') %>
+<% end %>
 <table class="table table-striped">
   <thead>
     <tr>

@@ -66,6 +66,8 @@ es:
   type: Tipo
   sign_in: Entrar
   sign_out: Salir
+  show: Mostrar
+  filter: Filtrar
   conference_name: FOSS4G Buenos Aires 2013
   conference_slogan: Conferencia de Geomática Libre
   conference_date: 24 al 26 de abril
