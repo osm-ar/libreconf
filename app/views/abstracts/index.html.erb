@@ -4,7 +4,7 @@
 </div>
 <%= form_tag(:abstracts, :method => "get") do %>
   <% AbstractStatus.order(:id).each do |status| %> 
-    <%= check_box_tag 'abstract_status_id[]', status.id, true %>
+    <%= check_box_tag 'abstract_status_id[]', status.id, ((params[:abstract_status_id] and params[:abstract_status_id].include?(status.id.to_s)) or (!params[:abstract_status_id] and status.id < AbstractStatus::APPROVED)) %>
     <%= status.name %>
   <% end %>
   <%= submit_tag(t(:filter), :class => 'btn btn-mini btn-primary') %>
@@ -13,6 +13,7 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:is_key) %></th>
       <th><%= t('status') %></th>
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:author) %></th>
@@ -26,6 +27,7 @@
     <% @abstracts.each do |abstract| %>
       <tr>
         <td><%= link_to abstract.id, abstract_path(abstract) %></td>
+        <td><%= abstract.is_key ? t(:yes) : t(:no) %></td>
         <td><%= abstract.abstract_status.name %></td>
         <td><%= abstract.title %></td>
         <td><%= abstract.author %></td>

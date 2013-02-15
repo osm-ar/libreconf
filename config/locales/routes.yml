@@ -4,6 +4,7 @@ es:
   routes:
     sponsors: auspiciantes
     abstracts: resumenes
+    workshops: talleres
     new: nuevo
     edit: editar
     destroy: eliminar

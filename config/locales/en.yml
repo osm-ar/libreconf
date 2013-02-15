@@ -24,6 +24,7 @@ en:
         description: Description
         status: Status
         organization: Organization/Project
+        is_key: KeyTalk?
         created_at: Created at
       sponsor:
         name: Name
@@ -61,6 +62,8 @@ en:
     titles:
       new: New
 
+  yes: Yes
+  no: No
   switch_lang: Cambiar a Español
   status: Status
   type: Type
@@ -73,6 +76,8 @@ en:
   conference_date: 24th - 26th April
   conference_venue: National Geographic Institute
   conference_location: Buenos Aires, Argentina
+  program: Program
+  the_venue: The Venue
   organized_by: Organized by
   supported_by: Supported by
   invited_by: Invites
@@ -86,9 +91,11 @@ en:
   twitter_text: FOSS4G Buenos Aires 2013 - Free Geospatial Software Conference
   new_abstract: Upload your Abstract
   become_sponsor: Become Sponsor
+  confirmed_workshops: Confirmed Workshops
+  confirmed_talks: Confirmed Talks
+  about_the_conference: About the Conference
   conference_about:
     html: |
-      <h2>About the conference</h2>
       <p><strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> are conferences about <strong>Free Geomatics</strong> that are held every year on differnt parts of the world. A global conference is organized by <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> and in 2013 it will take place in Nottingham, United Kingdom. Besides the global one, there are other local conferences in: North America, Eastern Europe, Spain, Japan, India and others.</p>
       <p>Starting on 2013, FOSS4G Buenos Aires intends to gather the members of the geomatics community from Argentina and the rest of the latin american countries. As well as in the global conference, we expect to have a mix of workshops, projects presentations and expositions about use cases of free tools applied to geomatics. It is also an event promoting the interaction between users of geomatics from different environments and places.</p>
       <p>During the conference time we will be looking for:</p>
@@ -108,7 +115,6 @@ en:
       <p><strong>See you soon!</strong></p>
   program_content:
     html: |
-      <h2>Program</h2>
       <h3>Wednesday</h3>
       <ul>
         <li>Half-day workshops where participants, along with the instructors, will work with different free geospatial tools</li>
@@ -129,7 +135,6 @@ en:
       </ul>
   venue_about:
     html: |
-      <h2>The venue</h2>
       <p>The National Geographic Institue (Instituto Geográfico Nacional - IGN) is a public organism which has as its main mission the representation of the national territory through the official cartography and watching over so that maps of the Argentine Republic which are made, that come in or that circulate inside the country are compliant with that official cartography.</p>
       <p>Being such an important organism inside the geomatic world, it's a pleasure, a pride and an honour to count with their facilities to accomplish this event in search of strenghtening the community sourrounding geographical information systems and geospatial data.</p>
       <p>The IGN counts with an auditorium for approximately 300 people and many smaller rooms for the workshops and expositions.</p>

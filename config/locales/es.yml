@@ -7,6 +7,9 @@ es:
       abstract: 
         one: Resumen
         other: Resúmenes
+      workshop:
+        one: Taller
+        other: Talleres
       abstract_status:
         one: Estado de Resúmenes
         other: Estados de Resúmenes
@@ -24,6 +27,14 @@ es:
         description: Descripción
         status: Estado
         organization: Organización/Proyecto
+        is_key: Plenaria?
+        created_at: Creación
+      workshop:
+        author: Autor
+        title: Título
+        description: Descripción
+        organization: Organización/Proyecto
+        capacity: Capacidad
         created_at: Creación
       sponsor:
         name: Nombre
@@ -61,6 +72,8 @@ es:
     titles:
       new: Nuevo
 
+  yes: Sí
+  no: No
   switch_lang: Switch to English
   status: Estado
   type: Tipo
@@ -73,6 +86,8 @@ es:
   conference_date: 24 al 26 de abril
   conference_venue: Instituto Geográfico Nacional
   conference_location: Buenos Aires, Argentina
+  program: Programa
+  the_venue: El Lugar
   organized_by: Organiza
   supported_by: Con el apoyo de
   invited_by: Invita
@@ -87,9 +102,11 @@ es:
   new_abstract: Subí tu resumen
   become_sponsor: Auspiciá la conferencia
   abstract_created: El resumen fue creado correctamente ¡Muchas gracias!
+  confirmed_workshops: Talleres Confirmados
+  confirmed_talks: Charlas Confirmadas
+  about_the_conference: Acerca de la Conferencia
   conference_about:
     html: |
-      <h2>Acerca de la conferencia</h2>
       <p>Las <strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> que en 2013 tendrá lugar en Nottingham, Reino Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del Este, España, Japón, India y otros.</p>
       <p>A partir del año 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de Argentina y del resto de los países latinoamericanos. Así como en la conferencia global, esperamos tener una mezcla de talleres prácticos, presentaciones de proyectos y exposiciones de casos de uso de herramientas libres aplicadas a la geomática. Además, es un evento que promueve la interacción entre los usuarios de la geomática de distintos ambientes y lugares.</p>
       <p>En los días en que transcurra la conferencia buscaremos:</p>
@@ -109,7 +126,6 @@ es:
       <p><strong>¡Nos vemos muy pronto!</strong></p>
   program_content:
     html: |
-      <h2>Programa</h2>
       <h3>Miércoles</h3>
       <ul>
         <li>Talleres de medio día donde los participantes, junto a los instructores, trabajarán con herramientas de geomática libre</li>
@@ -130,7 +146,6 @@ es:
       </ul>
   venue_about:
     html: |
-      <h2>El lugar</h2>
       <p>El Instituto Geográfico Nacional es un organismo público que tiene como misión principal representar el territorio nacional a través de la cartografía oficial y velar para que los mapas de la República Argentina que se confeccionen, ingresen o circulen en el país se ajusten a dicha cartografía oficial.</p>
       <p>Siendo un organismo tan importante dentro del ambiente de la geomática, es un placer, un orgullo y un honor contar con sus instalaciones para llevar a cabo este evento que busca fortalecer la comunidad en torno a los sistemas de información geográfica y los datos geoespaciales.</p>
       <p>El IGN cuenta con un auditorio para aproximadamente 300 personas y varias salas pequeñas para desarrollar los talleres prácticos y las exposiciones.</p>

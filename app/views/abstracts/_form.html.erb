@@ -6,6 +6,12 @@
         <%= collection_select(:abstract, :abstract_status_id, AbstractStatus.all, :id, :name) %>
       </div>
     </div>
+    <div class="control-group">
+      <%= f.label :is_key, :class => 'control-label' %>
+      <div class="controls">
+        <%= f.check_box :is_key, :class => 'checkbox' %>
+      </div>
+    </div>
   <% end %>
   <div class="control-group">
     <%= f.label :author, :class => 'control-label' %>

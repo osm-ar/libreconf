@@ -17,7 +17,7 @@
       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.ie.css" />
     <![endif]-->
 
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= analytics_init if Rails.env.production? %>
   </head>
@@ -39,10 +39,13 @@
             <ul class="nav pull-right">
               <% if user_signed_in? %>
                 <li><%= link_to Abstract.model_name.human(:count => 2), abstracts_path %></li>
+                <li><%= link_to Workshop.model_name.human(:count => 2), workshops_path %></li>
                 <li><%= link_to Sponsor.model_name.human(:count => 2), sponsors_path %></li>
                 <li><%= link_to Speaker.model_name.human(:count => 2), speakers_path %></li>
                 <li><%= link_to t(:sign_out), destroy_user_session_path %></li>
               <% else %>
+                <li><%= link_to t(:program), root_path + '#' + t(:program) %></li>  
+                <li><%= link_to t(:the_venue), root_path + '#' + t(:the_venue) %></li> 
                 <li><%= link_to t(:register), "https://eventioz.com.ar/foss4gba/registrations/new", :target => "_blank" %></li>
                 <li><%= link_to t(:new_abstract), new_abstract_path %></li>
               <% end %>

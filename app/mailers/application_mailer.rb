@@ -1,8 +1,8 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "geoinquietosbua@gmail.com"
+  default from: ENV["MAIL_FROM"]
 
   def abstract_notification(abstract)
     @abstract = abstract
-    mail(:to => "info@foss4g.org.ar", :subject => "Nuevo resumen aprobado")
+    mail(:to => ENV["MAIL_TO"], :subject => "Nuevo resumen aprobado")
   end
 end

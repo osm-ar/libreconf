@@ -14,11 +14,12 @@
     <div class="row" id="about">
       <div class="span9">
         <div class="well">
+          <h2><%= t(:about_the_conference) %></h2>
           <%= t('conference_about.html') %>
         </div>
       </div>
     </div>
-    <% if Speaker.count > 0 %>
+    <% if @speakers.count > 0 %>
       <div class="row" id="speakers">
         <div class="span9">
           <div id="speakers" class="well banner">
@@ -27,7 +28,7 @@
             </div>
             <h3><%= Speaker.model_name.human(:count => 2) %></h3>
             <ul class="thumbnails">
-              <% Speaker.all.each do |speaker| %>
+              <% @speakers.each do |speaker| %>
                 <li>
                   <span class="country <%= speaker.country.downcase.tr(" ", "-") if speaker.country %>"></span>
                   <%= link_to image_tag(speaker.picture_url), 'javascript:void(0)', 
@@ -47,22 +48,45 @@
         </div>
       </div>
     <% end %>
-    <div class="row" id="program">
+    <div class="row" id="<%= t(:program) %>">
       <div class="span9">
         <div class="well">
+          <h2><%= t(:program) %></h2>
           <%= t('program_content.html') %>
+          <% if @workshops.count > 0 %>
+            <hr/>
+            <h2><%= t('confirmed_workshops') %></h2>
+            <% @workshops.each do |workshop| %>
+              <h5><%= workshop.title %></h5>
+            <% end %>
+          <% end %>
+          <% if @abstracts.count > 0 %>
+            <hr/>
+            <h2><%= t('confirmed_talks') %></h2>
+            <div>
+              <% @abstracts.each do |abstract| %>
+                <% if abstract.is_key %>
+                  <h4><%= abstract.title %></h4>
+                <% else %>
+                  <h5><%= abstract.title %></h5>
+                <% end %>
+                <p style="margin-top: -10px;"><%= "#{abstract.author}, #{abstract.organization}" %></p>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
-    <div class="row" id="venue">
+    <div class="row" id="<%= t(:the_venue) %>">
       <div class="span9">
         <div class="well">
+          <h2><%= t(:the_venue) %></h2>
           <%= t('venue_about.html') %>
           <div id="map"></div>
         </div>
       </div>
     </div>
-    <% if Sponsor.count > 0 %>
+    <% if @sponsors.count > 0 %>
       <div class="row" id="sponsors">
         <div class="span9">
           <div id="sponsors" class="well">
@@ -71,7 +95,7 @@
             </div>
             <h2><%= Sponsor.model_name.human(:count => 2) %></h2>
             <ul class="thumbnails">
-              <% Sponsor.all(:order => :sponsor_type_id).each do |sponsor| %>
+              <% @sponsors.each do |sponsor| %>
                 <li>
                   <%= link_to image_tag(sponsor.logo_url, :class => sponsor.sponsor_type.name.downcase), 
                     sponsor.website, 

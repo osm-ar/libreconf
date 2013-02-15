@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  author: MyString
+  organization: MyString
+  description: MyText
+  capacity: 1
+
+two:
+  title: MyString
+  author: MyString
+  organization: MyString
+  description: MyText
+  capacity: 1

@@ -7,7 +7,7 @@ class AbstractsController < ApplicationController
     if params.has_key?(:abstract_status_id)
       @abstracts = Abstract.where(:abstract_status_id => params[:abstract_status_id])
     else
-      @abstracts = Abstract.all
+      @abstracts = Abstract.where("abstract_status_id < ?", AbstractStatus::APPROVED)
     end
 
     respond_to do |format|

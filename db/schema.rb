@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121122235624) do
+ActiveRecord::Schema.define(:version => 20130214210100) do
 
   create_table "abstract_statuses", :force => true do |t|
     t.string   "name"
@@ -24,10 +24,11 @@ ActiveRecord::Schema.define(:version => 20121122235624) do
     t.string   "email"
     t.string   "title"
     t.text     "description"
-    t.integer  "abstract_status_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.integer  "abstract_status_id", :default => 1
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
     t.string   "organization"
+    t.boolean  "is_key",             :default => false
   end
 
   create_table "speaker_translations", :force => true do |t|
@@ -87,5 +88,14 @@ ActiveRecord::Schema.define(:version => 20121122235624) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "workshops", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "description"
+    t.integer  "capacity"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
 end
