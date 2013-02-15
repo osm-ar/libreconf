@@ -2,110 +2,161 @@
   <div class="content">
     <div class="row">
       <div class="span9">
-        <div class="hero-unit banner" style="text-align: right;">
-          <h1><%= t(:conference_name) %></h1>
-          <h3><%= t(:conference_slogan) %></h3>
-          <h2><%= t(:conference_date) %></h2>
-          <h3><%= t(:conference_venue) %></h3>
-          <h4><%= t(:conference_location) %></h4>
-        </div>
-      </div>
-    </div>
-    <div class="row" id="about">
-      <div class="span9">
-        <div class="well">
-          <h2><%= t(:about_the_conference) %></h2>
-          <%= t('conference_about.html') %>
-        </div>
-      </div>
-    </div>
-    <% if @speakers.count > 0 %>
-      <div class="row" id="speakers">
-        <div class="span9">
-          <div id="speakers" class="well banner">
-            <div class="pull-right">
-              <%= link_to t(:new_abstract), new_abstract_path, :class => 'label label-info' %>
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="span9">
+                <div class="hero-unit banner" style="text-align: right;">
+                  <h1><%= t(:conference_name) %></h1>
+                  <h3><%= t(:conference_slogan) %></h3>
+                  <h2><%= t(:conference_date) %></h2>
+                  <h3><%= t(:conference_venue) %></h3>
+                  <h4><%= t(:conference_location) %></h4>
+                </div>
+              </div>
             </div>
-            <h3><%= Speaker.model_name.human(:count => 2) %></h3>
-            <ul class="thumbnails">
-              <% @speakers.each do |speaker| %>
-                <li>
-                  <span class="country <%= speaker.country.downcase.tr(" ", "-") if speaker.country %>"></span>
-                  <%= link_to image_tag(speaker.picture_url), 'javascript:void(0)', 
-                    'rel' => 'popover', 
-                    'data-placement' => 'right',
-                    'data-trigger' => 'hover',
-                    'data-content' => speaker.description,
-                    'data-original-title' => speaker.name,
-                    :class => 'thumbnail'
-                  %>
-                  <h4><%= speaker.name %></h4>  
-                  <h5><%= speaker.organization %></h5>
-                </li>
-              <% end %>
-            </ul>
-          </div>
-        </div>
-      </div>
-    <% end %>
-    <div class="row" id="<%= t(:program) %>">
-      <div class="span9">
-        <div class="well">
-          <h2><%= t(:program) %></h2>
-          <%= t('program_content.html') %>
-          <% if @workshops.count > 0 %>
-            <hr/>
-            <h2><%= t('confirmed_workshops') %></h2>
-            <% @workshops.each do |workshop| %>
-              <h5><%= workshop.title %></h5>
+            <div class="row" id="about">
+              <div class="span9">
+                <div class="well">
+                  <h2><%= t(:about_the_conference) %></h2>
+                  <%= t('conference_about.html') %>
+                </div>
+              </div>
+            </div>
+            <% if @speakers.count > 0 %>
+              <div class="row" id="speakers">
+                <div class="span9">
+                  <div id="speakers" class="well banner">
+                    <div class="pull-right">
+                      <%= link_to t(:new_abstract), new_abstract_path, :class => 'label label-info' %>
+                    </div>
+                    <h3><%= Speaker.model_name.human(:count => 2) %></h3>
+                    <ul class="thumbnails">
+                      <% @speakers.each do |speaker| %>
+                        <li>
+                          <span class="country <%= speaker.country.downcase.tr(" ", "-") if speaker.country %>"></span>
+                          <%= link_to image_tag(speaker.picture_url), 'javascript:void(0)', 
+                            'rel' => 'popover', 
+                            'data-placement' => 'right',
+                            'data-trigger' => 'hover',
+                            'data-content' => speaker.description,
+                            'data-original-title' => speaker.name,
+                            :class => 'thumbnail'
+                          %>
+                          <h4><%= speaker.name %></h4>  
+                          <h5><%= speaker.organization %></h5>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             <% end %>
-          <% end %>
-          <% if @abstracts.count > 0 %>
-            <hr/>
-            <h2><%= t('confirmed_talks') %></h2>
-            <div>
-              <% @abstracts.each do |abstract| %>
-                <% if abstract.is_key %>
-                  <h4><%= abstract.title %></h4>
-                <% else %>
-                  <h5><%= abstract.title %></h5>
-                <% end %>
-                <p style="margin-top: -10px;"><%= "#{abstract.author}, #{abstract.organization}" %></p>
-              <% end %>
+            <div class="row" id="<%= t(:program) %>">
+              <div class="span9">
+                <div class="well">
+                  <h2><%= t(:program) %></h2>
+                  <%= t('program_content.html') %>
+                  <% if @workshops.count > 0 %>
+                    <hr/>
+                    <h2><%= t('confirmed_workshops') %></h2>
+                    <% @workshops.each do |workshop| %>
+                      <h5><%= "#{workshop.title} - #{workshop.author}" %></h5>
+                    <% end %>
+                  <% end %>
+                  <% if @abstracts.count > 0 %>
+                    <hr/>
+                    <h2><%= t('confirmed_talks') %></h2>
+                    <div>
+                      <% @abstracts.each do |abstract| %>
+                        <% if abstract.is_key %>
+                          <h4><%= abstract.title %></h4>
+                        <% else %>
+                          <h5><%= abstract.title %></h5>
+                        <% end %>
+                        <p style="margin-top: -10px;"><%= "#{abstract.author}, #{abstract.organization}" %></p>
+                      <% end %>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
             </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="row" id="<%= t(:the_venue) %>">
-      <div class="span9">
-        <div class="well">
-          <h2><%= t(:the_venue) %></h2>
-          <%= t('venue_about.html') %>
-          <div id="map"></div>
-        </div>
-      </div>
-    </div>
-    <% if @sponsors.count > 0 %>
-      <div class="row" id="sponsors">
-        <div class="span9">
-          <div id="sponsors" class="well">
-            <div class="pull-right">
-              <%= link_to t(:become_sponsor), 'assets/brochure.pdf', :target => '_blank', :class => 'label label-info' %>
+            <div class="row" id="<%= t(:the_venue) %>">
+              <div class="span9">
+                <div class="well">
+                  <h2><%= t(:the_venue) %></h2>
+                  <%= t('venue_about.html') %>
+                  <div id="map"></div>
+                </div>
+              </div>
             </div>
-            <h2><%= Sponsor.model_name.human(:count => 2) %></h2>
-            <ul class="thumbnails">
-              <% @sponsors.each do |sponsor| %>
-                <li>
-                  <%= link_to image_tag(sponsor.logo_url, :class => sponsor.sponsor_type.name.downcase), 
-                    sponsor.website, 
-                    :class => "thumbnail" %>
-                </li>
-              <% end %>
-            </ul>
+            <% if @sponsors.count > 0 %>
+              <div class="row" id="sponsors">
+                <div class="span9">
+                  <div id="sponsors" class="well">
+                    <div class="pull-right">
+                      <%= link_to t(:become_sponsor), 'assets/brochure.pdf', :target => '_blank', :class => 'label label-info' %>
+                    </div>
+                    <h2><%= Sponsor.model_name.human(:count => 2) %></h2>
+                    <ul class="thumbnails">
+                      <% @sponsors.each do |sponsor| %>
+                        <li>
+                          <%= link_to image_tag(sponsor.logo_url, :class => sponsor.sponsor_type.name.downcase), 
+                            sponsor.website, 
+                            :class => "thumbnail" %>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
-    <% end %>
+      <div class="span3">
+        <div class="well well-small sidebar-nav sidebar-banner register">
+          <%= link_to t(:register), "https://eventioz.com.ar/foss4gba/registrations/new", :target => "_blank" %>
+        </div>
+        <div class="well well-small box">
+          <h4><%= t(:ticket_price) %></h5>
+          <h3><%= t(:ticket_discount) %></h3>
+          <h4><%= t(:ticket_date) %></h4>
+        </div>
+        <div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="foss4gBA" data-lang="<%= I18n.locale %>" data-count="none"></a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <div style="float: right;">
+            <a href="https://twitter.com/foss4gBA" class="twitter-follow-button" data-show-count="false" data-lang="<%= I18n.locale %>"></a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+        </div>
+        <div class="well well-small sidebar-nav">
+          <h4><%= t(:twitter_last_tweets) %></h4>
+          <div class="tweet"></div>
+        </div>
+        <div class="well well-small sidebar-nav sidebar-banner">
+          <%= link_to t(:new_abstract), new_abstract_path %>
+        </div>
+        <div class="sidebar-nav">
+          <div class="well well-small box">
+            <h5><%= t(:organized_by) %></h5>
+            <%= link_to image_tag('geoinquietos_logo.png'), 'http://wiki.osgeo.org/wiki/Geoinquietos_Buenos_Aires' %>
+          </div>
+          <div class="well well-small box">
+            <h5><%= t(:invited_by) %></h5>
+            <%= link_to image_tag('ign_logo.png'), 'http://www.ign.gob.ar/' %>
+          </div>              
+          <div class="well well-small box">
+            <h5><%= t(:supported_by) %></h5>
+            <%= link_to image_tag('osgeo_logo.png'), 'http://www.osgeo.org/' %>
+            <%= link_to image_tag('solar_logo.png'), 'http://www.solar.org.ar/' %>
+          </div>
+        </div>
+        <div class="well well-small sidebar-nav sidebar-banner">
+          <%= link_to t(:become_sponsor), "assets/brochure_#{I18n.locale}.pdf", :target => '_blank' %>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

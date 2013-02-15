@@ -1,12 +1,15 @@
 class Abstract < ActiveRecord::Base
   attr_accessible :author, :description, :email, :abstract_status_id, :title, :organization, :is_key
   belongs_to :abstract_status
-  after_save :send_notification
+  after_create :notify_created
+  after_save :notify_approved
 
   private
-    def send_notification
-    	if self.abstract_status_id_changed? and self.abstract_status_id == AbstractStatus::APPROVED
-        ApplicationMailer.abstract_notification(self).deliver
+    def notify_created
+      ApplicationMailer.abstract_created_notification(self).deliver
     end
-  end
+    
+    def notify_approved
+      ApplicationMailer.abstract_approved_notification(self).deliver if self.abstract_status_id_changed? and self.abstract_status_id == AbstractStatus::APPROVED
+    end
 end

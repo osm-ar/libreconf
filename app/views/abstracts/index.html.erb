@@ -27,7 +27,7 @@
     <% @abstracts.each do |abstract| %>
       <tr>
         <td><%= link_to abstract.id, abstract_path(abstract) %></td>
-        <td><%= abstract.is_key ? t(:yes) : t(:no) %></td>
+        <td><i class="<%= abstract.is_key ? 'icon-ok' : 'icon-remove' %>"></i></td>
         <td><%= abstract.abstract_status.name %></td>
         <td><%= abstract.title %></td>
         <td><%= abstract.author %></td>
