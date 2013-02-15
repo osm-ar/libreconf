@@ -27,6 +27,7 @@ es:
         description: Descripción
         status: Estado
         organization: Organización/Proyecto
+        country: País
         is_key: Plenaria?
         created_at: Creación
       workshop:

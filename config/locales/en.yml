@@ -24,6 +24,7 @@ en:
         description: Description
         status: Status
         organization: Organization/Project
+        country: Country
         is_key: KeyTalk?
         created_at: Created at
       sponsor:

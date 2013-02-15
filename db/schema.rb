@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130214210100) do
+ActiveRecord::Schema.define(:version => 20130215222616) do
 
   create_table "abstract_statuses", :force => true do |t|
     t.string   "name"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20130214210100) do
     t.datetime "updated_at",                            :null => false
     t.string   "organization"
     t.boolean  "is_key",             :default => false
+    t.string   "country"
   end
 
   create_table "speaker_translations", :force => true do |t|

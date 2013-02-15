@@ -1,5 +1,5 @@
 class Abstract < ActiveRecord::Base
-  attr_accessible :author, :description, :email, :abstract_status_id, :title, :organization, :is_key
+  attr_accessible :author, :description, :email, :abstract_status_id, :title, :organization, :is_key, :country
   belongs_to :abstract_status
   after_create :notify_created
   after_save :notify_approved

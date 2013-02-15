@@ -18,6 +18,7 @@
       <th><%= model_class.human_attribute_name(:title) %></th>
       <th><%= model_class.human_attribute_name(:author) %></th>
       <th><%= model_class.human_attribute_name(:organization) %></th>
+      <th><%= model_class.human_attribute_name(:country) %></th>
       <th><%= model_class.human_attribute_name(:email) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -32,6 +33,7 @@
         <td><%= abstract.title %></td>
         <td><%= abstract.author %></td>
         <td><%= abstract.organization %></td>
+        <td><%= abstract.country %></td>
         <td><%= abstract.email %></td>
         <td><%=l abstract.created_at %></td>
         <td>
