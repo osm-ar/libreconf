@@ -142,11 +142,9 @@ es:
         <li>Presentaciones de 20-30 minutos sobre productos de software libres y abiertos, y casos de uso de geomática libre</li>
         <li>Tutoriales de 60-90 minutos</li>
       </ul>
-      <h3>Sábado (eventos especiales)</h3>
+      <h3>Sábado</h3>
       <ul>
         <li><a href='http://sotm.openstreetmap.org.ar/''>State Of The Map Argentina</a> - OpenStreetMap</li>
-        <li><a href='http://wiki.openstreetmap.org/wiki/ES:Mapping_parties'>Mapping Party</a> - OpenStreetMap</li>
-        <li><a href='http://es.wikipedia.org/wiki/Hackathon'>Hackaton</a></li>
       </ul>
   venue_about:
     html: |
