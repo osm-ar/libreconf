@@ -1,45 +1,47 @@
-FOSS4G Buenos Aires
-===================
+OpenConf
+========
 
-Aplicación hecha con Ruby on Rails para administrar la página oficial de la conferencia FOSS4G de Buenos Aires.
+Ruby on Rails application created to manage conferences stuff like speakers, sponsors, talks, etc.
 
-Para levantar la página localmente
-----------------------------------
+This app was created for the FOSS4G Buenos Aires 2013.
 
-1. Instalar [RVM](https://rvm.io/)
+To setup the application locally
+--------------------------------
 
-2. Instalar Ruby 1.9.3
+1. Install [RVM](https://rvm.io/)
+
+2. Install Ruby 1.9.3
 
     `rvm install 1.9.3`
 
-3. Clonar el respositorio
+3. Clone the repo
 
-    `git clone https://github.com/maurimiranda/foss4gba.git`
+    `git clone https://github.com/maurimiranda/openconf.git`
 
-4. Entrar en el directorio y debería crearse el gemset foss4gba
+4. Go to the directory and the gemset should be create automatically
 
     `rvm info`
 
-5. Instalar bundler
+5. Install bundler
 
     `gem install bundler`
 
-6. Instalar las gemas necesarias
+6. Install all other required gems
     
     `bundle install`
 
-7. Crear la base de datos
+7. Create the db
 
     `rake db:create`
 
-8. Correr las migraciones
+8. Run migrations
 
     `rake db:migrate`
 
-9. Arrancar el servidor
+9. Start the server
     
     `rails server`
 
-10. Navegar el sitio 
+10. Navegate the app
 
     [http://localhost:3000](http://localhost:3000)
