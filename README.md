@@ -1,4 +1,4 @@
-OpenConf
+LibreConf
 ========
 
 Ruby on Rails application created to manage conferences stuff like speakers, sponsors, talks, etc.
