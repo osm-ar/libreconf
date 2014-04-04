@@ -4,7 +4,8 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "info@foss4g.org.ar"
+  config.mailer_sender = 'info@libreconf.org'
+  config.secret_key = 'a0a68dbd7edffa43afe0035c9a0a6f81faa32cf9d9b59159341b23c8ef948c0f0649d7e257927b92f19cfd7dd6e8e7646d5797293b65b4b358b38a9d92a13979'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"

@@ -2,100 +2,71 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.tweet {
-  font-size: 12px;
+.banner {
+  background-image: url('banner_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px 50px 0px;
+  height: 100%;
 }
 
-.tweet_list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+.banner .logo {
+  width: 25%;
+  min-width: 200px;
+  margin: 50px 0px 50px 0px;
 }
 
-.tweet_list li {
-  border-top: 1px dashed #004D6A;
-  padding-bottom: 5px;
-  margin-top: 5px;
-  clear: both;
-  min-height: 32px;
+.jumbotron {
+  background-color: rgba(8, 34, 67, 0.5);
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
 }
 
-.tweet_avatar img {
-  margin: 5px 5px 0px 0px;
+.block {
+  padding: 50px 50px 50px 50px;
+}
+
+.block h1 {
+  font-size: 60px;
+  font-family: 'LiberationSansBold';
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.block p {
+  font-family: 'LiberationSans';
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.block-alternative {
+  background-color: #082243;
+  color: #FFF;
+}
+
+.speaker {
+  width: 22%;
   float: left;
+  margin-left: 3%;
 }
 
-.tweet_list .tweet_first {
-  border-top: none;
+.speaker img {
+  width: 90%;
 }
 
-#map { 
-  height: 250px;
+.speaker p {
+  font-size: 14px;
+  padding-right: 10%;
+  padding-top: 10px;
+  text-align: justify;
 }
 
-#speakers img {
-  height: 169px;
-  width: 169px;
-}
-
-#speakers h5 {
-  margin-top: -10px;
-  color: #6D6E72;
-}
-
-.country {
-  display: block;
-  height: 48px;
-  margin: 131px 0 0 124px;
-  position: absolute;
-  width: 48px;
-  z-index: 3;
-}
-
-.argentina {
-  background: url('flags/Argentina.png');
-}
-
-.canada {
-  background: url('flags/Canada.png');
-}
-
-.colombia {
-  background: url('flags/Colombia.png');
-}
-
-.spain {
-  background: url('flags/Spain.png');
-}
-
-.france {
-  background: url('flags/France.png');
-}
-
-.brazil {
-  background: url('flags/Brazil.png');
-}
-
-.united-states {
-  background: url('flags/United States of America(USA).png');
-}
-
-#sponsors img.platinum {
-  width: 200px;
-  max-height: 200px;
-}
-
-#sponsors img.gold {
-  width: 120px;
-  max-height: 120px;
-}
-
-#sponsors img.silver {
-  width: 80px;
-  max-height: 80px;
-}
-
-#sponsors img.bronze {
-  width: 30px;
-  max-height: 30px;
+#map {
+  height: 500px;
 }

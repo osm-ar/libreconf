@@ -1,5 +1,7 @@
-Foss4g::Application.configure do
+Libreconf::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
+
+  config.eager_load = true
 
   # Code is not reloaded between requests
   config.cache_classes = true
@@ -68,6 +70,6 @@ Foss4g::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.en_url = 'http://foss4g-ba.org'
-  config.es_url = 'http://foss4g.org.ar'
+  config.en_url = 'http://libreconf-ba.org'
+  config.es_url = 'http://libreconf.org.ar'
 end

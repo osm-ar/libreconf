@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Foss4g::Application.load_tasks
+Libreconf::Application.load_tasks

@@ -12,21 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
+//= require bootstrap
+//= require leaflet
 //= require_tree .
 
-
-// Twitter sidebar panel
-jQuery(function($){
-    $(".tweet").tweet({
-        avatar_size: 32,
-        count: 5,
-        query: "foss4gBA -RT",
-        loading_text: "cargando tweets...",
-        refresh_interval: 30,
-        template: "{avatar}{text}"
-    }).bind("loaded",function(){$(this).find("a").attr("target","_blank");});
-});
 
 // Leaflet map
 var map = L.map('map').setView([-34.57158, -58.43926], 14);
