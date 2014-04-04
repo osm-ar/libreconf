@@ -18,7 +18,9 @@
 
 
 // Leaflet map
-var map = L.map('map').setView([-34.57158, -58.43926], 15);
+var map = L.map('map', {
+    scrollWheelZoom: false
+}).setView([-34.57158, -58.43926], 15);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
