@@ -10,9 +10,9 @@ To setup the application locally
 
 1. Install [RVM](https://rvm.io/)
 
-2. Install Ruby 1.9.3
+2. Install Ruby 2.1.1
 
-    `rvm install 1.9.3`
+    `rvm install 2.1.1`
 
 3. Clone the repo
 
