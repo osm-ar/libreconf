@@ -38,10 +38,14 @@ To setup the application locally
 
     `rake db:migrate`
 
-9. Start the server
+9. Load test data
+
+		`rake db:data:load`
+
+10. Start the server
     
     `rails server`
 
-10. Navegate the app
+11. Navegate the app
 
     [http://localhost:3000](http://localhost:3000)
