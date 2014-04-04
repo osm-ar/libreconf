@@ -12,41 +12,41 @@ To setup the application locally
 
 2. Install Ruby 2.1.1
 
-    `rvm install 2.1.1`
+        rvm install 2.1.1
 
 3. Clone the repo
 
-    `git clone https://github.com/maurimiranda/openconf.git`
+        git clone https://github.com/maurimiranda/openconf.git
 
 4. Go to the directory and the gemset should be create automatically
 
-    `rvm info`
+        rvm info
 
 5. Install bundler
 
-    `gem install bundler`
+        gem install bundler
 
 6. Install all other required gems
     
-    `bundle install`
+        bundle install
 
 7. Create the db
 
-    `rake db:create`
+        rake db:create
 
 8. Run migrations
-
-    `rake db:migrate`
+    
+        rake db:migrate
 
 9. Load test data
 
-		`rake db:data:load`
+        rake db:data:load
 
-		Note: This will create a test user (email: test@test.com, password: test1234)
+	_Note: This will create a test user (email: test@test.com, password: test1234)_
 
 10. Start the server
     
-    `rails server`
+        rails server
 
 11. Navegate the app
 
