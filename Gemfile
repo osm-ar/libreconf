@@ -35,3 +35,7 @@ gem 'globalize'
 gem 'sprockets', '2.11.0'
 gem "pg"
 gem "figaro"
+
+group :development do
+	gem 'yaml_db', github: 'jetthoughts/yaml_db', ref: 'fb4b6bd7e12de3cffa93e0a298a1e5253d7e92ba'
+end

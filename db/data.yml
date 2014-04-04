@@ -1,0 +1,137 @@
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - test@test.com
+    - "$2a$10$ar0gkDY.sDFFrPlHovvNUOq6SqEXD8MBEmBOsorpjlQ1ikaFengIO"
+    - 
+    - 
+    - 
+    - '1'
+    - '2014-04-03 16:50:45.575956'
+    - '2014-04-03 16:50:45.575956'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2014-04-03 16:50:34.242486'
+    - '2014-04-04 22:39:53.796334'
+
+---
+speaker_translations:
+  columns:
+  - id
+  - speaker_id
+  - locale
+  - created_at
+  - updated_at
+  - title
+  - description
+  records: 
+  - - '1'
+    - '1'
+    - en
+    - '2014-04-04 19:43:29.663025'
+    - '2014-04-04 20:20:13.947146'
+    - ''
+    - Aragorn II a.k.a. Strider, Elessar Telcontal, Dunadan, born in T.A. 2931, is
+      a member of the Fellowship of the Ring. At the age of two after his father’s
+      death he was taken into the care of Elrond in Rivendell.
+  - - '2'
+    - '2'
+    - en
+    - '2014-04-04 19:45:24.752971'
+    - '2014-04-04 20:20:25.517064'
+    - ''
+    - Gandalf the Grey, an immortal being, is a wizard, one of the five Istari (i.e.
+      “wise” in Kvenian) and a maiar. Before coming to Middle-earth (T.A. 1000) like
+      any other maiar he was subject to the Volar.
+  - - '3'
+    - '3'
+    - en
+    - '2014-04-04 19:46:44.399953'
+    - '2014-04-04 19:46:44.399953'
+    - ''
+    - Gimli, born in T.A. 2879, is a dwarf from the Darin's clan, a son of Gloin who
+      took part in the quest to the Lonely Mountain. Gimli spent his childhood in
+      the Blue Mountains.
+  - - '4'
+    - '4'
+    - en
+    - '2014-04-04 19:47:34.363554'
+    - '2014-04-04 19:47:34.363554'
+    - ''
+    - Boromir, born in T.A. 2978, son of Denethor II, Steward of Gondor, is a member
+      of the Fellowship of the Ring. He was named after the 11th Steward of Gondor
+      who repulsed orc’s attack on the Ithilien lands in T.A. 2475.
+
+---
+speakers:
+  columns:
+  - id
+  - name
+  - title
+  - description
+  - picture_url
+  - created_at
+  - updated_at
+  - organization
+  - country
+  records: 
+  - - '1'
+    - Aragorn
+    - ''
+    - Aragorn II a.k.a. Strider, Elessar Telcontal, Dunadan, born in T.A. 2931, is
+      a member of the Fellowship of the Ring. At the age of two after his father’s
+      death he was taken into the care of Elrond in Rivendell.
+    - http://www.espadasydragones.es/wp-content/uploads/aragorn4.jpg
+    - '2014-04-04 19:43:29.65471'
+    - '2014-04-04 20:20:13.941111'
+    - ''
+    - ''
+  - - '2'
+    - Gandalf
+    - ''
+    - Gandalf the Grey, an immortal being, is a wizard, one of the five Istari (i.e.
+      “wise” in Kvenian) and a maiar. Before coming to Middle-earth (T.A. 1000) like
+      any other maiar he was subject to the Volar.
+    - http://www.mckellen.com/images/t/3129.jpg
+    - '2014-04-04 19:45:24.748243'
+    - '2014-04-04 20:20:25.512127'
+    - ''
+    - ''
+  - - '3'
+    - Gimli
+    - ''
+    - Gimli, born in T.A. 2879, is a dwarf from the Darin's clan, a son of Gloin who
+      took part in the quest to the Lonely Mountain. Gimli spent his childhood in
+      the Blue Mountains.
+    - http://2.bp.blogspot.com/-uueb2R8Ow5g/T1LG3PCs0qI/AAAAAAAAAX8/I_SNHYUUbGw/s1600/200890-gimli_large.jpg
+    - '2014-04-04 19:46:44.398227'
+    - '2014-04-04 19:46:44.398227'
+    - ''
+    - ''
+  - - '4'
+    - Boromir
+    - ''
+    - Boromir, born in T.A. 2978, son of Denethor II, Steward of Gondor, is a member
+      of the Fellowship of the Ring. He was named after the 11th Steward of Gondor
+      who repulsed orc’s attack on the Ithilien lands in T.A. 2475.
+    - https://a3-images.myspacecdn.com/images03/30/5b829bc6c8284deb9fa34556a7b86039/300x300.jpg
+    - '2014-04-04 19:47:34.359063'
+    - '2014-04-04 20:08:09.381682'
+    - ''
+    - ''
