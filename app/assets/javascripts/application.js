@@ -18,11 +18,11 @@
 
 
 // Leaflet map
-var map = L.map('map').setView([-34.57158, -58.43926], 14);
-L.tileLayer('http://{s}.tile.cloudmade.com/ca2c213aa13f4f53923011857d2d8962/999/256/{z}/{x}/{y}.png', {
+var map = L.map('map').setView([-34.57158, -58.43926], 15);
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
 var circle = L.circle([-34.57158, -58.43926], 200, {
-    color: '#FFF14A',
+    color: '#082243',
     fillOpacity: 0.2
 }).addTo(map);
