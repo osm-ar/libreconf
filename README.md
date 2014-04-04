@@ -42,6 +42,8 @@ To setup the application locally
 
 		`rake db:data:load`
 
+		Note: This will create a test user (email: test@test.com, password: test1234)
+
 10. Start the server
     
     `rails server`
