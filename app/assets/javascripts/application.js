@@ -21,7 +21,7 @@
 var map = L.map('map', {
     scrollWheelZoom: false
 }).setView([-34.57158, -58.43926], 15);
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+L.tileLayer('http://a.tiles.mapbox.com/v3/fernando.h0p1dck9/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
 var circle = L.circle([-34.57158, -58.43926], 200, {
