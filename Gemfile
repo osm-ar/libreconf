@@ -32,6 +32,7 @@ gem 'leaflet-rails'
 gem 'rails-translate-routes'
 gem 'devise'
 gem 'globalize'
+gem 'sqlite3'
 gem 'sprockets', '2.11.0'
 gem "pg"
 gem "figaro"
