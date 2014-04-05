@@ -51,20 +51,18 @@
 }
 
 .speaker {
-  width: 22%;
-  float: left;
-  margin-left: 3%;
+  
 }
 
 .speaker img {
   width: 90%;
+  max-width: 300px;
 }
 
 .speaker p {
   font-size: 14px;
   padding-right: 10%;
   padding-top: 10px;
-  text-align: justify;
 }
 
 #map {
