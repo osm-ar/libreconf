@@ -1,0 +1,13 @@
+<div id="sponsors" class="row block block-alternative">
+  <div class="col-md-12">
+    <h1><%=t :sponsors %></h1>
+    <div class="row sponsors">
+      <% @sponsors.each do |sponsor| %>
+        <div class="col-md-3 col-xs-6 speaker" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          <h3><%= sponsor.name %></h3>
+          <%= image_tag sponsor.picture_url, class: "img-rounded" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
