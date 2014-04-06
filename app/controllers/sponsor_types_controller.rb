@@ -1,6 +1,10 @@
 class SponsorTypesController < ApplicationController
   before_filter :authenticate_user!
   
+  def sponsor_params
+    params.require(:sponsor_type).permit(:name, :commit, :authenticity_token)
+  end
+
   # GET /sponsor_types
   # GET /sponsor_types.json
   def index
@@ -42,7 +46,7 @@ class SponsorTypesController < ApplicationController
   # POST /sponsor_types
   # POST /sponsor_types.json
   def create
-    @sponsor_type = SponsorType.new(params[:sponsor_type])
+    @sponsor_type = SponsorType.new(sponsor_params)
 
     respond_to do |format|
       if @sponsor_type.save
