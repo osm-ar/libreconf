@@ -4,12 +4,17 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
 
   def set_locale
-    I18n.locale = get_from_host || I18n.default_locale
+    I18n.locale = get_from_qs || get_from_host || I18n.default_locale
     @other_locale = I18n.locale == :es ? :en : :es
   end
 
   def get_from_host
     parsed_locale = request.host.include?('ar') ? :es : :en
+    I18n.available_locales.include?(parsed_locale.to_sym) ? parsed_locale  : nil
+  end
+
+  def get_from_qs
+    parsed_locale = request.query_string.include?('locale=es') ? :es : :en
     I18n.available_locales.include?(parsed_locale.to_sym) ? parsed_locale  : nil
   end
 end
