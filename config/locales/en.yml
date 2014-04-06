@@ -76,7 +76,7 @@ en:
   conference_name: State of the Map 2014
   conference_slogan: OpenStreetMap's annual international conference
   conference_date: November 7th - 9th
-  conference_venue: National Geographic Institute
+  conference_venue: Yet unknown
   conference_location: Buenos Aires, Argentina
   program: Program
   full_program: Full Program
@@ -89,9 +89,9 @@ en:
   register: ¡Register Now!
   ticket_price: General Ticket ARS $400 (Students $250)
   ticket_discount: Special Discount 10%
-  ticket_date: by February 28, 2012
+  ticket_date: by October 1st, 2014
   twitter_last_tweets: Last tweets
-  twitter_follow: Follow @foss4gBA
+  twitter_follow: Follow @sotm2014
   twitter_tweet: Tweet
   twitter_text: FOSS4G Buenos Aires 2013 - Free Geospatial Software Conference
   new_abstract: Upload your Abstract
@@ -99,6 +99,7 @@ en:
   confirmed_workshops: Confirmed Workshops
   confirmed_talks: Confirmed Talks
   about_the_conference: About the Conference
+  about: About
   conference_about:
     html: |
       <p><strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> are conferences about <strong>Free Geomatics</strong> that are held every year on differnt parts of the world. A global conference is organized by <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> and in 2013 it will take place in Nottingham, United Kingdom. Besides the global one, there are other local conferences in: North America, Eastern Europe, Spain, Japan, India and others.</p>

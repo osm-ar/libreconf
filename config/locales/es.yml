@@ -82,10 +82,10 @@ es:
   sign_out: Salir
   show: Mostrar
   filter: Filtrar
-  conference_name: FOSS4G Buenos Aires 2013
-  conference_slogan: Conferencia de Geomática Libre
-  conference_date: 24 al 26 de abril
-  conference_venue: Instituto Geográfico Nacional
+  conference_name: SotM Buenos Aires 2014
+  conference_slogan: El conferencia internacional anual de OpenStreetMap
+  conference_date: 7 al 9 de noviembre
+  conference_venue: A confirmar
   conference_location: Buenos Aires, Argentina
   program: Programa
   full_program: Programa Completo
@@ -98,17 +98,18 @@ es:
   register: ¡Registrate!
   ticket_price: Entrada General ARS $400 (Estudiantes $250)
   ticket_discount: Descuento especial 10%
-  ticket_date: hasta el 28 de febrero
+  ticket_date: hasta el 1 de octubre
   twitter_last_tweets: Últimos tweets
-  twitter_follow: Seguir a @foss4gBA
+  twitter_follow: Seguir a @sotm2014
   twitter_tweet: Twittear
-  twitter_text: FOSS4G Buenos Aires 2013 - Conferencia de Geomática Libre
+  twitter_text: State of the Map 2014, Buenos Aires, Argentina
   new_abstract: Subí tu resumen
   become_sponsor: Auspiciá la conferencia
   abstract_created: El resumen fue creado correctamente ¡Muchas gracias!
   confirmed_workshops: Talleres Confirmados
   confirmed_talks: Charlas Confirmadas
   about_the_conference: Acerca de la Conferencia
+  about: Acerca de
   conference_about:
     html: |
       <p>Las <strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> que en 2013 tendrá lugar en Nottingham, Reino Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del Este, España, Japón, India y otros.</p>
