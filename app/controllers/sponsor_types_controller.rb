@@ -1,9 +1,6 @@
 class SponsorTypesController < ApplicationController
   before_filter :authenticate_user!
-  
-  def sponsor_params
-    params.require(:sponsor_type).permit(:name, :commit, :authenticity_token)
-  end
+  before_action :set_sponsor_type, only: [:show, :edit, :update, :destroy]
 
   # GET /sponsor_types
   # GET /sponsor_types.json
@@ -19,8 +16,6 @@ class SponsorTypesController < ApplicationController
   # GET /sponsor_types/1
   # GET /sponsor_types/1.json
   def show
-    @sponsor_type = SponsorType.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @sponsor_type }
@@ -40,13 +35,13 @@ class SponsorTypesController < ApplicationController
 
   # GET /sponsor_types/1/edit
   def edit
-    @sponsor_type = SponsorType.find(params[:id])
+
   end
 
   # POST /sponsor_types
   # POST /sponsor_types.json
   def create
-    @sponsor_type = SponsorType.new(sponsor_params)
+    @sponsor_type = SponsorType.new(sponsor_type_params)
 
     respond_to do |format|
       if @sponsor_type.save
@@ -65,7 +60,7 @@ class SponsorTypesController < ApplicationController
     @sponsor_type = SponsorType.find(params[:id])
 
     respond_to do |format|
-      if @sponsor_type.update_attributes(params[:sponsor_type])
+      if @sponsor_type.update_attributes(sponsor_type_params)
         format.html { redirect_to @sponsor_type, notice: 'Sponsor type was successfully updated.' }
         format.json { head :no_content }
       else
@@ -86,4 +81,13 @@ class SponsorTypesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+    def set_sponsor_type
+      @sponsor_type = SponsorType.find(params[:id])
+    end
+
+    def sponsor_type_params
+      params.require(:sponsor_type).permit(:name, :commit, :authenticity_token)
+    end
 end

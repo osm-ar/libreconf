@@ -19,7 +19,7 @@
     <% @sponsors.each do |sponsor| %>
       <tr>
         <td><%= link_to sponsor.id, sponsor_path(sponsor) %></td>
-        <td><%= image_tag sponsor.logo_url %></td>
+        <td><%= image_tag sponsor.logo_url, :style => 'width:120px' %></td>
         <td><%= sponsor.name %></td>
         <td><%= sponsor.sponsor_type.name %></td>
         <td><%= sponsor.email %></td>

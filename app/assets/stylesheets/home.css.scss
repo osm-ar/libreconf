@@ -64,6 +64,20 @@
   padding-right: 10%;
   padding-top: 10px;
 }
+.sponsor {
+  line-height:10em /* hack */
+}
+
+.sponsor img {
+  width: 90%;
+  max-width: 300px;
+}
+
+.sponsor p {
+  font-size: 14px;
+  padding-right: 10%;
+  padding-top: 10px;
+}
 
 #map {
   height: 500px;
