@@ -1,22 +1,34 @@
-<div class="row banner">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <%= image_tag 'logo_full.png', {:class => 'logo'} %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10 jumbotron">
-        <h2>The 2014 international OpenStreetMap conference will be held at Buenos Aires. This is the first time SOTM will take place in South America. You can't miss it!</h2>
 
-        <div class="text-center"><a href="#about" class="btn btn-default btn-lg" role="button"><%=t :register %></a></div>
-        <br/>
-        <h4 class="hidden-xs">State of the Map is the global gathering for everyone that contributes to and/or uses OpenStreetMap. We assemble to celebrate the scale of the changes and achievements so far. There are keynotes and breakout streams of presentations and workshops examining current practices, organisation and relationships.</h4>
-        <br/>
-        <a href="#about" class="btn btn-info btn-lg hidden-xs" role="button">More info</a>
+<div class="navbar navbar-fixed-top" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/#about"><%=t :about %></a></li>
+          <li><a href="/news"><%=t :blog %></a></li>
+          <li><a href="/#speakers"><%=t :info %></a></li>
+          <li><a href="/#venue"><%=t :the_venue %></a></li>
+          <li><a href="/#sponsors"><%=t :sponsors %></a></li>
+          <li><a href="/#register" id="register-button"><%=t :register %></a></li>
+        </ul>
+</div>
+<div class="row banner">
+
+            
+  <div class="col-sm-4 col-xs-3"></div>
+  <div class="col-sm-4 col-xs-6 text-center"><%= image_tag 'logo_full.png', {:class => 'logo img-responsive'} %></div>
+  <div class="col-sm-4 col-xs-3"></div>
+  <div class="col-md-12">
+    <div class="row hidden-xs">
+      <div class="col-sm-12 jumbotron text-center">
+        <div class="row ">
+          <div class="col-sm-12">
+            <h1 class="visible-md visible-lg"><%= t(:conference_name) %></h1>
+            <h2 class="visible-sm"><%= t(:conference_name) %></h2>
+            <h4><%= t(:conference_date) %>, <span><%= t(:conference_location) %></span></h4>
+            <h3><%= t(:conference_slogan) %></h3>
+          </div>
+          
+        </div>
       </div>
-      <div class="col-md-1"></div>
     </div>
+
   </div>
 </div> 

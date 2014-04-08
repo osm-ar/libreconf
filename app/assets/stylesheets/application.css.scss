@@ -55,7 +55,7 @@ body > .container {
 }
 
 .navbar {
-  background: rgba(8, 34, 67, 0.85);
+  background: rgba(8, 34, 67, 0.75);
   border-width: 0px;
   border-radius: 0px;
   margin-bottom: 0px;
@@ -68,11 +68,22 @@ body > .container {
 
 .navbar-nav > li > a {
   color: #FFF;
+  font-size: 1.25em;
+}
+
+.navbar-nav > li > a#register-button {
+  background-color: rgba(237, 28, 36, 0.75);
+  color: white;
+  margin-right: 15px;
+}
+.navbar-nav > li > a#register-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(237, 28, 36);
 }
 
 .navbar-nav > li > a:hover {
-  background: none;
-  color: #ED1C24;
+  background: rgba(77, 179, 197, 0.75); 
+  color: #082243;
 }
 
 .footer {

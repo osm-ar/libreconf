@@ -6,21 +6,57 @@
   background-image: url('banner_bg.jpg');
   background-size: cover;
   background-position: center;
-  padding: 50px 0 3% 0;
+  padding: 20px 0 3% 0;
   height: 100%;
 }
 
 .banner .logo {
-  width: 25%;
-  min-width: 200px;
-  margin: 3% 0 3% 0;
+  margin: 45px 0 3% 0;
+}
+
+.banner h1 {
+  font-size:4.2em;
+  line-height:.9em;
+  margin: 15px 5px 5px 0;
+}
+
+.banner h2 {
+  color:#ed1847;
+  font-size:3.4em;
+  line-height:.4em;
+}
+.banner h3 {
+  font-size:2.0em;
+}
+
+.banner h4 {
+  font-size:2.2em;
+  color: #4db3c5;
+  background-color:#082243;
+  display:inline;
+}
+.banner h4 span {
+  color: #fff;
+}
+.banner h1 span {
+  color: #4db3c5;
+}
+
+.banner .nav li a {
+    font-size: 1.45em;
+}
+.banner .nav li a:hover {
+    background: #4db3c5;
+    coslor:082243;
 }
 
 .jumbotron {
-  background-color: rgba(8, 34, 67, 0.5);
+  background-color: rgba(8, 34, 67, 0.75);
   color: #FFF;
-  text-align: center;
-  border-radius: 6px;
+  border-radius: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-top: 25px;
 }
 
 .block {
@@ -80,6 +116,6 @@
 }
 
 #map {
-  height: 500px;
+  height: 650px;
   border-radius: 6px;
 }
