@@ -21,7 +21,8 @@
 var tiles = [
 	'http://a.tiles.mapbox.com/v3/fernando.ho5761ak/{z}/{x}/{y}.png',
 	'http://a.tiles.mapbox.com/v3/fernando.ho504jfb/{z}/{x}/{y}.png',
-	'http://a.tiles.mapbox.com/v3/fernando.i0b5no8h/{z}/{x}/{y}.png'
+	'http://a.tiles.mapbox.com/v3/fernando.i0b5no8h/{z}/{x}/{y}.png',
+    'http://www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png'
 	];
 /*
 var map = L.map('map', {
@@ -38,7 +39,7 @@ var circle = L.circle([-34.57158, -58.43926], 200, {
 
 var artmap = L.map('artmap', {
     scrollWheelZoom: false
-}).setView([-34.57158, -58.43926], 17);
+}).setView([-34.57158, -58.43926], 12);
 L.tileLayer(tiles[Math.floor(Math.random() * tiles.length)], {
-    maxZoom: 18
+    maxZoom: 12
 }).addTo(artmap);
