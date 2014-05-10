@@ -89,6 +89,7 @@ es:
   conference_location: Buenos Aires, Argentina
   program: Programa
   full_program: Programa Completo
+  get_in_touch: Haz contacto
   hotels_map: Mapa de hoteles cercanos
   sotm_registration: Registrate en el SotM
   the_venue: El Lugar
@@ -113,23 +114,9 @@ es:
   about: Acerca de
   conference_about:
     html: |
-      <p>Las <strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> que en 2013 tendrá lugar en Nottingham, Reino Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del Este, España, Japón, India y otros.</p>
-      <p>A partir del año 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de Argentina y del resto de los países latinoamericanos. Así como en la conferencia global, esperamos tener una mezcla de talleres prácticos, presentaciones de proyectos y exposiciones de casos de uso de herramientas libres aplicadas a la geomática. Además, es un evento que promueve la interacción entre los usuarios de la geomática de distintos ambientes y lugares.</p>
-      <p>En los días en que transcurra la conferencia buscaremos:</p>
-      <ul>
-        <li><strong>Compartir</strong> experiencias, proyectos e ideas en torno a la geomática libre</li>
-        <li><strong>Consolidar</strong> la comunidad para trabajar apostando a la transparencia, la colaboración y el conocimiento compartido</li>
-      </ul>
-      <p>La conferencia está dirigida a:</p>
-      <ul>
-        <li>Decisores de distintos organismos de gobierno</li>
-        <li>Empleados estatales relacionados con el SIG</li>
-        <li>Miembros de <a href='http://www.idera.gob.ar' rel='tooltip' title='Infraestructura de Datos Espaciales de la República Argentina'>IDERA</a></li>
-        <li>Universidades: profesores y alumnos</li>
-        <li>Público general</li>
-      </ul>
-      <p>Seguinos en <a href='https://twitter.com/foss4gBA' rel='tooltip' title='@foss4gBA'>Twitter</a> para enterarte de las novedades o escribinos a <a href='mailto:info@foss4g.org.ar'>info@foss4g.org.ar</a> por cualquier duda o comentario que tengas.</p>
-      <p><strong>¡Nos vemos muy pronto!</strong></p>
+      <p>The State of the Map (SotM) conference is the annual conference of OpenStreetMap. Organised by the OpenStreetMap Foundation it has been held each year since 2007. There have also been any other regional and local conferences named <i>State of the Map</i>.</p>
+      <p>After being in Europe, North America and Asia, it is time to explore yet another continent. The OpenStreetMap Foundation is happy to announce that the 8th international State of the Map 2014 conference will be held in Buenos Aires, Argentina on November 7th–9th.</p>
+      <p>OSM is a truly global project with people all over the globe. Having SotM14 in Argentina is a great way to show the world what’s going on in South America regarding OSM and it can help strengthen the local OSM communities there.</p>
   program_content:
     html: |
       <h3>Miércoles</h3>

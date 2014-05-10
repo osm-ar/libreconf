@@ -43,6 +43,7 @@
 body {
   background-color: #E6EAEE;
   color: #082243;
+  overflow-x:hidden;
 }
 
 body > .container {
@@ -93,6 +94,11 @@ body > .container {
 }
 
 .navbar-nav > li > a:hover {
+  background: rgba(77, 179, 197, 0.75); 
+  color: #082243;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background: rgba(77, 179, 197, 0.75); 
   color: #082243;
 }
