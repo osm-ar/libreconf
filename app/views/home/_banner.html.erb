@@ -1,13 +1,18 @@
 <div id="artmap"></div>
 
-<div class="navbar navbar-fixed-top" role="navigation">
+<div class="navbar navbar-fixed-top hidden-xs" role="navigation">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="/#about"><%=t :about %></a></li>
+          <li class="dropdown"> 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=t :get_in_touch %> <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i>IRC: #sotm @OFTC</i></a></li>
+              <li><a href="https://twitter.com/sotm" target="blank">Twitter: @sotm</a></li>
+            </ul>
+          </li>
           <li><a href="#" id="register-button"><%=t :registration_opening_date %></a></li>
         </ul>
 </div>
-
-      
 
 <div class="row banner">
   <div class="col-xs-12">
@@ -29,6 +34,7 @@
         <h2 class="visible-sm"><%= t(:conference_name) %></h2>
         <h4><%= t(:conference_date) %>, <span><%= t(:conference_location) %></span></h4>-->
         <h3><%= t(:conference_slogan) %></h3>
+        <h4><%=t :registration_opening_date %></h4>
       </div>
       
     </div>
