@@ -61,6 +61,10 @@ body > .container {
   width:100%;
 }
 
+#artmap .leaflet-control-container {
+  display:none;
+}
+
 .navbar {
   background: rgba(8, 34, 67, 0.75);
   border-width: 0px;
@@ -101,3 +105,4 @@ body > .container {
 .footer a {
   color: rgb(237, 28, 36);
 }
+

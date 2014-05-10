@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20130215222616) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "abstract_statuses", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -35,6 +32,29 @@ ActiveRecord::Schema.define(version: 20130215222616) do
     t.string   "country"
   end
 
+  create_table "posts", force: true do |t|
+    t.string   "author"
+    t.string   "email"
+    t.string   "title"
+    t.text     "description"
+    t.integer  "status_id", default: 1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts_translations", force: true do |t|
+    t.integer  "post_id",  null: false
+    t.integer  "user_id",  null: false
+    t.string   "locale",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "title"
+    t.text     "content"
+  end
+
+  add_index "posts_translations", ["locale"], name: "index_post_translations_on_locale"
+  add_index "posts_translations", ["post_id"], name: "index_post_translations_on_post_id"
+
   create_table "speaker_translations", force: true do |t|
     t.integer  "speaker_id",  null: false
     t.string   "locale",      null: false
@@ -44,8 +64,8 @@ ActiveRecord::Schema.define(version: 20130215222616) do
     t.text     "description"
   end
 
-  add_index "speaker_translations", ["locale"], name: "index_speaker_translations_on_locale", using: :btree
-  add_index "speaker_translations", ["speaker_id"], name: "index_speaker_translations_on_speaker_id", using: :btree
+  add_index "speaker_translations", ["locale"], name: "index_speaker_translations_on_locale"
+  add_index "speaker_translations", ["speaker_id"], name: "index_speaker_translations_on_speaker_id"
 
   create_table "speakers", force: true do |t|
     t.string   "name"
@@ -90,8 +110,8 @@ ActiveRecord::Schema.define(version: 20130215222616) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
   create_table "workshops", force: true do |t|
     t.string   "title"
