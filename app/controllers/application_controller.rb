@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def get_from_qs
-    parsed_locale = request.query_string.include?('locale=es') ? :es : :en
+    parsed_locale = request.query_string.include?('l=es') ? :es : :en
     I18n.available_locales.include?(parsed_locale.to_sym) ? parsed_locale  : nil
   end
 end

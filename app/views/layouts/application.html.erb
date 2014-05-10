@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "#{t(:conference_name)} - #{t(:conference_slogan)}"  %></title>
     <%= csrf_meta_tags %>
-
+    <meta property="og:type" content="event" />
+    <meta property="og:url" content="http://www.stateofthemap.org" />
+    <meta property="og:start_time" content="2014-011-07T00:00:00+00:00" />
+    <meta property="og:description" content="7th-9th Nov, Buenos Aires" />
+    <meta property="og:title" content="State of the Map 2014" />
+    <meta property="og:image" content="http://a.fernando.com.ar/assets/logo_full.png" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="State of the Map" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
