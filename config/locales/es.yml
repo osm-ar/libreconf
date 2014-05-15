@@ -137,10 +137,8 @@ es:
       </ul>
   venue_about:
     html: |
-      <p>El Instituto Geográfico Nacional es un organismo público que tiene como misión principal representar el territorio nacional a través de la cartografía oficial y velar para que los mapas de la República Argentina que se confeccionen, ingresen o circulen en el país se ajusten a dicha cartografía oficial.</p>
-      <p>Siendo un organismo tan importante dentro del ambiente de la geomática, es un placer, un orgullo y un honor contar con sus instalaciones para llevar a cabo este evento que busca fortalecer la comunidad en torno a los sistemas de información geográfica y los datos geoespaciales.</p>
-      <p>El IGN cuenta con un auditorio para aproximadamente 300 personas y varias salas pequeñas para desarrollar los talleres prácticos y las exposiciones.</p>
-      <p>Está ubicado sobre la calle Cabildo, en el barrio de Palermo y tiene fácil acceso a través de transporte público.</p>
+      <p><a href="http://www.openstreetmap.org/way/266067970" target="_blank">Cerrito 1250 (C1010AAZ) Buenos Aires, Argentina</a>.</p>
+      <p>El <b>Centro Argentino de Ingenieros</b> es una Asociación Civil sin fines de lucro que reúne a estudiantes, profesionales, empresas, entidades y organizaciones interesadas en resaltar la importancia estratégica de la ingeniería en la sociedad.</p><p> Pone de manifiesto la necesaria colaboración y aporte de la ingeniería para la planificación y ejecución de acciones que impulsen el desarrollo sustentable del país, a fin que la sociedad aprecie su accionar en todos los elementos de la vida diaria.</p>
   abstract_disclaimer:
     html: |
       <h4>Antes de cargar tu resumen tené en cuenta lo siguiente:</h4>

@@ -127,10 +127,8 @@ en:
       </ul>
   venue_about:
     html: |
-      <p>The National Geographic Institue (Instituto Geográfico Nacional - IGN) is a public organism which has as its main mission the representation of the national territory through the official cartography and watching over so that maps of the Argentine Republic which are made, that come in or that circulate inside the country are compliant with that official cartography.</p>
-      <p>Being such an important organism inside the geomatic world, it's a pleasure, a pride and an honour to count with their facilities to accomplish this event in search of strenghtening the community sourrounding geographical information systems and geospatial data.</p>
-      <p>The IGN counts with an auditorium for approximately 300 people and many smaller rooms for the workshops and expositions.</p>
-      <p>It is located on Cabildo street, in Palermo neighbourhood and it's easily reached through public transportation.</p>
+      <p><a href="http://www.openstreetmap.org/way/266067970" target="_blank">Cerrito 1250 (C1010AAZ) Buenos Aires, Argentina</a>.</p>
+      <p>El <b>Centro Argentino de Ingenieros</b> es una Asociación Civil sin fines de lucro que reúne a estudiantes, profesionales, empresas, entidades y organizaciones interesadas en resaltar la importancia estratégica de la ingeniería en la sociedad.</p><p> Pone de manifiesto la necesaria colaboración y aporte de la ingeniería para la planificación y ejecución de acciones que impulsen el desarrollo sustentable del país, a fin que la sociedad aprecie su accionar en todos los elementos de la vida diaria.</p>
   abstract_disclaimer:
     html: |
       <h4>Before uploading your abstract, keep the following in mind:</h4>
