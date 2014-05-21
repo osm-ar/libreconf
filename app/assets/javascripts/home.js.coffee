@@ -11,15 +11,11 @@ tiles = [
 
 map = L.map('map', {
     scrollWheelZoom: false
-}).setView([-34.59330, -58.38331], 15);
+}).setView([-34.59359, -58.38327], 15);
 L.tileLayer('http://a.tiles.mapbox.com/v3/fernando.h0p1dck9/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
-circle = L.circle([-34.57158, -58.43926], 200, {
-    color: '#ED1C24',
-    fillOpacity: 0.2
-}).addTo(map);
-
+marker = L.marker([-34.59359, -58.38327]).addTo(map);
 
 artmap = L.map('artmap', {
     scrollWheelZoom: false

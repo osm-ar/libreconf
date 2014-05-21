@@ -2,14 +2,14 @@
   <div class="col-md-12">
     <h1><%=t :about %> SotM</h1>
     <%=t 'conference_about.html' %>
-	<div id="photos" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="none">
-	  <div class="carousel-inner">
-	    <% @images.each_with_index do |image, index| %>
-	      <div class="item<%= ' active' if index == 0 %>">
-	        <%= image_tag image %>
-	      </div>
-	    <% end %>
+	  <div id="photos" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="none">
+  	  <div class="carousel-inner">
+  	    <% @images.each_with_index do |image, index| %>
+  	      <div class="item<%= ' active' if index == 0 %>">
+  	        <%= image_tag image %>
+  	      </div>
+  	    <% end %>
+  	  </div>
 	  </div>
-	</div>
   </div>
 </div>
