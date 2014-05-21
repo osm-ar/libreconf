@@ -126,9 +126,8 @@ en:
         <li><a href='http://sotm.openstreetmap.org.ar/''>State Of The Map Argentina</a> - OpenStreetMap</li>
       </ul>
   venue_about:
-    html: |
-      <p><a href="http://www.openstreetmap.org/way/266067970" target="_blank">Cerrito 1250 (C1010AAZ) Buenos Aires, Argentina</a>.</p>
-      <p>El <b>Centro Argentino de Ingenieros</b> es una Asociación Civil sin fines de lucro que reúne a estudiantes, profesionales, empresas, entidades y organizaciones interesadas en resaltar la importancia estratégica de la ingeniería en la sociedad.</p><p> Pone de manifiesto la necesaria colaboración y aporte de la ingeniería para la planificación y ejecución de acciones que impulsen el desarrollo sustentable del país, a fin que la sociedad aprecie su accionar en todos los elementos de la vida diaria.</p>
+    html: |      
+      <p><b>Centro Argentino de Ingenieros</b> gathers students, professionals, business, entities and organizations that aknowledge the strategic value of engineering and sustainable development in modern society, and work for it to make life better.</p>
   abstract_disclaimer:
     html: |
       <h4>Before uploading your abstract, keep the following in mind:</h4>
