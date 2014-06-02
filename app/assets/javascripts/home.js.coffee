@@ -9,13 +9,15 @@ tiles = [
     'http://www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png'
     ];
 
+latlng = [-34.59359, -58.38327];
 map = L.map('map', {
     scrollWheelZoom: false
-}).setView([-34.59359, -58.38327], 15);
-L.tileLayer('http://a.tiles.mapbox.com/v3/fernando.h0p1dck9/{z}/{x}/{y}.png', {
+}).setView(latlng, 15);
+L.tileLayer('http://{s}.tiles.mapbox.com/v3/fernando.h0p1dck9/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(map);
-marker = L.marker([-34.59359, -58.38327]).addTo(map);
+marker = L.marker(latlng).addTo(map);
+marker.bindPopup(venueAddress).openPopup();
 
 artmap = L.map('artmap', {
     scrollWheelZoom: false
