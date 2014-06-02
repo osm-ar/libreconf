@@ -78,12 +78,18 @@ en:
   conference_date: November 7th - 9th
   conference_venue: Yet unknown
   conference_location: Buenos Aires, Argentina
+  map_credits: 
+    html: |
+      Map data © <a href="/copyright">OpenStreetMap contributors</a> ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox
+  developed_by: Developed by
+  powered_by: Powered by
   program: Program
   full_program: Full Program
   get_in_touch: Get in touch
   hotels_map: Near hotels map
   sotm_registration: Register to the SotM
   the_venue: The Venue
+  venue_address: CAI, 1250 Cerrito, Retiro, Autonomous City of Buenos Aires, C1010AAZ, Argentina
   organized_by: Organized by
   supported_by: Supported by
   invited_by: Invites
@@ -123,17 +129,17 @@ en:
       </ul>
       <h3>Saturday</h3>
       <ul>
-        <li><a href='http://sotm.openstreetmap.org.ar/''>State Of The Map Argentina</a> - OpenStreetMap</li>
+        <li><a href='http://sotm.openstreetmap.org.ar/'>State Of The Map Argentina</a> - OpenStreetMap</li>
       </ul>
   venue_about:
     html: |      
-      <p><b>Centro Argentino de Ingenieros</b> gathers students, professionals, business, entities and organizations that aknowledge the strategic value of engineering and sustainable development in modern society, and work for it to make life better.</p>
+      <p><b>Centro Argentino de Ingenieros</b> gathers students, professionals, companies, entities and organizations that acknowledge the strategic value of engineering and sustainable development in modern society, and work for it to make life better.</p>
   abstract_disclaimer:
     html: |
       <h4>Before uploading your abstract, keep the following in mind:</h4>
       <ul>
-        <li>Talks will be 30 minutes long, where the last 5 ones will be used for questions</li>
-        <li>Talks should be use cases of FOSS4G</li>
+        <li>Talks will be 30~60 minutes long, where the last 5~10 ones will be used for questions</li>
+        <li>Talks should be somehow related to OSM or of interest for the community</li>
         <li>Presentations about propietary software products will not be allowed, even though they make use of free software.</li>
         <li>In every case it will be allowed to present the use case: how the tools were chosen, how they were configured, how are they used, which are the advantages.</li>
         <li>Presentation of a final product without a free license will not be allowed.</li>

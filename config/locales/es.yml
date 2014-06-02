@@ -87,12 +87,18 @@ es:
   conference_date: 7 al 9 de noviembre
   conference_venue: A confirmar
   conference_location: Buenos Aires, Argentina
+  map_credits: 
+    html: |
+      Datos de mapa © <a href="/copyright">OpenStreetMap contributors</a> ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox
+  developed_by: Desarrollado por
+  powered_by: Hecho con
   program: Programa
   full_program: Programa Completo
   get_in_touch: Haz contacto
   hotels_map: Mapa de hoteles cercanos
   sotm_registration: Registrate en el SotM
   the_venue: El Lugar
+  venue_address: CAI, Cerrito 1250, Retiro, Ciudad Autónoma de Buenos Aires, C1010AAZ, Argentina
   organized_by: Organiza
   supported_by: Con el apoyo de
   invited_by: Invita
@@ -114,9 +120,9 @@ es:
   about: Acerca de
   conference_about:
     html: |
-      <p>The State of the Map (SotM) conference is the annual conference of OpenStreetMap. Organised by the OpenStreetMap Foundation it has been held each year since 2007. There have also been any other regional and local conferences named <i>State of the Map</i>.</p>
-      <p>After being in Europe, North America and Asia, it is time to explore yet another continent. The OpenStreetMap Foundation is happy to announce that the 8th international State of the Map 2014 conference will be held in Buenos Aires, Argentina on November 7th–9th.</p>
-      <p>OSM is a truly global project with people all over the globe. Having SotM14 in Argentina is a great way to show the world what’s going on in South America regarding OSM and it can help strengthen the local OSM communities there.</p>
+      <p>State of the Map (SotM ó Estado del Mapa) es la conferencia internacional anual de la comunidad de OpenStreetMap. Organizada por la Fundación OpenStreetMap, ha sido celebrada cada año desde 2007. También se realizan otras conferencias <i>State of the Map</i> regionales o locales.</p>
+      <p>Luego de estar en Europa, Norteamérica y Asia, es tiempo de explorar otro continente. La Fundación OpenStreetMap está feliz de anunciar que la 8va conferencia internacional State of the Map 2014 sucederá en Buenos Aires, Argentina, del 7 al 9 de noviembre.</p>
+      <p>OSM es un proyecto verdaderamente global constituído por personas de cualquier parte del mundo. Hacer el SotM14 en Argentina es una oportunidad para compartir con el mundo la actividad en Latinoameŕica con respecto a OSM, además de fortalecer a las comunidades locales y regionales.</p>
   program_content:
     html: |
       <h3>Miércoles</h3>
