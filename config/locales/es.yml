@@ -87,15 +87,23 @@ es:
   conference_date: 7 al 9 de noviembre
   conference_venue: A confirmar
   conference_location: Buenos Aires, Argentina
+  map_credits: 
+    html: |
+      Datos de mapa © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox
+  developed_by: Desarrollado por
+  powered_by: Hecho con
   program: Programa
   full_program: Programa Completo
+  get_in_touch: Haz contacto
   hotels_map: Mapa de hoteles cercanos
   sotm_registration: Registrate en el SotM
   the_venue: El Lugar
+  venue_address: CAI, Cerrito 1250, Retiro, Ciudad Autónoma de Buenos Aires, C1010AAZ, Argentina
   organized_by: Organiza
   supported_by: Con el apoyo de
   invited_by: Invita
   register: ¡Registrate!
+  registration_opening_date: El registro abre el 15 de Junio
   ticket_price: Entrada General ARS $400 (Estudiantes $250)
   ticket_discount: Descuento especial 10%
   ticket_date: hasta el 1 de octubre
@@ -112,23 +120,9 @@ es:
   about: Acerca de
   conference_about:
     html: |
-      <p>Las <strong><a href='#' rel='tooltip' title='Free and Open Source Software for Geospatial'>FOSS4G</a></strong> son conferencias de <strong>Geomática Libre</strong> que se dan todos los años en distintas partes del mundo. Existe una conferencia global organizada por <strong><a href='http://www.osgeo.org' rel='tooltip' title='Open Source Geospatial Foundation'>OSGeo</a></strong> que en 2013 tendrá lugar en Nottingham, Reino Unido. Además de la global, existen otras conferencias locales en: Norte América, Europa del Este, España, Japón, India y otros.</p>
-      <p>A partir del año 2013, la FOSS4G Buenos Aires pretende reunir a los miembros de la comunidad de geomáticos de Argentina y del resto de los países latinoamericanos. Así como en la conferencia global, esperamos tener una mezcla de talleres prácticos, presentaciones de proyectos y exposiciones de casos de uso de herramientas libres aplicadas a la geomática. Además, es un evento que promueve la interacción entre los usuarios de la geomática de distintos ambientes y lugares.</p>
-      <p>En los días en que transcurra la conferencia buscaremos:</p>
-      <ul>
-        <li><strong>Compartir</strong> experiencias, proyectos e ideas en torno a la geomática libre</li>
-        <li><strong>Consolidar</strong> la comunidad para trabajar apostando a la transparencia, la colaboración y el conocimiento compartido</li>
-      </ul>
-      <p>La conferencia está dirigida a:</p>
-      <ul>
-        <li>Decisores de distintos organismos de gobierno</li>
-        <li>Empleados estatales relacionados con el SIG</li>
-        <li>Miembros de <a href='http://www.idera.gob.ar' rel='tooltip' title='Infraestructura de Datos Espaciales de la República Argentina'>IDERA</a></li>
-        <li>Universidades: profesores y alumnos</li>
-        <li>Público general</li>
-      </ul>
-      <p>Seguinos en <a href='https://twitter.com/foss4gBA' rel='tooltip' title='@foss4gBA'>Twitter</a> para enterarte de las novedades o escribinos a <a href='mailto:info@foss4g.org.ar'>info@foss4g.org.ar</a> por cualquier duda o comentario que tengas.</p>
-      <p><strong>¡Nos vemos muy pronto!</strong></p>
+      <p>State of the Map (SotM ó Estado del Mapa) es la conferencia internacional anual de la comunidad de OpenStreetMap. Organizada por la Fundación OpenStreetMap, ha sido celebrada cada año desde 2007. También se realizan otras conferencias <i>State of the Map</i> regionales o locales.</p>
+      <p>Luego de estar en Europa, Norteamérica y Asia, es tiempo de explorar otro continente. La Fundación OpenStreetMap está feliz de anunciar que la 8va conferencia internacional State of the Map 2014 sucederá en Buenos Aires, Argentina, del 7 al 9 de noviembre.</p>
+      <p>OSM es un proyecto verdaderamente global constituído por personas de cualquier parte del mundo. Hacer el SotM14 en Argentina es una oportunidad para compartir con el mundo la actividad en Latinoameŕica con respecto a OSM, además de fortalecer a las comunidades locales y regionales.</p>
   program_content:
     html: |
       <h3>Miércoles</h3>
@@ -149,10 +143,7 @@ es:
       </ul>
   venue_about:
     html: |
-      <p>El Instituto Geográfico Nacional es un organismo público que tiene como misión principal representar el territorio nacional a través de la cartografía oficial y velar para que los mapas de la República Argentina que se confeccionen, ingresen o circulen en el país se ajusten a dicha cartografía oficial.</p>
-      <p>Siendo un organismo tan importante dentro del ambiente de la geomática, es un placer, un orgullo y un honor contar con sus instalaciones para llevar a cabo este evento que busca fortalecer la comunidad en torno a los sistemas de información geográfica y los datos geoespaciales.</p>
-      <p>El IGN cuenta con un auditorio para aproximadamente 300 personas y varias salas pequeñas para desarrollar los talleres prácticos y las exposiciones.</p>
-      <p>Está ubicado sobre la calle Cabildo, en el barrio de Palermo y tiene fácil acceso a través de transporte público.</p>
+      <p>El <b>Centro Argentino de Ingenieros</b> es una Asociación Civil sin fines de lucro que reúne a estudiantes, profesionales, empresas, entidades y organizaciones interesadas en resaltar la importancia estratégica de la ingeniería en la sociedad. Pone de manifiesto la necesaria colaboración y aporte de la ingeniería para la planificación y ejecución de acciones que impulsen el desarrollo sustentable del país, a fin que la sociedad aprecie su accionar en todos los elementos de la vida diaria.</p>
   abstract_disclaimer:
     html: |
       <h4>Antes de cargar tu resumen tené en cuenta lo siguiente:</h4>
