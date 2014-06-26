@@ -1,42 +1,32 @@
-<div id="artmap"></div>
+<div id="artmap2"></div>
 
 <div class="navbar navbar-fixed-top hidden-xs" role="navigation">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about"><%=t :about %></a></li>
-          <li class="dropdown"> 
+          <li><a href="https://twitter.com/sotm" target="_blank"><%=t :news %></a></li>
+          <li><a href="#venue"><%=t :the_venue %></a></li>
+          <!--<li class="dropdown"> 
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=t :get_in_touch %> <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#"><i>IRC: #sotm @OFTC</i></a></li>
               <li><a href="https://twitter.com/sotm" target="blank">Twitter: @sotm</a></li>
             </ul>
-          </li>
-          <li><a href="#" id="register-button"><%=t :registration_opening_date %></a></li>
+          </li>-->
+          <li><a href="#register" id="register-button"><%=t :register %></a></li>
+          <li><%=t "switch_lang.html" %></li>
         </ul>
 </div>
 
-<div class="row banner">
-  <div class="col-xs-12">
-    <div class="row">
+<div class="row banner" style="padding-top:75px;">
                 
 
-      <div class="col-sm-4 col-xs-3"></div>
-      <div class="col-sm-4 col-xs-6 text-center"><%= image_tag 'logo_full.png', {:class => 'logo img-responsive'} %>
+      <div class="col-sm-3 col-xs-12"><%= image_tag 'logo_full.png', {:class => 'img-responsive'} %></div>
+      <div class="col-sm-8 text-left" style="padding-top:40px;">
+        <h1><%= t(:conference_name) %></h1>
+        <h3><%= t(:conference_slogan_2) %>
+        <br>
+        <%= t(:conference_date) %></h3>
+        <h4><i>"<%= t(:conference_slogan) %>"</i></h4>
       </div>
 
-      <div class="col-sm-4 col-xs-3"></div>
-    </div>
-  </div>
-  
-  <div class="col-xs-12 jumbotron text-center hidden-xs">
-    <div class="row ">
-      <div class="col-sm-12">
-        <!--<h1 class="visible-md visible-lg"><%= t(:conference_name) %></h1>
-        <h2 class="visible-sm"><%= t(:conference_name) %></h2>
-        <h4><%= t(:conference_date) %>, <span><%= t(:conference_location) %></span></h4>-->
-        <h3><%= t(:conference_slogan) %></h3>
-        <h4><%=t :registration_opening_date %></h4>
-      </div>
-      
-    </div>
-  </div>
 </div> 

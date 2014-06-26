@@ -66,7 +66,9 @@ en:
 
   yes: Yes
   no: No
-  switch_lang: Cambiar a Español
+  switch_lang: 
+    html: |
+      <a href="/?l=en" title="Cambiar a Español" style="margin-right: 15px">Cambiar a Español</a>
   status: Status
   type: Type
   sign_in: Login
@@ -75,6 +77,7 @@ en:
   filter: Filter
   conference_name: State of the Map 2014
   conference_slogan: An open and passionate community mapping the world
+  conference_slogan_2: 8th Annual OpenStreetMap Conference
   conference_date: November 7th - 9th
   conference_venue: Yet unknown
   conference_location: Buenos Aires, Argentina
@@ -93,6 +96,14 @@ en:
   organized_by: Organized by
   supported_by: Supported by
   invited_by: Invites
+  registration: Registration
+  registration_foreigns: International registration
+  registration_foreigns_button: Register at Eventbrite
+  registration_foreigns_text: Registration is now open to international attendees (Non Argentine)
+  registration_locals: Registration for Argentine attendees
+  registration_locals_button: Register at Eventioz
+  registration_locals_text: Coming soon! (We are working to setup a local currency payment method)
+  registration_community: As a OSM Community member you can attend the conference for a special rate. It's our way of saying thank you for your support of the project! At the sign-up you will be asked for your OSM-Username.
   register: ¡Register Now!
   registration_opening_date: Registration opens June 15th
   ticket_price: General Ticket ARS $400 (Students $250)
@@ -135,6 +146,12 @@ en:
   venue_about:
     html: |      
       <p><b>Centro Argentino de Ingenieros</b> gathers students, professionals, companies, entities and organizations that acknowledge the strategic value of engineering and sustainable development in modern society, and work for it to make life better.</p>
+      <h3>Tourism</h3>      
+      <p style="font-size:14px"><a href="http://www.turismo.gov.ar/indexfse.html" target="_blank">Argentine</a> official's turism country page / <a href="http://en.wikipedia.org/wiki/Argentina" target="_blank">wikipedia</a></br>
+      <a href="http://www.turismo.buenosaires.gob.ar/en" title="Autonomous City of Buenos Aires">Buenos Aires</a> official's turism city page / <a href="http://en.wikipedia.org/wiki/Buenos_Aires" target="_blank">wikipedia</a></p>
+      <h3>Transport</h3>
+      <p style="font-size:14px">Ministro Pistarini International Airport <a href="http://www.openstreetmap.org/#map=14/-34.8222/-58.5358" target="_blank">OSM</a> / <a href="http://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport" target="_blank">wikipedia</a></br>
+      Retiro Bus Station <a href="http://www.openstreetmap.org/way/20371249" target="_blank">OSM</a> / <a href="http://en.wikipedia.org/wiki/Retiro_bus_station" title="Retiro Bus Station" target="_blank">wikipedia</a></p>
   abstract_disclaimer:
     html: |
       <h4>Before uploading your abstract, keep the following in mind:</h4>

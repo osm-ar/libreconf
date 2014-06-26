@@ -75,7 +75,9 @@ es:
 
   yes: Sí
   no: No
-  switch_lang: Switch to English
+  switch_lang: 
+    html: |
+      <a href="/?l=en" title="Switch to English" style="margin-right: 15px">Switch to English</a>
   status: Estado
   type: Tipo
   sign_in: Entrar
@@ -84,6 +86,7 @@ es:
   filter: Filtrar
   conference_name: State of the Map 2014
   conference_slogan: Una comunidad abierta y apasionada por mapear el mundo
+  conference_slogan_2: 8va Conferencia Anual de OpenStreetMap
   conference_date: 7 al 9 de noviembre
   conference_venue: A confirmar
   conference_location: Buenos Aires, Argentina
@@ -102,6 +105,14 @@ es:
   organized_by: Organiza
   supported_by: Con el apoyo de
   invited_by: Invita
+  registration: Registración
+  registration_foreigns: Registración internacional
+  registration_foreigns_button: Registro en Eventbrite
+  registration_foreigns_text: La inscripción para no residentes en Argentina ya se encuentra abierta.
+  registration_locals: Registración para argentinos
+  registration_locals_button: Registro en Eventioz
+  registration_locals_text: Próximamente se abrirá la inscripción para argentinos a través de un sistema que utilice sistemas de pagos locales.
+  registration_community: Como miembro de la Comunidad de OSM puedes obtener descuentos en el registro. Es nuestra forma de agrader por tu apoyo al proyecto! Durante el registro se te solicitará tu usuario de OpenStreetMap.org
   register: ¡Registrate!
   registration_opening_date: El registro abre el 15 de Junio
   ticket_price: Entrada General ARS $400 (Estudiantes $250)
@@ -123,7 +134,7 @@ es:
     html: |
       <p>State of the Map (SotM ó Estado del Mapa) es la conferencia internacional anual de la comunidad de OpenStreetMap. Organizada por la Fundación OpenStreetMap, ha sido celebrada cada año desde 2007. También se realizan otras conferencias <i>State of the Map</i> regionales o locales.</p>
       <p>Luego de estar en Europa, Norteamérica y Asia, es tiempo de explorar otro continente. La Fundación OpenStreetMap está feliz de anunciar que la 8va conferencia internacional State of the Map 2014 sucederá en Buenos Aires, Argentina, del 7 al 9 de noviembre.</p>
-      <p>OSM es un proyecto verdaderamente global constituído por personas de cualquier parte del mundo. Hacer el SotM14 en Argentina es una oportunidad para compartir con el mundo la actividad en Latinoameŕica con respecto a OSM, además de fortalecer a las comunidades locales y regionales.</p>
+      <p>OSM es un proyecto verdaderamente global constituído por personas de cualquier parte del mundo. Hacer el SotM14 en Argentina es una oportunidad para compartir con el mundo la actividad en Latinoamérica con respecto a OSM, además de fortalecer a las comunidades locales y regionales.</p>
   program_content:
     html: |
       <h3>Miércoles</h3>
@@ -144,7 +155,13 @@ es:
       </ul>
   venue_about:
     html: |
-      <p>El <b>Centro Argentino de Ingenieros</b> es una Asociación Civil sin fines de lucro que reúne a estudiantes, profesionales, empresas, entidades y organizaciones interesadas en resaltar la importancia estratégica de la ingeniería en la sociedad. Pone de manifiesto la necesaria colaboración y aporte de la ingeniería para la planificación y ejecución de acciones que impulsen el desarrollo sustentable del país, a fin que la sociedad aprecie su accionar en todos los elementos de la vida diaria.</p>
+      <p style="font-size:16px">El <b>Centro Argentino de Ingenieros</b> es una Asociación Civil sin fines de lucro que reúne a estudiantes, profesionales, empresas, entidades y organizaciones interesadas en resaltar la importancia estratégica de la ingeniería en la sociedad. Pone de manifiesto la necesaria colaboración y aporte de la ingeniería para la planificación y ejecución de acciones que impulsen el desarrollo sustentable del país, a fin que la sociedad aprecie su accionar en todos los elementos de la vida diaria.</p>
+      <h3>Turismo</h3>
+      <p style="font-size:14px"><a href="http://www.turismo.gov.ar/indexfse.html" target="_blank">Argentine</a>: Sitio oficial de turismo / <a href="http://es.wikipedia.org/wiki/Argentina" target="_blank">wikipedia</a></br>
+      <a href="http://www.turismo.buenosaires.gob.ar" title="Ciudad Autónoma de Buenos Aires">Buenos Aires</a>:  Sitio oficial de turismo / <a href="http://es.wikipedia.org/wiki/Buenos_Aires" target="_blank">wikipedia</a></p>
+      <h3>Transporte</h3>
+      <p style="font-size:14px">Aeropuerto Internacional Ministro Pistarini (EZE) (<a href="http://www.openstreetmap.org/#map=14/-34.8222/-58.5358" target="_blank">OSM</a> / <a href="http://es.wikipedia.org/wiki/Aeropuerto_Internacional_Ministro_Pistarini" target="_blank">Wikipedia</a>)</br>
+      Estación de Bus Retiro (<a href="http://www.openstreetmap.org/way/20371249" target="_blank">OSM</a> / <a href="http://es.wikipedia.org/wiki/Estaci%C3%B3n_Retiro" title="Estación Retiro" target="_blank">Wikipedia</a>)</p>
   abstract_disclaimer:
     html: |
       <h4>Antes de cargar tu resumen tené en cuenta lo siguiente:</h4>
