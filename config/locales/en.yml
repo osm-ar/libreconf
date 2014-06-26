@@ -68,7 +68,7 @@ en:
   no: No
   switch_lang: 
     html: |
-      <a href="/?l=en" title="Cambiar a Español" style="margin-right: 15px">Cambiar a Español</a>
+      <a href="/?l=es" title="Cambiar a Español" style="margin-right: 15px">Cambiar a Español</a>
   status: Status
   type: Type
   sign_in: Login
