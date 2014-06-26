@@ -1,12 +1,12 @@
 <div id="sponsors" class="row block block-alternative text-center">
   <div class="col-md-12">
-    <h1><%=t :sponsors %></h1>
+    <h1><%=t 'activerecord.models.sponsor.other' %></h1>
 
     <% @sponsor_types.each do |sponsor_type| %>
     <div class="row text-center sponsors <%= sponsor_type.name.downcase %> ">
       <h4><%= sponsor_type.name %></h4>
       <% @sponsors.where(sponsor_type_id: sponsor_type.id).each do |sponsor| %>
-        <div class="col-xs-<%= (sponsor.sponsor_type_id>1?6:12) %> col-sm-<%= (12/(@sponsors.where(sponsor_type_id: sponsor_type.id).count)) %> sponsor" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <div class="col-xs-<%= (sponsor.sponsor_type_id>1?6:12) %> col-sm-<%= (12/(@sponsors.where(sponsor_type_id: sponsor_type.id).count)) %> sponsor" data-container="body" data-toggle="popover" data-placement="right" data-content=".">
           <%= image_tag sponsor.logo_url, class: "img-rounded" %>
         </div>
       <% end %>

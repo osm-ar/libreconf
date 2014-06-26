@@ -1,9 +1,9 @@
 <div id="speakers" class="row block block-alternative">
   <div class="col-md-12">
-    <h1>The Speakers</h1>
+    <h1><%=t 'activerecord.models.speaker.other' %></h1>
     <div class="row speakers">
       <% @speakers.each do |speaker| %>
-        <div class="col-md-3 col-sm-3 col-xs-6 speaker" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <div class="col-md-3 col-sm-3 col-xs-6 speaker" data-container="body" data-toggle="popover" data-placement="right" data-content="<%= speaker.name %>">
           <h3><%= speaker.name %></h3>
           <%= image_tag speaker.picture_url, class: "img-responsive" %>
           <p><%= speaker.description %></p>
