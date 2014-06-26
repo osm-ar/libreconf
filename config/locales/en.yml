@@ -83,7 +83,7 @@ en:
   conference_location: Buenos Aires, Argentina
   map_credits: 
     html: |
-      Map data © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox
+      Map data © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox, Logo made by M. Inés Szychowski and licensed under <a rel="license" href="//creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International license</a>.
   developed_by: Developed by
   powered_by: Powered by
   program: Program
