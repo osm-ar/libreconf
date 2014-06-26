@@ -83,7 +83,7 @@ es:
   show: Mostrar
   filter: Filtrar
   conference_name: State of the Map 2014
-  conference_slogan: La conferencia internacional anual de OpenStreetMap
+  conference_slogan: Una comunidad abierta y apasionada por mapear el mundo
   conference_date: 7 al 9 de noviembre
   conference_venue: A confirmar
   conference_location: Buenos Aires, Argentina
@@ -112,6 +112,7 @@ es:
   twitter_tweet: Twittear
   twitter_text: State of the Map 2014, Buenos Aires, Argentina
   new_abstract: Subí tu resumen
+  news: Noticias
   become_sponsor: Auspiciá la conferencia
   abstract_created: El resumen fue creado correctamente ¡Muchas gracias!
   confirmed_workshops: Talleres Confirmados
