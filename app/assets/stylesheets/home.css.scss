@@ -94,7 +94,7 @@
   color:#000;
 }
 
-#about>div,#workshops>div {
+#about>div,#workshops>div,.translucid-white>div {
   background-color: rgba(255, 255, 255, 0.75);
   padding-bottom:20px;
 }
@@ -135,4 +135,13 @@
 
 #map {
   height: 650px;
+}
+.row.same-height{
+    display: table;
+}
+
+[class*="col-"].same-height {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
 }

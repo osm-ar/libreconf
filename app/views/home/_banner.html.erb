@@ -1,4 +1,4 @@
-<div id="artmap2"></div>
+<div id="artmap"></div>
 
 <div class="navbar navbar-fixed-top hidden-xs" role="navigation">
         <ul class="nav navbar-nav navbar-right">
@@ -19,8 +19,12 @@
 
 <div class="row banner" style="padding-top:75px;">
                 
-
-      <div class="col-sm-3 col-xs-12"><%= image_tag 'logo_full.png', {:class => 'img-responsive'} %></div>
+      <div class="col-xs-2 visible-xs"></div>
+      <div class="col-sm-3 col-xs-8">
+        <%= image_tag 'logo_full.png', {:class => 'hidden-xs hidden-sm img-responsive'} %>
+        <%= image_tag 'logo_full.png', {:class => 'visible-sm img-responsive', :style => 'padding-top:50px;'} %>
+        <%= image_tag 'logo_full.png', {:class => 'visible-xs img-responsive', :style => 'padding-bottom:30px;'} %>
+      </div>
       <div class="col-sm-8 text-left" style="padding-top:40px;">
         <h1><%= t(:conference_name) %></h1>
         <h3><%= t(:conference_slogan_2) %>
@@ -28,5 +32,5 @@
         <%= t(:conference_date) %></h3>
         <h4><i>"<%= t(:conference_slogan) %>"</i></h4>
       </div>
-
+      <div class="col-xs-2 visible-xs"></div>
 </div> 

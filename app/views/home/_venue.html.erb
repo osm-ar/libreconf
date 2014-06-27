@@ -1,13 +1,17 @@
-<div id="venue" class="row block">
-  <div class="col-xs-12 col-sm-4">
+<div id="venue" class="row block same-height">
+  <div class="col-xs-12 col-sm-4 same-height">
     <h1 class="visible-xs"><%=t :the_venue %></h1>
     <h2 class="hidden-xs" style="text-align:left; font-size:3.2em;"><%=t :the_venue %></h2>
     <div><%=t 'venue_about.html' %></div>
   </div>
-  <div class="col-sm-8 col-xs-12" style="padding: 0 0 0 0;">
-    <div id="map"></div>
+  <div class="col-sm-8 col-xs-12 same-height hidden-xs" id="map" style="padding: 0 0 0 0;">
   </div>
 </div>
+<div id="map-xs" class="visible-xs"></div>
+
+
+
+<!-- Address table, escondida! -->
 <div id="venue_html" style="display:none">
 	<table class="table table-hover table-condensed" style="font-size: 0.75em; background:rgba(255,255,255,.33)">
 		<tbody>
