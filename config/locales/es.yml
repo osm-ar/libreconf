@@ -78,6 +78,9 @@ es:
   switch_lang: 
     html: |
       <a href="/?l=en" title="Switch to English" class="switch-lang">Switch to English</a>
+  switch_lang_phone: 
+    html: |
+      <a href="/?l=en" title="Switch to English" class="switch-lang-phone">Switch to English</a>
   status: Estado
   type: Tipo
   sign_in: Entrar
