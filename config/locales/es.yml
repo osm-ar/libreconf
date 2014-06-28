@@ -77,7 +77,7 @@ es:
   no: No
   switch_lang: 
     html: |
-      <a href="/?l=en" title="Switch to English" style="margin-right: 15px">Switch to English</a>
+      <a href="/?l=en" title="Switch to English" class="switch-lang">Switch to English</a>
   status: Estado
   type: Tipo
   sign_in: Entrar
@@ -85,7 +85,7 @@ es:
   show: Mostrar
   filter: Filtrar
   conference_name: State of the Map 2014
-  conference_slogan: Una comunidad abierta y apasionada por mapear el mundo
+  conference_slogan: Una comunidad abierta y apasionada por cartografiar el mundo
   conference_slogan_2: 8va Conferencia Anual de OpenStreetMap
   conference_date: 7 al 9 de noviembre
   conference_venue: A confirmar
@@ -98,6 +98,20 @@ es:
   program: Programa
   full_program: Programa Completo
   get_in_touch: Haz contacto
+  contact_form: Formulario de contacto
+  name: Nombre
+  name_placeholder: Tu nombre o apodo
+  email_placeholder: Tu dirección de correo
+  email_tip: Comprueba la dirección para que podamos responderte
+  message: Mensaje
+  subject: Asunto
+  question: Pregunta
+  suggestion: Sugerencia
+  urgent_issue: Urgencia!
+  comment: Comentario
+  submit: Enviar
+  submitted_successfully: Tu mensaje ha sido enviado. Lo responderemos cuanto antes.
+  not_submitted: Tu mensaje NO ha sido enviado. Comprueba los campos.
   hotels_map: Mapa de hoteles cercanos
   sotm_registration: Registrate en el SotM
   the_venue: El Lugar
@@ -112,7 +126,7 @@ es:
   registration_locals: Registración para argentinos
   registration_locals_button: Registro en Eventioz
   registration_locals_text: Próximamente se abrirá la inscripción para argentinos a través de un sistema que utilice sistemas de pagos locales.
-  registration_community: Como miembro de la Comunidad de OSM puedes obtener descuentos en el registro. Es nuestra forma de agrader por tu apoyo al proyecto! Durante el registro se te solicitará tu usuario de OpenStreetMap.org
+  registration_community: Como miembro de la Comunidad de OSM puedes obtener descuentos en el registro. Es nuestra forma de agradecer por tu apoyo al proyecto! Durante el registro se te solicitará tu usuario de OpenStreetMap.org
   register: ¡Registrate!
   registration_opening_date: El registro abre el 15 de Junio
   ticket_price: Entrada General ARS $400 (Estudiantes $250)
@@ -130,6 +144,16 @@ es:
   confirmed_talks: Charlas Confirmadas
   about_the_conference: Acerca de la Conferencia
   about: Acerca de
+  coordination: Coordinación
+  organization: Organización
+  communication: Comunicación
+  design: Diseño
+  website: Desarrollo del sitio web
+  sponsors_southamerica: Auspiciantes sudamericanos
+  sponsors_international: Auspiciantes internacionales
+  isologo_about: 
+    html: |
+      <p>El isologo contiene un ícono de la ciudad, el Obelisco de Buenos Aires (<a href="http://es.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">Wikipedia</a>), y una pareja bailando el típico Tango argentino (<a href="http://es.wikipedia.org/wiki/Tango" target="_blank">Wikipedia</a>) representando la pasión, un sentimiento que hizo a OpenStreetMap lo que es hoy en día. 
   conference_about:
     html: |
       <p>State of the Map (SotM ó Estado del Mapa) es la conferencia internacional anual de la comunidad de OpenStreetMap. Organizada por la Fundación OpenStreetMap, ha sido celebrada cada año desde 2007. También se realizan otras conferencias <i>State of the Map</i> regionales o locales.</p>

@@ -136,6 +136,7 @@
 #map {
   height: 650px;
 }
+
 .row.same-height{
     display: table;
 }
@@ -144,4 +145,9 @@
     float: none;
     display: table-cell;
     vertical-align: top;
+}
+
+.switch-lang{
+  margin-right: 15px;
+  font-style: oblique;
 }

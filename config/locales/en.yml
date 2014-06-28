@@ -68,7 +68,7 @@ en:
   no: No
   switch_lang: 
     html: |
-      <a href="/?l=es" title="Cambiar a Español" style="margin-right: 15px">Cambiar a Español</a>
+      <a href="/?l=es" title="Cambiar a Español" class="switch-lang">Cambiar a Español</a>
   status: Status
   type: Type
   sign_in: Login
@@ -89,6 +89,20 @@ en:
   program: Program
   full_program: Full Program
   get_in_touch: Get in touch
+  contact_form: Contact form
+  name: Name
+  name_placeholder: Your name or nickname
+  email_placeholder: Your email address
+  email_tip: Double check the email so we can reply
+  message: Message
+  subject: Subject
+  question: Question
+  suggestion: Suggestion
+  urgent_issue: Urgency!
+  comment: Comment
+  submit: Submit
+  submitted_successfully: Your message has been sent. We will reply ASAP.
+  not_submitted: Your message has NOT been sent. Please check the fields.
   hotels_map: Near hotels map
   sotm_registration: Register to the SotM
   the_venue: The Venue
@@ -103,7 +117,7 @@ en:
   registration_locals: Registration for Argentine attendees
   registration_locals_button: Register at Eventioz
   registration_locals_text: Coming soon! (We are working to setup a local currency payment method)
-  registration_community: As a OSM Community member you can attend the conference for a special rate. It's our way of saying thank you for your support of the project! At the sign-up you will be asked for your OSM-Username.
+  registration_community: As a OSM Community member you can attend the conference for a special rate. It's our way to thank you for your support on the project! At the sign-up you will be asked for your OSM-Username.
   register: ¡Register Now!
   registration_opening_date: Registration opens June 15th
   ticket_price: General Ticket ARS $400 (Students $250)
@@ -120,6 +134,16 @@ en:
   confirmed_talks: Confirmed Talks
   about_the_conference: About the Conference
   about: About
+  coordination: Coordination
+  organization: Organization
+  communication: Communication
+  design: Design
+  website: Website development and design
+  sponsors_southamerica: Southamerican sponsors
+  sponsors_international: International sponsors
+  isologo_about: 
+    html: |
+      <p>Our isologo is about an icon of the city, the Obelisk of Buenos Aires (<a href="http://en.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">wikipedia</a>), and a couple dancing the typical Argentine Tango (<a href="http://en.wikipedia.org/wiki/Argentine_tango" target="_blank">wikipedia</a>) representing the passion, that what made OpenStreetMap possible. 
   conference_about:
     html: |
       <p>The State of the Map (SotM) conference is the annual conference of OpenStreetMap. Organised by the OpenStreetMap Foundation it has been held each year since 2007. There have also been any other regional and local conferences named <i>State of the Map</i>.</p>

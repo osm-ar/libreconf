@@ -1,0 +1,122 @@
+<a id="register"></a>
+<div class="row block same-height hidden-xs translucid-white">
+                
+
+      <div class="col-sm-4 same-height">
+        <h3><%=t :organization %></h3>
+        
+        <ul class="list-group">
+          <li class="list-group-item"><b><%=t :coordination %></b>: Gonzalo Gabriel Pérez, Malena Libman</li>
+          <li class="list-group-item"><b><%=t :venue %></b>: Miguel Angel Blanco, Gonzalo Gabriel Pérez</li>
+          <li class="list-group-item"><b><%=t :communication %></b>: Germán Carrasco Amaral, Gonzalo Gabriel Pérez</li>
+          <li class="list-group-item"><b><%=t :design %></b>: María Inés Szychowski</li>
+          <li class="list-group-item"><b><%=t :website %></b>: Fernando Sanz, Mauricio Miranda, Germán Carrasco Amaral</li>
+          <li class="list-group-item"><b><%=t :sponsors_international %></b>:  Henk Hoff</li>
+          <li class="list-group-item"><b><%=t :sponsors_southamerica %></b>:  Melody Atienza, Mailen Soria</li>
+        <ul>
+      </div>
+
+      <div class="col-sm-4 col-xs-12 same-height">
+        
+        <h3><%=t :get_in_touch %></h3>
+
+
+            <form class="form-horizontal">
+              <fieldset>
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="name"><%=t :name %></label>  
+                <div class="col-md-8">
+                <input id="name" name="name" placeholder="<%=t :name_placeholder %>" class="form-control input-sm" required="" type="text">
+                  
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="email">E-mail</label>  
+                <div class="col-md-8">
+                <input id="email" name="email" placeholder="<%=t :email_placeholder %>" class="form-control input-sm" required="" type="text">
+                <span class="help-block text-danger"><%=t :email_tip %></span>  
+                </div>
+              </div>
+
+              <!-- Select Basic -->
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="subject"><%=t :subject %></label>
+                <div class="col-md-8">
+                  <select id="subject" name="subject" class="input-sm form-control">
+                    <option value="suggestion"><%=t :suggestion %></option>
+                    <option value="comment"><%=t :comment %></option>
+                    <option value="urgency"><%=t :urgent_issue %></option>
+                    <option value="question"><%=t :question %></option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Textarea -->
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="message"><%=t :message %></label>
+                <div class="col-md-8">                     
+                  <textarea class="form-control" required="" style="width:99%" id="message" name="message"></textarea>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-3 control-label" for="submit"></label>
+                <div class="col-md-8">
+                  <button id="submit" name="submit" class="btn btn-info"><%=t :submit %></button>
+                </div>
+              </div>
+
+              </fieldset>
+              </form>
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            <ul class="">
+              <li><b>Twitter</b>: <a href="https://twitter.com/sotm" target="_blank">@sotm</a></li>
+              <li><b>IRC</b>: #sotm @OFTC</li>
+              <li><b>E-mail</b>: info@stateofthemap.org</li>
+            </ul>
+          </li>
+        </ul> 
+
+      </div>
+      
+      <div class="col-sm-4 col-xs-12 same-height" style="background: rgba(240, 240, 240, 0.75)">
+        <h3><%=t :isologo %></h3>
+        <p>
+            <%= image_tag 'logo_full.png', {:class => '', :style => 'width:45%'} %>
+          
+            <%= image_tag 'logo.png', {:class => '', :style => 'width:45%; float:right'} %>
+        </p>
+        <%=t 'isologo_about.html' %>
+        
+      </div>
+</div> 
+
+<div class="row block visible-xs translucid-white">
+                
+
+      <div class="col-xs-12" style="background: rgba(77, 179, 197, 0.75)">
+        <h3><%=t :organization %></h3>
+        
+        <ul>
+          <li><b><%=t :coordination %></b>: Gonzalo Gabriel Pérez, Malena Libman</li>
+          <li><b><%=t :venue %></b>: Miguel Angel Blanco, Gonzalo Gabriel Pérez</li>
+          <li><b><%=t :communication %></b>: Germán Carrasco Amaral, Gonzalo Gabriel Pérez</li>
+          <li><b><%=t :design %></b>: María Inés Szychowski</li>
+          <li><b><%=t :website %></b>: Fernando Sanz, Mauricio Miranda, Germán Carrasco Amaral</li>
+          <li><b><%=t :sponsors_international %></b>:  Henk Hoff</li>
+          <li><b><%=t :sponsors_southamerica %></b>:  Melody Atienza, Mailen Soria</li>
+        <ul>
+      </div>
+
+      <div class="col-xs-12">
+        
+        <h3><%=t :isologo %></h3>
+        <%=t 'isologo_about.html' %>
+      </div>
+</div> 
