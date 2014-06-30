@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+users = User.create([
+  {email: "test@test.com", password: "abcd1234", password_confirmation: "abcd1234"}
+])
+
+abstract_statuses = AbstractStatus.create([
+  {name: "Pending"},
+  {name: "Rejected"},
+  {name: "Approved"}
+])
