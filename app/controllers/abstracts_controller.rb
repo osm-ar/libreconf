@@ -1,6 +1,7 @@
 class AbstractsController < ApplicationController
   before_filter :authenticate_user!
-  
+  before_action :set_abstract, only: [:show, :edit, :update, :destroy]
+
   # GET /abstracts
   # GET /abstracts.json
   def index
@@ -19,8 +20,6 @@ class AbstractsController < ApplicationController
   # GET /abstracts/1
   # GET /abstracts/1.json
   def show
-    @abstract = Abstract.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @abstract }
@@ -46,7 +45,7 @@ class AbstractsController < ApplicationController
   # POST /abstracts
   # POST /abstracts.json
   def create
-    @abstract = Abstract.new(params[:abstract])
+    @abstract = Abstract.new(abstract_params)
 
     respond_to do |format|
       if (user_signed_in? or verify_recaptcha) and @abstract.save
@@ -66,10 +65,8 @@ class AbstractsController < ApplicationController
   # PUT /abstracts/1
   # PUT /abstracts/1.json
   def update
-    @abstract = Abstract.find(params[:id])
-
     respond_to do |format|
-      if @abstract.update_attributes(params[:abstract])
+      if @abstract.update_attributes(abstract_params)
         format.html { redirect_to @abstract, notice: 'Abstract was successfully updated.' }
         #format.json { head :no_content }
       else
@@ -82,7 +79,6 @@ class AbstractsController < ApplicationController
   # DELETE /abstracts/1
   # DELETE /abstracts/1.json
   def destroy
-    @abstract = Abstract.find(params[:id])
     @abstract.destroy
 
     respond_to do |format|
@@ -90,5 +86,14 @@ class AbstractsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+    def set_abstract
+      @abstract = Abstract.find(params[:id])
+    end
+
+    def abstract_params
+      params.require(:abstract).permit(:author, :email, :country, :organization, :title, :description, :status_id)
+    end
 
 end
