@@ -116,7 +116,7 @@ en:
   registration: Registration
   registration_foreigns: International registration
   registration_foreigns_button: Register at Eventbrite
-  registration_foreigns_text: Registration is now open to international attendees (Non Argentine)
+  registration_foreigns_text: Registration is now open!
   registration_locals: Registration for Argentine attendees
   registration_locals_button: Register at Eventioz
   registration_locals_text: Coming soon! (We are working to setup a local currency payment method)
@@ -173,12 +173,12 @@ en:
   venue_about:
     html: |      
       <p><b>Centro Argentino de Ingenieros</b> gathers students, professionals, companies, entities and organizations that acknowledge the strategic value of engineering and sustainable development in modern society, and work for it to make life better.</p>
-      <h3>Tourism</h3>      
+      <h3><i class="fa fa-suitcase" style="color:rgba(237, 28, 36, 0.75)"></i> Tourism</h3>      
       <p style="font-size:14px"><a href="http://www.turismo.gov.ar/indexfse.html" target="_blank">Argentine</a> official's turism country page / <a href="http://en.wikipedia.org/wiki/Argentina" target="_blank">wikipedia</a></br>
       <a href="http://www.turismo.buenosaires.gob.ar/en" title="Autonomous City of Buenos Aires">Buenos Aires</a> official's turism city page / <a href="http://en.wikipedia.org/wiki/Buenos_Aires" target="_blank">wikipedia</a></p>
       <h3>Transport</h3>
-      <p style="font-size:14px">Ministro Pistarini International Airport <a href="http://www.openstreetmap.org/#map=14/-34.8222/-58.5358" target="_blank">OSM</a> / <a href="http://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport" target="_blank">wikipedia</a></br>
-      Retiro Bus Station <a href="http://www.openstreetmap.org/way/20371249" target="_blank">OSM</a> / <a href="http://en.wikipedia.org/wiki/Retiro_bus_station" title="Retiro Bus Station" target="_blank">wikipedia</a></p>
+      <p style="font-size:14px"><i class="fa fa-plane" style="color:rgba(237, 28, 36, 0.75)"></i> Ministro Pistarini International Airport <a href="http://www.openstreetmap.org/#map=14/-34.8222/-58.5358" target="_blank">OSM</a> / <a href="http://en.wikipedia.org/wiki/Ministro_Pistarini_International_Airport" target="_blank">wikipedia</a></br>
+      <i class="fa fa-road" style="color:rgba(237, 28, 36, 0.75)"></i> Retiro Bus Station <a href="http://www.openstreetmap.org/way/20371249" target="_blank">OSM</a> / <a href="http://en.wikipedia.org/wiki/Retiro_bus_station" title="Retiro Bus Station" target="_blank">wikipedia</a></p>
   abstract_disclaimer:
     html: |
       <h4>Before uploading your abstract, keep the following in mind:</h4>

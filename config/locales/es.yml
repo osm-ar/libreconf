@@ -125,7 +125,7 @@ es:
   registration: Registración
   registration_foreigns: Registración internacional
   registration_foreigns_button: Registro en Eventbrite
-  registration_foreigns_text: La inscripción para no residentes en Argentina ya se encuentra abierta.
+  registration_foreigns_text: La inscripción ya se encuentra abierta.
   registration_locals: Registración para argentinos
   registration_locals_button: Registro en Eventioz
   registration_locals_text: Próximamente se abrirá la inscripción para argentinos a través de un sistema que utilice sistemas de pagos locales.
@@ -187,8 +187,8 @@ es:
       <p style="font-size:14px"><a href="http://www.turismo.gov.ar/indexfs.html" target="_blank">Argentina</a>: Sitio oficial de turismo / <a href="http://es.wikipedia.org/wiki/Argentina" target="_blank">wikipedia</a></br>
       <a href="http://www.turismo.buenosaires.gob.ar" title="Ciudad Autónoma de Buenos Aires">Buenos Aires</a>:  Sitio oficial de turismo / <a href="http://es.wikipedia.org/wiki/Buenos_Aires" target="_blank">wikipedia</a></p>
       <h3>Transporte</h3>
-      <p style="font-size:14px">Aeropuerto Internacional Ministro Pistarini (EZE) (<a href="http://www.openstreetmap.org/#map=14/-34.8222/-58.5358" target="_blank">OSM</a> / <a href="http://es.wikipedia.org/wiki/Aeropuerto_Internacional_Ministro_Pistarini" target="_blank">Wikipedia</a>)</br>
-      Estación de Bus Retiro (<a href="http://www.openstreetmap.org/way/20371249" target="_blank">OSM</a> / <a href="http://es.wikipedia.org/wiki/Estaci%C3%B3n_Retiro" title="Estación Retiro" target="_blank">Wikipedia</a>)</p>
+      <p style="font-size:14px"><i class="fa fa-plane" style="color:rgba(237, 28, 36, 0.75)"></i> Aeropuerto Internacional Ministro Pistarini (EZE) (<a href="http://www.openstreetmap.org/#map=14/-34.8222/-58.5358" target="_blank">OSM</a> / <a href="http://es.wikipedia.org/wiki/Aeropuerto_Internacional_Ministro_Pistarini" target="_blank">Wikipedia</a>)</br>
+      <i class="fa fa-road" style="color:rgba(237, 28, 36, 0.75)"></i> Estación de Bus Retiro (<a href="http://www.openstreetmap.org/way/20371249" target="_blank">OSM</a> / <a href="http://es.wikipedia.org/wiki/Estaci%C3%B3n_Retiro" title="Estación Retiro" target="_blank">Wikipedia</a>)</p>
   abstract_disclaimer:
     html: |
       <h4>Antes de cargar tu resumen tené en cuenta lo siguiente:</h4>
