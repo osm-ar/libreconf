@@ -68,10 +68,10 @@ en:
   no: No
   switch_lang: 
     html: |
-      <a href="/?l=es" title="Cambiar a Español" class="switch-lang">Cambiar a Español</a>
+      <a href="/?l=es" title="Cambiar a Español" class="switch-lang">Español</a>
   switch_lang_phone: 
     html: |
-      <a href="/?l=es" title="Cambiar a Español" class="switch-lang-phone">Cambiar a Español</a>
+      <a href="/?l=es" title="Cambiar a Español" class="switch-lang-phone">Español</a>
   status: Status
   type: Type
   sign_in: Login

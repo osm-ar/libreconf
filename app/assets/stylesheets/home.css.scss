@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+a { text-decoration: underline;}
+a.social-buttons { text-decoration: none;}
 .banner {
   margin-top:0;
   //min-height: 100%;
@@ -14,7 +16,7 @@
   h1 {
     font-size:3.2em;
     line-height:.9em;
-    margin: 15px 5px 5px 0;
+    margin: 10px 5px 5px 0;
 
     span {
       color: #4db3c5;
@@ -134,7 +136,6 @@
 }
 
 #map {
-  height: 650px;
 }
 
 .row.same-height{
