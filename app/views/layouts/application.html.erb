@@ -8,7 +8,7 @@
     <%= csrf_meta_tags %>
     <meta property="og:type" content="event" />
     <meta property="og:url" content="http://www.stateofthemap.org" />
-    <meta property="og:start_time" content="2014-011-07T00:00:00+00:00" />
+    <meta property="og:start_time" content="2014-11-07T00:00:00+00:00" />
     <meta property="og:description" content="7th-9th Nov, Buenos Aires" />
     <meta property="og:title" content="State of the Map 2014" />
     <meta property="og:image" content="http://2014.stateofthemap.org/assets/logo_full.png" />
@@ -25,9 +25,15 @@
     <%= analytics_init if Rails.env.production? %>
   </head>
   <body>
-    <%= render 'layouts/messages' %>
+    
+      <% if request.original_url.include?('admin') %>
+      <%= render 'layouts/menu' %>
+      <%= render 'layouts/messages' %>
+      <div class="row block"><%= yield %></div>
+      <% else %>
       <%= render 'layouts/header' %>
       <%= yield %>
+      <% end %>
       <%= render 'layouts/footer' %>
 
     <!-- Javascripts

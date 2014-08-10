@@ -84,6 +84,8 @@ en:
   conference_date: November 7th - 9th
   conference_venue: Yet unknown
   conference_location: Buenos Aires, Argentina
+  call_for_presentations: Call for Presentations
+  CfP: CfP 
   map_credits: 
     html: |
       Map data © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox, Logo made by M. Inés Szychowski and licensed under <a rel="license" href="//creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International license</a>.
@@ -129,10 +131,11 @@ en:
   twitter_last_tweets: Last tweets
   twitter_follow: Follow @sotm2014
   twitter_tweet: Tweet
-  twitter_text: FOSS4G Buenos Aires 2013 - Free Geospatial Software Conference
+  twitter_text: State of the Map 2014
   new_abstract: Upload your Abstract
   news: News
   become_sponsor: Become Sponsor
+  abstract_created: Abstract successfully created ¡Thanks!
   confirmed_workshops: Confirmed Workshops
   confirmed_talks: Confirmed Talks
   about_the_conference: About the Conference
@@ -144,6 +147,9 @@ en:
   website: Website development and design
   sponsors_southamerica: Southamerican sponsors
   sponsors_international: International sponsors
+  tourism: Tourism
+  transportation: Transportation
+  accomodation: Accomodation
   isologo_about: 
     html: |
       <p>Our isologo is about an icon of the city, the Obelisk of Buenos Aires (<a href="http://en.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">wikipedia</a>), and a couple dancing the typical Argentine Tango (<a href="http://en.wikipedia.org/wiki/Argentine_tango" target="_blank">wikipedia</a>) representing the passion, that what made OpenStreetMap possible. 

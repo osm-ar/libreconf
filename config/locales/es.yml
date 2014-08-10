@@ -93,6 +93,8 @@ es:
   conference_date: 7 al 9 de noviembre
   conference_venue: A confirmar
   conference_location: Buenos Aires, Argentina
+  call_for_presentations: Proponer presentación
+  CfP: CfP 
   map_credits: 
     html: |
       Datos de mapa © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donar</a>, Tiles © Mapbox, Logo hecho por M. Inés Szychowski licenciado bajo <a rel="license" href="//creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International license</a>.
@@ -154,6 +156,9 @@ es:
   website: Desarrollo del sitio web
   sponsors_southamerica: Auspiciantes sudamericanos
   sponsors_international: Auspiciantes internacionales
+  tourism: Turismo
+  transportation: Transporte
+  accomodation: Hospedaje
   isologo_about: 
     html: |
       <p>El isologo contiene un ícono de la ciudad, el Obelisco de Buenos Aires (<a href="http://es.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">Wikipedia</a>), y una pareja bailando el típico Tango argentino (<a href="http://es.wikipedia.org/wiki/Tango" target="_blank">Wikipedia</a>) representando la pasión, un sentimiento que hizo a OpenStreetMap lo que es hoy en día. 
