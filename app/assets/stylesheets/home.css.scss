@@ -135,7 +135,9 @@ a.social-buttons { text-decoration: none;}
   padding-top: 10px;
 }
 
-#map {
+#map>div.leaflet-map-pane {
+  position:relative;
+
 }
 
 .row.same-height{
