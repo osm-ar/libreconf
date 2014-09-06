@@ -9,6 +9,7 @@ To setup the application locally
 --------------------------------
 
 0. Install dependencies. On ubuntu you need the following packages:
+
         sudo apt-get update
         sudo apt-get install git
         sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
