@@ -2,6 +2,9 @@
 <div class="row block translucid-white"> 
 
       <div class="col-sm-6 col-xs-12 same-height" style="text-align:center;">
-        <h3><i class="fa fa-warning" style="color:rgba(237, 28, 36, 0.75)"></i> <%=t :cfp_alert %></h3>
+        <h3><i class="fa fa-warning" style="color:rgba(237, 28, 36, 0.75)"></i>
+        <%=link_to t(:CfP), controller: "pages", action: "CfP" %></h3>
+        <p><%=t :cfp_alert %></p>
+        
       </div>
 </div>
