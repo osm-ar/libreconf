@@ -8,6 +8,15 @@ This app was created for the FOSS4G Buenos Aires 2013.
 To setup the application locally
 --------------------------------
 
+0. Install dependencies. On ubuntu you need the following packages:
+
+        sudo apt-get update
+        sudo apt-get install git
+        sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
+        sudo apt-get install postgresql postgresql-contrib libpq-dev 
+        sudo apt-get install sqlite3 libsqlite3-dev
+        sudo apt-get install nodejs
+
 1. Install [RVM](https://rvm.io/)
 
 2. Install Ruby 2.1.1
@@ -48,6 +57,6 @@ To setup the application locally
     
         rails server
 
-11. Navegate the app
+11. Open the site in your browser
 
     [http://localhost:3000](http://localhost:3000)
