@@ -12,7 +12,7 @@ en:
         other: Abstract Statuses
       sponsor_type:
         one: Sponsor Type
-        other: Sponsor Types
+        other:  Sponsor Types
       speaker:
         one: Speaker
         other: Speakers
@@ -136,6 +136,13 @@ en:
   twitter_follow_us: Follow us
   new_abstract: Upload your Abstract
   news: News
+  sponsors: Our sponsors
+  tungsten: Tungsten carbide
+  platinum: Platinum
+  diamond:  Diamond
+  gold: Gold
+  silver: Silver
+  bronze: Bronze
   become_sponsor: Become Sponsor
   abstract_created: Abstract successfully created ¡Thanks!
   confirmed_workshops: Confirmed Workshops
