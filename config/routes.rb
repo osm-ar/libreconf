@@ -26,6 +26,6 @@ Libreconf::Application.routes.draw do
   match 'hospedaje' => 'pages#accomodation', :via => :get
   match 'transportation' => 'pages#transportation', :via => :get
   match 'press' => 'pages#press', :via => :get
-  match 'program' => 'program#program', :via => :get
+  match 'program' => 'pages#program', :via => :get
   #ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
 end
