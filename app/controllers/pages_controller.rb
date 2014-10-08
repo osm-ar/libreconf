@@ -19,6 +19,13 @@ class PagesController < ApplicationController
       render :CfP_es
     end
   end
+  def CfP
+    if(I18n.locale == :en )
+      render :program
+    else
+      render :program
+    end
+  end
   def videos
   end
   def press
