@@ -168,7 +168,14 @@ es:
   tourism: Turismo
   transportation: Transporte
   press: Prensa
-  accomodation: Hospedaje
+  accomodation: Hospedaje  
+  program: Programa
+  break: Corte
+  opening: Apertura
+  closing: Cierre
+  lunch: Almuerzo
+  snack: Merienda
+  hour: Hora
   isologo_about: 
     html: |
       <p>El isologo contiene un ícono de la ciudad, el Obelisco de Buenos Aires (<a href="http://es.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">Wikipedia</a>), y una pareja bailando el típico Tango argentino (<a href="http://es.wikipedia.org/wiki/Tango" target="_blank">Wikipedia</a>) representando la pasión, un sentimiento que hizo a OpenStreetMap lo que es hoy en día. 
