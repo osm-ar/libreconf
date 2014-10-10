@@ -31,9 +31,9 @@ class PagesController < ApplicationController
   end
   def program
     if(I18n.locale == :en )
-      render :program
+      render :programme
     else
-      render :program
+      render :programa
     end
   end  
   def calendar
