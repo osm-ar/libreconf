@@ -170,12 +170,41 @@ es:
   press: Prensa
   accomodation: Hospedaje  
   program: Programa
+  professional_day: Dia Profesional
+  community_day: Dia de la Comunidad
   break: Corte
+  checkin: Acreditación
   opening: Apertura
   closing: Cierre
+  group_photo: Foto grupal
+  breakfast: Desayuno
   lunch: Almuerzo
   snack: Merienda
   hour: Hora
+  sunday: Domingo
+  friday: Viernes
+  saturday: Sabado
+  included: included
+  US: United States
+  UK: United Kingdom
+  JA: Japan
+  AR: Argentine
+  BR: Brazil
+  BE: Belgium
+  FI: Suomi
+  CH: Switzerland
+  SE: Sweden
+  NI: Nigeria
+  IN: India
+  PA: Palestine
+  FR: France
+  BO: Bolivia
+  NL: Netherlands
+  DE: Germany
+  PL: Poland
+  QA: Qatar
+  CO: Colombia
+  RO: Romania
   isologo_about: 
     html: |
       <p>El isologo contiene un ícono de la ciudad, el Obelisco de Buenos Aires (<a href="http://es.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">Wikipedia</a>), y una pareja bailando el típico Tango argentino (<a href="http://es.wikipedia.org/wiki/Tango" target="_blank">Wikipedia</a>) representando la pasión, un sentimiento que hizo a OpenStreetMap lo que es hoy en día. 

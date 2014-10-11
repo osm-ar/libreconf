@@ -160,12 +160,41 @@ en:
   transportation: Transportation
   accomodation: Accomodation
   program: Program
+  professional_day: Professional Day
+  community_day: Community Day
   break: Break
+  checkin: Check-in
   opening: Opening
   closing: Closing
+  group_photo: Group photo
+  breakfast: Breakfast
   lunch: Lunch
   snack: Snack
   hour: Hour
+  sunday: Sunday
+  friday: Friday
+  saturday: Saturday
+  included: included
+  US: United States
+  UK: United Kingdom
+  JA: Japan
+  AR: Argentine
+  BR: Brazil
+  BE: Belgium
+  FI: Suomi
+  CH: Switzerland
+  SE: Sweden
+  NI: Nigeria
+  IN: India
+  PA: Palestine
+  FR: France
+  BO: Bolivia
+  NL: Netherlands
+  DE: Germany
+  PL: Poland
+  QA: Qatar
+  CO: Colombia
+  RO: Romania
   isologo_about: 
     html: |
       <p>Our isologo is about an icon of the city, the Obelisk of Buenos Aires (<a href="http://en.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">wikipedia</a>), and a couple dancing the typical Argentine Tango (<a href="http://en.wikipedia.org/wiki/Argentine_tango" target="_blank">wikipedia</a>) representing the passion, that what made OpenStreetMap possible. 
