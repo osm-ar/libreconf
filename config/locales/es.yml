@@ -102,7 +102,10 @@ es:
   developed_by: Desarrollado por
   powered_by: Hecho con
   program: Programa
+  program_alert:  Este programa puede estar sujeto a cambios.
   full_program: Programa Completo
+  main_track: Track principal
+  parallel_track: Track paralelo
   get_in_touch: Haz contacto
   contact_form: Formulario de contacto
   name: Nombre
@@ -210,6 +213,9 @@ es:
   QA: Qatar
   CO: Colombia
   RO: Rumania
+  CA: Canadá
+  osm_agm: Reunión General Anual de la Fundación OSM
+  osm_latam_2nd_meeting: OSM Latinoamérica - 2da Ronda
   buses: Buses
   station: estación
   keynote: Keynote

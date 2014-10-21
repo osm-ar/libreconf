@@ -93,7 +93,10 @@ en:
   developed_by: Developed by
   powered_by: Powered by
   program: Program
+  program_alert:  This program may still be subject to change.
   full_program: Full Program
+  main_track: Main track
+  parallel_track: Parallel track
   get_in_touch: Get in touch
   contact_form: Contact form
   name: Name
@@ -200,6 +203,9 @@ en:
   QA: Qatar
   CO: Colombia
   RO: Romania
+  CA: Canada
+  osm_agm: OSM Foundation Annual General Meeting
+  osm_latam_2nd_meeting: OSM Latinoamerican Meeting
   buses: Buses
   station: station
   keynote: Keynote
