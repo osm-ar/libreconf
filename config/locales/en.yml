@@ -12,7 +12,7 @@ en:
         other: Abstract Statuses
       sponsor_type:
         one: Sponsor Type
-        other: Sponsor Types
+        other:  Sponsor Types
       speaker:
         one: Speaker
         other: Speakers
@@ -86,14 +86,17 @@ en:
   conference_location: Buenos Aires, Argentina
   call_for_presentations: Call for Presentations
   CfP: Call for Presentations
-  cfp_alert:  The deadline for abstracts submission was extended to September 14th. 
+  cfp_alert:  Presentations are being evaluated. Coming soon we will publish the programme.
   map_credits: 
     html: |
       Map data © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL) ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donate</a>, Tiles © Mapbox, Logo made by M. Inés Szychowski and licensed under <a rel="license" href="//creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International license</a>.
   developed_by: Developed by
   powered_by: Powered by
   program: Program
+  program_alert:  This program may still be subject to change.
   full_program: Full Program
+  main_track: Main track
+  parallel_track: Parallel track
   get_in_touch: Get in touch
   contact_form: Contact form
   name: Name
@@ -136,6 +139,13 @@ en:
   twitter_follow_us: Follow us
   new_abstract: Upload your Abstract
   news: News
+  sponsors: Our sponsors
+  tungsten: Tungsten carbide
+  platinum: Platinum
+  diamond:  Diamond
+  gold: Gold
+  silver: Silver
+  bronze: Bronze
   become_sponsor: Become Sponsor
   abstract_created: Abstract successfully created ¡Thanks!
   confirmed_workshops: Confirmed Workshops
@@ -152,6 +162,56 @@ en:
   tourism: Tourism
   transportation: Transportation
   accomodation: Accomodation
+  program: Program
+  professional_day: Professional Day
+  community_day: Community Day
+  break: Break
+  checkin: Check-in
+  opening: Opening
+  closing: Closing
+  group_photo: Group photo
+  breakfast: Breakfast
+  lunch: Lunch
+  snack: Snack
+  hour: Hour
+  sunday: Sunday
+  sunday_9: Sunday 9th
+  thursday: Thursday
+  thursday_6: Thursday 6th
+  friday: Friday
+  friday_7: Friday 7th
+  saturday: Saturday
+  saturday_8: Saturday 8th
+  included: included
+  US: United States
+  UK: United Kingdom
+  JA: Japan
+  AR: Argentine
+  BR: Brazil
+  BE: Belgium
+  FI: Suomi
+  CH: Switzerland
+  SE: Sweden
+  NI: Nigeria
+  IN: India
+  PA: Palestine
+  FR: France
+  BO: Bolivia
+  NL: Netherlands
+  DE: Germany
+  PL: Poland
+  QA: Qatar
+  CO: Colombia
+  RO: Romania
+  CA: Canada
+  osm_agm: OSM Foundation Annual General Meeting
+  osm_latam_2nd_meeting: OSM Latinoamerican Meeting
+  buses: Buses
+  station: station
+  keynote: Keynote
+  welcome_cocktail: Welcome Cocktail
+  at: At
+  welcome_coctail_abs: Lets enjoy a relaxing night just before the first day of the conference!
   isologo_about: 
     html: |
       <p>Our isologo is about an icon of the city, the Obelisk of Buenos Aires (<a href="http://en.wikipedia.org/wiki/Obelisco_de_Buenos_Aires" target="_blank">wikipedia</a>), and a couple dancing the typical Argentine Tango (<a href="http://en.wikipedia.org/wiki/Argentine_tango" target="_blank">wikipedia</a>) representing the passion, that what made OpenStreetMap possible. 
