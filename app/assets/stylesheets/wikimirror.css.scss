@@ -1,0 +1,28 @@
+
+.wikicontent a.new {
+  color:RED;
+}
+
+.wikicontent TABLE.wikitable {
+   border-style:solid;
+   border-width:1px;
+   border-color:#aaa;
+   background: #f9f9f9;
+   border-collapse: collapse;
+   font-size: 95%;
+}
+ 
+.wikicontent TABLE.wikitable TD {
+   padding:4px;
+   border-style:solid;
+   border-width:1px;
+   border-color:#aaa;
+}
+.wikicontent TABLE.wikitable TH {
+   padding:4px;
+   background-color:#E9E9E9;
+   border-style:solid;
+   border-width:1px;
+   border-color:#aaa;
+}
+ 

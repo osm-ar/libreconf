@@ -1,5 +1,6 @@
 Libreconf::Application.routes.draw do
 
+  	
   resources :workshops, path: 'admin/workshops'
 
   resources :speakers, path: 'admin/speakers'
@@ -20,6 +21,7 @@ Libreconf::Application.routes.draw do
 
   match 'contact' => 'contact#new', :via => :get
   match 'contact' => 'contact#create', :via => :post
+  
   match 'tourism' => 'pages#tourism', :via => :get
   match 'CfP' => 'pages#CfP', :via => :get
   match 'accomodation' => 'pages#accomodation', :via => :get
@@ -27,4 +29,9 @@ Libreconf::Application.routes.draw do
   match 'transportation' => 'pages#transportation', :via => :get
   match 'press' => 'pages#press', :via => :get
   #ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
+  
+  match 'sessions' => 'wiki_mirror#session_list', :via => :get 
+  match 'sessions/:year' => 'wiki_mirror#session_list', :via => :get
+  
+  match 'session/*title' => 'wiki_mirror#sessn', :via => :get
 end
