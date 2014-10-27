@@ -1,9 +1,9 @@
 class WikiMirrorController < ApplicationController
 	
   PREFIX_LINK_MAP = { "SotM_2011_session:_" => "/session/SotM_2011_session:_",
-                      "State_Of_The_Map_2011" => "/sessions/2011",
+                      "State_Of_The_Map_2011" => "/program/2011",
                       "SotM_2014_session:_" => "/session/",
-                      "State_Of_The_Map_2014" => "/sessions"}
+                      "State_Of_The_Map_2014" => "/program"}
                       
   CACHE_TIME_TO_LIVE = 60 #in seconds
   
@@ -33,14 +33,14 @@ class WikiMirrorController < ApplicationController
   
   
   # Display a session list page
-  def session_list
+  def program
     @year = params[:year] || "2014"
     content = wiki_mirror("State_Of_The_Map_#{@year}")
     
     # Find whatever the session list section is called on the wiki page, and remove all
     # proceeding and trailing sections from the content
     
-    possibleHeadings = ["Sessions", "Sessions list", "Programme", "Conference Program"]
+    possibleHeadings = ["Sessions", "Sessions list", "Programme", "Program", "Conference Program"]
     
     found = false
     possibleHeadings.each do |heading|
@@ -101,6 +101,8 @@ private
     
     file = cacheDir + "/" + fileTitle + ".html"
     
+    @cache_comment = ""
+    
     if !File.exist?(file) or File.zero?(file) or (Time.now - File.stat(file).mtime > CACHE_TIME_TO_LIVE )
      
        puts "Getting from #{url}"
@@ -117,17 +119,16 @@ private
        File.open(file, "w+") do |f|
           f.write(content)
        end
-       puts "Written to cache file '#{file}'"
-       
+       @cache_comment = "Written to cache file '#{file}'"
     else  
-       puts "Getting from cache #{file}"
-       content = File.read(file)     
+       content = File.read(file)
+       @cache_comment = "Read from cache file '#{file}' (age: " + (Time.now - File.stat(file).mtime).to_i.to_s + ")"
     end
+    puts @cache_comment
     
     #Remove all the wiki head, menus, footer etc:
     content = chompleft(content, "class=\"mw-content-ltr\">", true)
     content = chompright(content,"<div class=\"printfooter\">", true)
-    
     content = chompright(content,"<!-- \nNewPP limit report", true)
     
     #Lose the rel=nofollows. Assume we're spam free and let's give some google love
@@ -143,6 +144,8 @@ private
     content.gsub!(" href=\"/w/",       " href=\"http://wiki.openstreetmap.org/w/")
     #and deep link images from the wiki
     content.gsub!(" src=\"/w/images/", " src=\"http://wiki.openstreetmap.org/w/images/")
+    
+    content.gsub!('<div style="width:52px;"><a href="http://wiki.openstreetmap.org/wiki/File:Ambox_warning_pn.svg" class="image" title="Warning"><img alt="Warning" src="http://wiki.openstreetmap.org/w/images/thumb/1/15/Ambox_warning_pn.svg/40px-Ambox_warning_pn.svg.png" width="40" height="34" srcset="/w/images/thumb/1/15/Ambox_warning_pn.svg/60px-Ambox_warning_pn.svg.png 1.5x, /w/images/thumb/1/15/Ambox_warning_pn.svg/80px-Ambox_warning_pn.svg.png 2x" /></a></div>', '<i class="fa fa-warning" style="color:rgba(237, 28, 36, 0.75); font-size:2em; margin:3px;"></i>')
     
     return content
   end     

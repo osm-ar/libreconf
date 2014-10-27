@@ -1,4 +1,10 @@
 
+.wikicontent {
+   background:white;
+   margin:10px 25px 10px 25px;
+   padding:30px;
+}
+
 .wikicontent a.new {
   color:RED;
 }
@@ -10,6 +16,7 @@
    background: #f9f9f9;
    border-collapse: collapse;
    font-size: 95%;
+   margin:2px;
 }
  
 .wikicontent TABLE.wikitable TD {
@@ -25,4 +32,7 @@
    border-width:1px;
    border-color:#aaa;
 }
- 
+
+a.wikilink {
+   margin:10px 25px 10px 25px;
+}

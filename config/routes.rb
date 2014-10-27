@@ -28,13 +28,12 @@ Libreconf::Application.routes.draw do
   match 'hospedaje' => 'pages#accomodation', :via => :get
   match 'transportation' => 'pages#transportation', :via => :get
   match 'press' => 'pages#press', :via => :get
-  match 'program' => 'pages#program', :via => :get
   match 'calendar' => 'pages#calendar', :via => :get
   match 'calendario' => 'pages#calendar', :via => :get
   #ActionDispatch::Routing::Translator.translate_from_file('config/locales/routes.yml')
   
-  match 'sessions' => 'wiki_mirror#session_list', :via => :get 
-  match 'sessions/:year' => 'wiki_mirror#session_list', :via => :get
+  match 'program' => 'wiki_mirror#program', :via => :get 
+  match 'program/:year' => 'wiki_mirror#program', :via => :get
   
   match 'session/*title' => 'wiki_mirror#sessn', :via => :get
 end
