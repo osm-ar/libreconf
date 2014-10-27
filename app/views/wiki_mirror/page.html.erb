@@ -1,0 +1,16 @@
+<div id="session" class="row block">
+  <div class="col-xs-12 col-sm-12">
+  
+    <h1 style="margin:55px 25px 20px 25px;"><i class="fa fa-calendar" style="color:rgba(237, 28, 36, 0.75)"></i> <%=@page_title || "Untitled" %></h1>
+    
+    <div class="wikicontent">
+      <!-- WIKI MIRROR CONTENT -->
+      <%=@mirror_content.html_safe %>
+      <!-- END OF WIKI MIRROR CONTENT -->
+    </div>
+    
+    <%= link_to "View/Edit this page on the OpenStreetMap wiki", @wiki_url, { :class => 'wikilink' }  %>
+    <!-- <%=@cache_comment.html_safe %> -->
+  </div>
+</div>
+
