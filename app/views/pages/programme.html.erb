@@ -1,0 +1,516 @@
+<div id="program" class="row block">
+  <div class="col-xs-12 col-sm-12">
+    <h1 class=""><i class="fa fa-calendar" style="color:rgba(237, 28, 36, 0.75)"></i> <%=t :program %></h1>
+
+	<div class="row block translucid-white"> 
+
+      <div class="col-xs-12" style="text-align:center;">
+        <h3><i class="fa fa-warning" style="color:rgba(237, 28, 36, 0.75)"></i> <%=t :program_alert %></h3>
+      </div>
+	</div>	
+		<div id="" class="row">
+
+<!--
+<table class="table table-stripped table-hover" style="font-size:18px">
+	<tr>
+		<td align="left" valign="bottom" style="vertical-align:bottom;" bgcolor="#88c2cb"><h4><%=t :hour %></h4></td>
+		<td colspan="6" align="left" valign="top" bgcolor="#88c2cb"><h2><%=t :thursday_6 %> - <%=t :welcome_coctail %></h2></td>
+	</tr>
+	<tr>
+		<td style="" align="left" valign="top" class="hour">20:00</td>
+		<td colspan="6" align="left" valign="top">
+			<h4><%=t :at %> <a href="http://ccmatienzo.com.ar" target="_blank" title="Centro Cultural Matienzo">CCMatienzo</a></h4>
+			<p><h4><%=t :welcome_coctail_abs %></h4><br>Pringles 1249 y Av. Córdoba, Villa Crespo, Buenos Aires, Argentina.
+			<br>
+			<%=t :buses %>: 15, 19, 36, 39, 57, 92, 99, 106, 109, 110, 127, 140, 141, 151, 160, 168.<br>
+			Subte B <%=t :station %> Angel Gallardo.
+			</p>
+		</td>
+	</tr>
+</table>
+-->
+
+<table class="table table-stripped table-hover" style="">
+	<colgroup id="hora">
+    	<col span="1" style="border-right:0px solid #aaa; font-size:18px;"></col>
+    </colgroup>
+	<colgroup id="track1">
+    	<col span="4" style="background-color:#FFF; font-size:13px"></col>
+    </colgroup>
+	<tr>
+		<td align="left" valign="bottom" style="vertical-align:bottom;" bgcolor="#88c2cb"><h4><%=t :hour %></h4></td>
+		<td colspan="4" align="left" valign="top" bgcolor="#88c2cb"><h2><%=t :friday_7 %> - <%=t :professional_day %></h2></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,375" sdnum="11274;0;H:MM">9:00</td>
+		<td colspan=4 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :acreditation %> - <%=t :opening %></h4></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,395833333333333" sdnum="11274;0;H:MM">9:30</td>
+		<td colspan=4 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :breakfast %>  (<%=t :included %>)</h4></td>
+	</tr>
+	<tr>
+		<td style="" height="55" align="center" sdval="0,416666666666667" sdnum="11274;0;H:MM">10:00</td>
+		<td align="left" valign=top>Mike Cunningham</td>
+		<td align="left" valign=top>A consumer mapping app built entirely on open code and open data</td>
+		<td align="left" valign=middle>Mapzen</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,4375" sdnum="11274;0;H:MM">10:30</td>
+		<td align="left" valign=bottom>Stefan Keller</td>
+		<td align="left" valign=bottom>OpenStreetMap Data Wrangling for Spatial Analysis and Professional Use</td>
+		<td align="left" valign=middle>University of Applied Sciences Rapperswil (UAS HSR)</td>
+		<td align="left" valign=middle class="country"><%=t :CH %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,458333333333333" sdnum="11274;0;H:MM">11:00</td>
+		<td colspan=4 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :break %></h4></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,479166666666667" sdnum="11274;0;H:MM">11:30</td>
+		<td align="left" valign=bottom>Jen Asbury</td>
+		<td align="left" valign=top>How Corporations Identify Opportunities for OSM Contributions: A Baseline Belief in the Community's Mission</td>
+		<td align="left" valign=middle>MapQuest</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,5" sdnum="11274;0;H:MM">12:00</td>
+		<td align="left" valign=top>Christian Quest</td>
+		<td align="left" valign=top>OSM Quality Assurance thru cross checking statistics and external datasets</td>
+		<td align="left" valign=middle>OpenStreetMap France</td>
+		<td align="left" valign=middle class="country"><%=t :FR %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,520833333333333" sdnum="11274;0;H:MM">12:30</td>
+		<td align="left" valign=top>Francisco Javier Rodríguez Arias, Nicolás Lichtmaier</td>
+		<td align="left" valign=top>Making the world computable using Wolfram Technologies and OpenStreetMap data</td>
+		<td align="left" valign=middle>Wolfram Research</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,541666666666667" sdnum="11274;0;H:MM">13:00</td>
+		<td colspan=4 rowspan=3 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :lunch %> (<%=t :included %>)</h4></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,5625" sdnum="11274;0;H:MM">13:30</td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,583333333333333" sdnum="11274;0;H:MM">14:00</td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,604166666666667" sdnum="11274;0;H:MM">14:30</td>
+		<td align="left" valign=top>Kevin Bullock</td>
+		<td align="left" valign=top>Leveled up mapping with WorldView-3</td>
+		<td align="left" valign=middle>DigitalGlobe</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,625" sdnum="11274;0;H:MM">15:00</td>
+		<td align="left" valign=top>Nicole Beringer</td>
+		<td align="left" valign=top>OSM on wheels</td>
+		<td align="left" valign=middle>Elektrobit Automotive GmbH</td>
+		<td align="left" valign=middle class="country"><%=t :DE %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,645833333333333" sdnum="11274;0;H:MM">15:30</td>
+		<td align="left" valign=top>Sebastian Mattheis</td>
+		<td align="left" valign=top>Putting Big Data on the Map</td>
+		<td align="left" valign=middle>BMW Car IT GmbH</td>
+		<td align="left" valign=middle class="country"><%=t :DE %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,666666666666667" sdnum="11274;0;H:MM">16:00</td>
+		<td align="left" valign=bottom>Julián Perelli</td>
+		<td align="left" valign=bottom>Transporte público al alcance de todos</td>
+		<td align="left" valign=middle>CualBondi</td>
+		<td align="left" valign=middle class="country"><%=t :AR %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,6875" sdnum="11274;0;H:MM">16:30</td>
+		<td colspan=4 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :snack %></h4></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,708333333333333" sdnum="11274;0;H:MM">17:00</td>
+		<td align="left" valign=top>Brett Camper - Mapzen</td>
+		<td align="left" valign=top>Tangram: an open-source WebGL engine for real-time 2D and 3D maps</td>
+		<td align="left" valign=middle>Mapzen</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,729166666666667" sdnum="11274;0;H:MM">17:30</td>
+		<td align="left" valign=bottom>Martijn van Exel</td>
+		<td align="left" valign=top>OpenStreetMap and Telenav; Past, Present And Future</td>
+		<td align="left" valign=middle>Telenav</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,75" sdnum="11274;0;H:MM">18:00</td>
+		<td align="left" valign=top>Oscar Sergio Miranda</td>
+		<td align="left" valign=top>Caminos y accesos Nacionales Para el Control y Fiscalización del Bosque y la Tierra -  ABT</td>
+		<td align="left" valign=middle>Autoridad en fiscalización y control social de Bosques y Tierras - ABT</td>
+		<td align="left" valign=middle class="country"><%=t :BO %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,770833333333333" sdnum="11274;0;H:MM">18:30</td>
+		<td align="left" valign=top>Pedro Ferraz Cruz</td>
+		<td align="left" valign=top>OpenStreetMap como una herramienta para la gestión ambiental en Brasil</td>
+		<td align="left" valign=top>IBAMA - Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis</td>
+		<td align="left" valign=top class="country"><%=t :BR %></td>
+	</tr>
+	<tr>
+		<td style="" align="center" sdval="0,791666666666667" sdnum="11274;0;H:MM">19:00</td>
+		<td colspan=4 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :snack %></h4></td>
+	</tr>
+
+</table>
+<table class="table table-hover" border="0">
+	<colgroup id="hora">
+    	<col span="1" style="border-right:0px solid #aaa; font-size:18px;"></col>
+    </colgroup>
+	<colgroup id="track1">
+    	<col span="4" style="background-color:#FFF; font-size:13px"></col>
+    </colgroup>
+	<colgroup id="separador">
+    	<col span="1" cellpadding="0" style="background-color:#eee; border-left:10px solid rgba(8, 34, 67, 0.10); width: 0 !important;"></col>
+    </colgroup>
+	<colgroup id="track2">
+    	<col span="4" style="background-color:#eee; font-size:13px"></col>
+    </colgroup>
+	<tr>
+		<td rowspan="2" align="left" valign="bottom" style="vertical-align:bottom;" bgcolor="#88c2cb"><h4><%=t :hour %></h4></td>
+		<td colspan="11" align="left" valign="top" bgcolor="#88c2cb"><h2><%=t :saturday_8 %> - <%=t :community_day %></h2></td>
+	</tr>
+	<tr>
+		<td colspan=4 align="center" valign=middle bgcolor="#88c2cb"><h4><%=t :main_track %></h4></td>
+		<td colspan=4 align="center" valign=middle bgcolor="#88c2cb"><h4><%=t :parallel_track %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,375" sdnum="11274;0;H:MM">9:00</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :opening %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,395833333333333" sdnum="11274;0;H:MM">9:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :breakfast %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,416666666666667" sdnum="11274;0;H:MM">10:00</td>
+		<td align="left" valign=top>Sterling Quinn</td>
+		<td align="left" valign=top>The state of OpenStreetMap in South America: A computational and visual analysis</td>
+		<td align="left" valign=bottom>The Pennsylvania State University</td>
+		<td align="left" valign=middle class="country"><%=t :US %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,4375" sdnum="11274;0;H:MM">10:30</td>
+		<td align="left" valign=top>Mauricio Miranda</td>
+		<td align="left" valign=top>Comunidades libres: organización y anarquía</td>
+		<td align="left" valign=middle>Geoinquietos</td>
+		<td align="left" valign=middle class="country"><%=t :AR %></td>
+		<td align="left" valign=top>Rafael Avila Coya (presentación Nº 20)</td>
+		<td align="left" valign=top>Public Health Mapping in Nigeria with OSM</td>
+		<td align="left" valign=middle>eHealth Africa</td>
+		<td align="left" valign=middle>Nigeria</td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,458333333333333" sdnum="11274;0;H:MM">11:00</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :break %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,479166666666667" sdnum="11274;0;H:MM">11:30</td>
+		<td align="left" valign=bottom>José Linhares da Silva</td>
+		<td align="left" valign=top>Mapa Ecológico, onde os viajantes se encontram!</td>
+		<td align="left" valign=bottom><u><font color="#0000FF"><a href="http://mapaecologico.com.br/">mapaecologico.com.br</a></font></u></td>
+		<td align="left" valign=middle class="country"><%=t :BR %></td>
+		<td align="left" valign=top>Fernando Raffo<br>Fernando Javier Umaña<br>Alumnos del CEM</td>
+		<td align="left" valign=top>Posicionando a Río Chico en el mapa. Experiencia de mapeo colectivo con alumnos del Centro de Educación Media Rural de Río Chico, provincia de Río Negro.</td>
+		<td align="left" valign=top>Instituto Nacional de Tecnología Agropecuaria. IDE RN</td>
+		<td align="left" valign=bottom class="country"><%=t :AR %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,5" sdnum="11274;0;H:MM">12:00</td>
+		<td align="left" valign=top>Harry Wood</td>
+		<td align="left" valign=top>The Long Tail of OpenStreetMap</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=top class="country"><%=t :UK %></td>
+		<td align="left" valign=top>Shawn Carrié<br>Sara Al Asfar</td>
+		<td align="left" valign=top>Putting Palestine on the map</td>
+		<td align="left" valign=top>RamallahGeo</td>
+		<td align="left" valign=top class="country"><%=t :PA %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,520833333333333" sdnum="11274;0;H:MM">12:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#9eb0c9"><h4><%=t :group_photo %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,541666666666667" sdnum="11274;0;H:MM">13:00</td>
+		<td colspan=11 rowspan="3" align="center" valign="middle" bgcolor="#a4d3dA"><h4><%=t :lunch %> / <%=t :osm_agm %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,5625" sdnum="11274;0;H:MM">13:30</td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,583333333333333" sdnum="11274;0;H:MM">14:00</td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,604166666666667" sdnum="11274;0;H:MM">14:30</td>
+		<td colspan=11 align="center" bgcolor="#A2C4C9"><h4><%=t :osm_latam_2nd_meeting %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,625" sdnum="11274;0;H:MM">15:00</td>
+		<td align="left" valign=bottom>Peter Neubauer</td>
+		<td align="left" valign=bottom>Mapillary - street level photos for OSM, directly in iD</td>
+		<td align="left" valign=middle>Mapillary</td>
+		<td align="left" valign=middle class="country"><%=t :SE %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,645833333333333" sdnum="11274;0;H:MM">15:30</td>
+		<td align="left" valign=top>Pierre Pezziardi<br>Christian Quest</td>
+		<td align="left" valign=top>French &quot;BANO&quot; address database project: why and how a community initiative get endorsed by a government agency</td>
+		<td align="left" valign=top>Etalab / OSM France</td>
+		<td align="left" valign=top class="country"><%=t :FR %></td>
+		<td align="left" valign=top>Harry Wood</td>
+		<td align="left" valign=top>This year with H.O.T.</td>
+		<td align="left" valign=top>HOT</td>
+		<td align="left" valign=top class="country"><%=t :UK %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,666666666666667" sdnum="11274;0;H:MM">16:00</td>
+		<td align="left" valign=top>Frederik Ramm</td>
+		<td align="left" valign=top>More than Just Data</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=top class="country"><%=t :DE %></td>
+		<td align="left" valign=bottom>Harsha Devulapalli</td>
+		<td align="left" valign=bottom>Producing Open Knowledge through Hyderabad Urban Lab</td>
+		<td align="left" valign=top>Hyderabad Urban Lab</td>
+		<td align="left" valign=top class="country"><%=t :IN %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,6875" sdnum="11274;0;H:MM">16:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :break %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,708333333333333" sdnum="11274;0;H:MM">17:00</td>
+		<td align="left" valign=bottom>Alex Barth</td>
+		<td align="left" valign=bottom>Helping build the best map in the world</td>
+		<td align="left" valign=bottom>Mapbox</td>
+		<td align="left" valign=bottom class="country"><%=t :US %></td>
+		<td align="left" valign=bottom>Severin Menard</td>
+		<td align="left" valign=bottom>Espace OSM Francophone</td>
+		<td align="left" valign=bottom>ProjectEOF</td>
+		<td align="left" valign=bottom class="country"><%=t :FR %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,729166666666667" sdnum="11274;0;H:MM">17:30</td>
+		<td align="left" valign=bottom>Sukhjit Singh Sehra</td>
+		<td align="left" valign=bottom>Topological Error Detection in OpenStreetMap Data.</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=bottom class="country"><%=t :IN %></td>
+		<td align="left" valign=bottom>Luis Hernando Aguilar Ramirez</td>
+		<td align="left" valign=bottom>Impacto de los mapas libres en la atención a los afectados por el tifón Haiyan - Filipinas en 2013 ¿Como los mapas libres ayudan a salvar vidas?</td>
+		<td align="left" valign=bottom>Oficina de las Naciones Unidas para la Coordinación de Asuntos Humanitarios - OCHA</td>
+		<td align="left" valign=top class="country"><%=t :CO %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,75" sdnum="11274;0;H:MM">18:00</td>		
+		<td align="left" valign=bottom>Susanna Ånäs</td>
+		<td align="left" valign=bottom>Wikimaps Expedition</td>
+		<td align="left" valign=bottom>Wikimedia Suomi</td>
+		<td align="left" valign=bottom class="country"><%=t :FI %></td>
+		<td align="left" valign=top>Matías Kalwill</td>
+		<td align="left" valign=top>Bikestorming: Abriendo ciudades con OpenStreetMap</td>
+		<td align="left" valign=top>Bikestorming</td>
+		<td align="left" valign=top class="country"><%=t :AR %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,770833333333333" sdnum="11274;0;H:MM">18:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :snack %></h4></td>
+		</tr>
+</table>
+<table class="table table-hover" border="0">
+	<colgroup id="hora">
+    	<col span="1" style="border-right:0px solid #aaa; font-size:18px;"></col>
+    </colgroup>
+	<colgroup id="track1">
+    	<col span="4" style="background-color:#FFF; font-size:13px"></col>
+    </colgroup>
+	<colgroup id="separador">
+    	<col span="1" cellpadding="0" style="background-color:#eee; border-left:10px solid rgba(8, 34, 67, 0.10); width: 0;"></col>
+    </colgroup>
+	<colgroup id="track2">
+    	<col span="4" style="background-color:#eee; font-size:13px"></col>
+    </colgroup>
+	<tr>
+		<td rowspan="2" align="left" valign="bottom" style="vertical-align:bottom;" bgcolor="#88c2cb"><h4><%=t :hour %></h4></td>
+		<td colspan="11" align="left" valign="top" bgcolor="#88c2cb"><h2><%=t :sunday_9 %> - <%=t :community_day %></h2></td>
+	</tr>
+	<tr>
+		<td colspan=4 align="center" valign=middle bgcolor="#88c2cb"><h4><%=t :main_track %></h4></td>
+		<td colspan=4 align="center" valign=middle bgcolor="#88c2cb"><h4><%=t :parallel_track %></h4></td>
+		</tr>
+	<tr>
+	<tr>
+		<td align="center" sdval="0,375" sdnum="11274;0;H:MM">9:00</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :opening %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,395833333333333" sdnum="11274;0;H:MM">9:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :breakfast %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,416666666666667" sdnum="11274;0;H:MM">10:00</td>
+		<td align="left" valign=top>Ervin Ruci</td>
+		<td align="left" valign=top>Crowd Sourcing Canadian Postal Codes</td>
+		<td align="left" valign=top>Geolytica Inc.</td>
+		<td align="left" valign=top class="country"><%=t :CA %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,4375" sdnum="11274;0;H:MM">10:30</td>
+		<td align="left" valign=top>Beata Jancso</td>
+		<td align="left" valign=top>ScoutSigns: automatic road sign collection during navigation and analysis via JOSM</td>
+		<td align="left" valign=top>Telenav</td>
+		<td align="left" valign=top class="country"><%=t :RO %></td>
+		<td align="left" bgcolor="#9eb0c9">Lightning talks</td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,458333333333333" sdnum="11274;0;H:MM">11:00</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :break %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,479166666666667" sdnum="11274;0;H:MM">11:30</td>
+		<td align="left" valign=bottom>Marek Strassenburg Kleciak</td>
+		<td align="left" valign=bottom>Future and possible improvement of S3DB definition</td>
+		<td align="left" valign=top>OSM Polska</td>
+		<td align="left" valign=top class="country"><%=t :PL %></td>
+		<td align="left" bgcolor="#9eb0c9">Lightning talks</td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,5" sdnum="11274;0;H:MM">12:00</td>
+		<td align="left" valign=top>Christoph Bünte</td>
+		<td align="left" valign=top>Donating data to OSM ain’t easy - Wheelmap’s approach to data imports</td>
+		<td align="left" valign=top>SOZIALHELDEN .e.V</td>
+		<td align="left" valign=top class="country"><%=t :DE %></td>
+		<td align="left" bgcolor="#9eb0c9"></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,520833333333333" sdnum="11274;0;H:MM">12:30</td>
+		<td align="left" valign=top>Christian Quest</td>
+		<td align="left" valign=top>Benefit of data clustering for osm2pgsql/mapnik rendering.</td>
+		<td align="left" valign=top>OSM France</td>
+		<td align="left" valign=top class="country"><%=t :FR %></td>
+		<td align="left" bgcolor="#eda2b2">Open Workshop + Lightning Talks</td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,541666666666667" sdnum="11274;0;H:MM">13:00</td>
+		<td colspan=11 rowspan=3 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :lunch %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,5625" sdnum="11274;0;H:MM">13:30</td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,583333333333333" sdnum="11274;0;H:MM">14:00</td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,604166666666667" sdnum="11274;0;H:MM">14:30</td>
+		<td align="left" valign=top>Frederik Ramm</td>
+		<td align="left" valign=top>Behind the Scenes of OSM Inspector</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=top class="country"><%=t :DE %></td>
+		<td align="left" bgcolor="#eda2b2">Open Workshop + Lightning Talks</td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,625" sdnum="11274;0;H:MM">15:00</td>
+		<td align="left" valign=top>Yuriy Czoli</td>
+		<td align="left" valign=top>Extracting building height using Open Street Map building footprints and open LiDAR data.</td>
+		<td align="left" valign=top>Development Seed</td>
+		<td align="left" valign=top class="country"><%=t :US %></td>
+		<td align="left" bgcolor="#eda2b2"></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,645833333333333" sdnum="11274;0;H:MM">15:30</td>
+		<td align="left" valign=top>Hiroshi Miura</td>
+		<td align="left" valign=top>Can Global Navigation Satellite System (GNSS) change a way of mapping?</td>
+		<td align="left" valign=top>OSM Japan Foundation</td>
+		<td align="left" valign=top class="country"><%=t :JA %></td>
+		<td align="left" bgcolor="#eda2b2"></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,666666666666667" sdnum="11274;0;H:MM">16:00</td>
+		<td align="left" valign=top>Henk Hoff<br>Johan de Ruijter</td>
+		<td align="left" valign=top>Dutch address and building import</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=top class="country"><%=t :NL %></td>
+		<td align="left" bgcolor="#eda2b2"></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,6875" sdnum="11274;0;H:MM">16:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :snack %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,708333333333333" sdnum="11274;0;H:MM">17:00</td>
+		<td align="left" valign=top>Gregor MacLennan</td>
+		<td align="left" valign=top>Offline Community Mapping in the Amazon with iDEditor</td>
+		<td align="left" valign=top>Digital Democracy</td>
+		<td align="left" valign=top class="country"><%=t :US %></td>
+		<td align="left" bgcolor="#eda2b2"></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,729166666666667" sdnum="11274;0;H:MM">17:30</td>
+		<td align="left" valign=bottom>Robert Buchholz</td>
+		<td align="left" valign=bottom>3D Applications for OSM data</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=bottom class="country"><%=t :DE %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,75" sdnum="11274;0;H:MM">18:00</td>
+		<td align="left" valign=top>Joost Schouppe</td>
+		<td align="left" valign=top>Statistics for local communities</td>
+		<td align="left" valign=top></td>
+		<td align="left" valign=top class="country"><%=t :BE %></td>
+	</tr>
+	<tr>
+		<td align="center" sdval="0,770833333333333" sdnum="11274;0;H:MM">18:30</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :closing %></h4></td>
+		</tr>
+	<tr>
+		<td align="center" sdval="0,791666666666667" sdnum="11274;0;H:MM">19:00</td>
+		<td colspan=11 align="center" valign=middle bgcolor="#a4d3dA"><h4><%=t :snack %></h4></td>
+		</tr>
+
+</table>
+<!--
+<table class="table table-stripped table-hover" style="font-size:18px">
+	<tr>
+		<td align="left" valign="bottom" style="vertical-align:bottom;" bgcolor="#88c2cb"><h4><%=t :hour %></h4></td>
+		<td colspan="6" align="left" valign="top" bgcolor="#88c2cb"><h2><%=t :monday_10 %> - <%=t :tuesday_11 %>: <%=t :carmelo %></h2></td>
+	</tr>
+	<tr>
+		<td style="" align="left" valign="top" class="hour">20:00</td>
+		<td colspan="6" align="left" valign="top">
+			<h4><%=t :at %> <a href="http://ccmatienzo.com.ar" target="_blank" title="Centro Cultural Matienzo">ccmatienzo</a></h4>
+			<p><h4><%=t :carmelo_abs %></h4><br>
+			<iframe width="100%" height="420px" frameBorder="0" src="http://umap.openstreetmap.fr/es/map/carmelo_20037?scaleControl=true&miniMap=true&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=false&datalayersControl=false&onLoadPanel=undefined"></iframe><small><a href="http://umap.openstreetmap.fr/es/map/carmelo_20037">Ver pantalla completa</a></small>
+			</p>
+		</td>
+	</tr>
+</table>-->
+		</div>
+		<div id="" class="row block same-height" style="">
+  			<div class="col-xs-12 col-sm-4">
+
+			</div>
+
+  			<div class="col-xs-12 col-sm-4">
+							
+  			</div>
+
+  			<div class="col-xs-12 col-sm-4">
+  				
+  			</div>
+		</div>
+   
+
+
+
+  </div>
+</div>
+
