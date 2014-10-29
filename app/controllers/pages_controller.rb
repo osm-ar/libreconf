@@ -8,18 +8,18 @@ class PagesController < ApplicationController
       render :tourism
     end
   end
-  def accomodation
+  def accommodation
     if(I18n.locale == :en )
-      render :accomodation
+      render :accommodation
     else
       render :hospedaje
     end
   end
   def transportation
     if(I18n.locale == :en )
-      render :calendar
+      render :transportation
     else
-      render :calendar
+      render :transporte
     end
   end
   def CfP

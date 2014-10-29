@@ -24,9 +24,10 @@ Libreconf::Application.routes.draw do
   
   match 'tourism' => 'pages#tourism', :via => :get
   match 'CfP' => 'pages#CfP', :via => :get
-  match 'accomodation' => 'pages#accomodation', :via => :get
-  match 'hospedaje' => 'pages#accomodation', :via => :get
+  match 'accommodation' => 'pages#accommodation', :via => :get
+  match 'hospedaje' => 'pages#accommodation', :via => :get
   match 'transportation' => 'pages#transportation', :via => :get
+  match 'transporte' => 'pages#transportation', :via => :get
   match 'press' => 'pages#press', :via => :get
   match 'calendar' => 'pages#calendar', :via => :get
   match 'calendario' => 'pages#calendar', :via => :get
