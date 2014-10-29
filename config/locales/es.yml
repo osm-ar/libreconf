@@ -149,12 +149,12 @@ es:
   new_abstract: Subí tu resumen
   news: Noticias
   sponsors: Nuestros auspiciantes
-  tungsten: Carburo de tungsteno
-  platinum: Platino
-  diamond:  Diamante
-  gold: Oro
-  silver: Plata
-  bronze: Bronce
+  Tungsten: Carburo de tungsteno
+  Platinum: Platino
+  Diamond:  Diamante
+  Gold: Oro
+  Silver: Plata
+  Bronze: Bronce
   become_sponsor: Auspiciá la conferencia
   abstract_created: El resumen fue creado correctamente ¡Muchas gracias!
   confirmed_workshops: Talleres Confirmados
