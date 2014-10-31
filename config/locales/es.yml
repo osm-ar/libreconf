@@ -135,7 +135,9 @@ es:
   registration_locals: Registración para argentinos
   registration_locals_button: Registro en Eventioz
   registration_locals_text: Próximamente se abrirá la inscripción para argentinos a través de un sistema que utilice sistemas de pagos locales.
-  registration_community: Como miembro de la Comunidad de OSM puedes obtener descuentos en el registro. Es nuestra forma de agradecer por tu apoyo al proyecto! Durante el registro se te solicitará tu usuario de OpenStreetMap.org
+  registration_community:
+    html: |
+        Como miembro de la Comunidad de OSM puedes obtener descuentos en el registro. Es nuestra forma de agradecer por tu apoyo al proyecto! Durante el registro se te solicitará tu usuario de <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>
   register: ¡Registrate!
   registration_opening_date: El registro abre el 15 de Junio
   ticket_price: Entrada General ARS $400 (Estudiantes $250)
