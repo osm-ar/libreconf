@@ -86,7 +86,12 @@ en:
   conference_location: Buenos Aires, Argentina
   call_for_presentations: Call for Presentations
   CfP: Call for Presentations
-  cfp_alert:  Presentations are being evaluated. Coming soon we will publish the programme.
+  cfp_alert:
+    html: |
+      Live streaming at <a href="http://t.co/B3wSP2UNEQ" target="_blank">Ustream</a>.
+  app_alert:
+    html: |
+      Android app available in <a href="https://play.google.com/store/apps/details?id=com.artech.sotm.sotm2014" target="_blank"><img src="/assets/Google_Play_badge.png" alt="alternative text" /></a>
   map_credits: 
     html: |
       Map data © <a href="http://openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a> (ODbL) ♥ <a class="donate-attr" href="http://donate.openstreetmap.org" target="_blank">Donate</a>, Tiles © Mapbox, Logo made by M. Inés Szychowski and licensed under <a rel="license" href="//creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 International license</a>.

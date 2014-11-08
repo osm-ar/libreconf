@@ -95,7 +95,12 @@ es:
   conference_location: Buenos Aires, Argentina
   call_for_presentations: Proponer presentación
   CfP: Llamado a Presentaciones
-  cfp_alert:  Las presentaciones están siendo evaluadas. Próximamente publicaremos el programa.
+  cfp_alert:
+    html: |
+      Video en vivo en <a href="http://t.co/B3wSP2UNEQ" target="_blank">Ustream</a>.
+  app_alert:
+    html: |
+      Aplicación para Android disponible en <a href="https://play.google.com/store/apps/details?id=com.artech.sotm.sotm2014" target="_blank"><img src="/assets/Google_Play_badge.png" alt="alternative text" /></a>
   map_credits: 
     html: |
       Datos de mapa © <a href="http://openstreetmap.org/copyright">OpenStreetMap contributors</a> ♥ <a class="donate-attr" href="http://donate.openstreetmap.org">Donar</a>, Tiles © Mapbox, Logo hecho por M. Inés Szychowski licenciado bajo <a rel="license" href="//creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International license</a>.
