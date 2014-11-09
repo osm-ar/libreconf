@@ -24,7 +24,7 @@ To setup the application locally
 
 3. Clone the repo
 
-        git clone https://github.com/maurimiranda/openconf.git
+        git clone https://github.com/osm-ar/libreconf.git
 
 4. Go to the directory and the gemset should be create automatically
 
